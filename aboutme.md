@@ -22,10 +22,13 @@ subtitle: Self-introduction
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
+![]
+**[Mad Camp]()
+
 ![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="100"}  
 **[Karlsruhe Institute of Technology](https://www.kit.edu/english/)**  
-<em>- Overseas Exchange Student, Informatics</em>  
-<em>- March 2020 ~ July 2020</em>  
+<em>- Outbound Exchange Student, Mathematics</em>  
+<em>- March 2020 ~ August 2020</em>  
 
 ## Interests
 **Study**  
