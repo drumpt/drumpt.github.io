@@ -31,7 +31,7 @@ Welcome to my blog!
 **[MadCamp](https://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
-![KIT_LOGO](/img/pages/kit_logo.png){: width="210"}  
+![KIT_LOGO](/img/pages/kit_logo.png){: height="100"}  
 **[Karlsruhe Institute of Technology](https://www.kit.edu/english/)**  
 <em>- Outbound Exchange Student, Mathematics</em>  
 <em>- March 2020 ~ August 2020</em>  
