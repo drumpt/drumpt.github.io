@@ -22,11 +22,11 @@ subtitle: Self-introduction
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
-![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="150"}  
+![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="100"}  
 **[MadCamp](https://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
-![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="100"}  
+![KIT_LOGO](/img/pages/kit_logo.png){: width="210"}  
 **[Karlsruhe Institute of Technology](https://www.kit.edu/english/)**  
 <em>- Outbound Exchange Student, Mathematics</em>  
 <em>- March 2020 ~ August 2020</em>  
