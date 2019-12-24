@@ -22,7 +22,7 @@ subtitle: Self-introduction
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
-![MadCamp_LOGO](/img/pages/madcamp_logo.jpg){: height="150"}  
+![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="150"}  
 **[MadCamp](https://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
