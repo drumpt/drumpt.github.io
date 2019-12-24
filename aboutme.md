@@ -5,6 +5,7 @@ subtitle: Self-introduction
 ---
 
 ![Me](/img/pages/identification_picture.png){: width="200" height="266" align="center"}
+Hello, welcome to my blog!
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
@@ -22,7 +23,7 @@ subtitle: Self-introduction
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
-![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="100"}  
+![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="75"}  
 **[MadCamp](https://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
