@@ -4,7 +4,7 @@ title: About me
 subtitle: Self-introduction
 ---
 
-![Me](/img/pages/identification_picture.png){: width="200" height="266" .aligncenter}
+![Me](/img/pages/identification_picture.png){: width="200" height="266" align="center"}
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
