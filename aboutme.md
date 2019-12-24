@@ -4,8 +4,12 @@ title: About me
 subtitle: Self-introduction
 ---
 
-![Me](/img/pages/identification_picture.png){: width="200" height="266" align="center"}
-Hello, welcome to my blog!
+<div align="center">
+<div markdown="1">
+![Me](/img/pages/identification_picture.png){: width="200" height="266"}  
+</div>
+</div>
+Welcome to my blog!
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
@@ -13,7 +17,7 @@ Hello, welcome to my blog!
 <em>- B.S. in [Computer Science](http://cs.kaist.ac.kr/) and [Mathematics](http://mathsci.kaist.ac.kr/home/)</em>  
 <em>- February 2017 ~ Now</em>
 
-![BSHS_LOGO](/img/pages/bshs_logo2.jpg){: width="150" height="150"}  
+![BSHS_LOGO](/img/pages/bshs_logo.jpg){: width="150" height="150"}  
 **[Busan Science High School](http://bss.hs.kr)**  
 <em>- May 2014 ~ February 2017</em>  
 
