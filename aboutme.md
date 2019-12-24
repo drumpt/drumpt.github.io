@@ -12,7 +12,7 @@ subtitle: Self-introduction
 <em>- B.S. in [Computer Science](http://cs.kaist.ac.kr/) and [Mathematics](http://mathsci.kaist.ac.kr/home/)</em>  
 <em>- February 2017 ~ Now</em>
 
-![BSHS_LOGO](/img/pages/bshs_logo.jpg){: width="150" height="150"}  
+![BSHS_LOGO](/img/pages/bshs_logo2.jpg){: width="150" height="150"}  
 **[Busan Science High School](http://bss.hs.kr)**  
 <em>- May 2014 ~ February 2017</em>  
 
@@ -22,8 +22,9 @@ subtitle: Self-introduction
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
-![]
-**[Mad Camp]()
+![MadCamp_LOGO](/img/pages/madcamp_logo.jpg){: height="150"}  
+**[MadCamp](https://madcamp.io/)**  
+<em>- December 2019 ~ January 2020</em>  
 
 ![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="100"}  
 **[Karlsruhe Institute of Technology](https://www.kit.edu/english/)**  
