@@ -10,8 +10,8 @@ subtitle: Self-introduction
 </div>
 </div>
 Welcome to my blog! I'm Changhun Kim who lives in Daejeon, South Korea. I'm an undergraduate at KAIST, majoring in both computer science and mathematics. My interests of study are artificial intelligence, information security and problem solving.  
-My hobby is music. I like to singing and playing the guitar. I'm also interested in composition and playing the piano. I'm enterprising, goal-oriented and sociable person.  
-This blog is for recording my career, posting research of my study and sharing projects. Below is brief description of my experience.
+My hobby is music. I like to singing a song and playing the guitar. I'm also interested in composition and playing the piano. I'm enterprising, goal-oriented and sociable person.  
+This blog is for recording my career, posting some research of my study and sharing some interesting projects. Below is a brief description of my career.
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
@@ -30,7 +30,7 @@ This blog is for recording my career, posting research of my study and sharing p
 <em>- June 2019 ~ August 2019</em>  
 
 ![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="80"}  
-**[MadCamp](https://madcamp.io/)**  
+**[Immersion Camp](https://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
 ![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="80"}  
@@ -49,14 +49,3 @@ This blog is for recording my career, posting research of my study and sharing p
 <em>- Acoustic Guitar</em>  
 <em>- Piano</em>  
 <em>- Composition</em> -->
-
-<!-- My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions. -->
