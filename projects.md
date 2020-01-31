@@ -1,5 +1,5 @@
 ---
 layout: page
 title: post
-permalink: _posts/_projects
+permalink: _posts/Projects
 ---

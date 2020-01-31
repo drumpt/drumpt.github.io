@@ -22,8 +22,8 @@ description: Intellectual Research
 navbar-links:
   About Me: "aboutme"
   Posts: ""
-  Projects: "_posts/_projects"
-  Tests: "_posts/_tests"
+  Projects: "_posts/Projects"
+  Tests: "_posts/Tests"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
