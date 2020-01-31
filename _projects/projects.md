@@ -1,5 +1,5 @@
 ---
 layout: category
 title: post
-permalink: /_tests
+permalink: /category/_projects
 ---
