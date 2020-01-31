@@ -180,6 +180,22 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: ""
+      type: "tests"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+      -
+    scope:
       path: "" # all files
     values:
       layout: "page"
