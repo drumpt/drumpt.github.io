@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 title: post
-permalink: /_tests
+permalink: _posts/_tests
 ---
