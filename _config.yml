@@ -159,7 +159,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver" # need to change
+timezone: "America/Vancouver" # need to be modifed
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -178,23 +178,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-      -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-      -
-    scope:
-      path: ""
-      type: "tests"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-      -
+  -
     scope:
       path: "" # all files
     values:
