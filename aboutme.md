@@ -30,23 +30,16 @@ This blog is for recording my career, posting some research of my study or somet
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
-![MadCamp_LOGO](/img/pages/madcamp_logo.png){: height="80"}  
-**[Immersion Camp](https://madcamp.io/)**  
+![Madcamp_LOGO](/img/pages/madcamp_logo.png){: height="80"}  
+**[Immersion Camp](http://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
+![VIL_LOGO](/img/pages/vil_logo.png){: height="80"}
+**[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/) in [KAIST](http://www.kaist.ac.kr/html/kr/index.html)**  
+<em>- Undergraduate researcher</em>  
+<em>- October 2019 ~ February 2020</em>  
+
 ![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="80"}  
-**[Karlsruhe Institute of Technology](https://www.kit.edu/english/)**  
+**[Karlsruhe Institute of Technology](http://www.kit.edu/english/)**  
 <em>- Outbound Exchange Student, Mathematics</em>  
-<em>- March 2020 ~ August 2020</em>  
-
-<!-- ## Interests
-**Study**  
-<em>- Artificial Intelligence</em>  
-<em>- Information Security</em>  
-<em>- Problem Solving and Algorithms</em>  
-
-**Music**  
-<em>- Singing</em>  
-<em>- Acoustic Guitar</em>  
-<em>- Piano</em>  
-<em>- Composition</em> -->
+<em>- March 2020 ~ August 2020</em>
