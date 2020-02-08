@@ -24,6 +24,7 @@ navbar-links:
   Posts:
     - Algorithms: "category/Posts/Algorithms"
     - Machine Learning: "category/Posts/Machine Learning"
+    - Extra: "category/Posts/Extra"
   Projects:
     - Immersion Camp Week1: "category/Projects"
     - Immersion Camp Week2: "category/Projects"
