@@ -21,7 +21,7 @@ description: Intellectual Research
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Posts: "category/posts"
+  Posts: ""
   Projects: "category/projects"
   Tests: "category/tests"
   # Resources:
