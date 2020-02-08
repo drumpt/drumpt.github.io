@@ -21,8 +21,15 @@ description: Intellectual Research
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Posts: "category/Posts"
-  Projects: "category/Projects"
+  Posts:
+    - Algorithms: "category/Posts"
+    - Machine Learning: "category/Posts"
+  Projects:
+    - Immersion Camp Week1: "category/Projects"
+    - Immersion Camp Week2: "category/Projects"
+    - Immersion Camp Week3: "category/Projects"
+    - Immersion Camp Week4: "category/Projects"
+    - Block Coding System for AI Soccer: "category/Projects"
   Tests: "category/Tests"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
