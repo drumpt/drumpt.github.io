@@ -22,8 +22,8 @@ description: Intellectual Research
 navbar-links:
   About Me: "aboutme"
   Posts:
-    - Algorithms: "category/Posts"
-    - Machine Learning: "category/Posts"
+    - Algorithms: "category/Posts/Algorithms"
+    - Machine Learning: "category/Posts/Machine Learning"
   Projects:
     - Immersion Camp Week1: "category/Projects"
     - Immersion Camp Week2: "category/Projects"
