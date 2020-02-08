@@ -34,7 +34,7 @@ This blog is for recording my career, posting some research of my study or somet
 **[Immersion Camp](http://madcamp.io/)**  
 <em>- December 2019 ~ January 2020</em>  
 
-![VIL_LOGO](/img/pages/vil_logo.png){: height="80"}
+![VIL_LOGO](/img/pages/vil_logo.png){: height=""}  
 **[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/) in [KAIST](http://www.kaist.ac.kr/html/kr/index.html)**  
 <em>- Undergraduate researcher</em>  
 <em>- October 2019 ~ February 2020</em>  
