@@ -2,7 +2,7 @@
 layout: post
 title: First post!
 image: /img/hello_world.jpeg
-categories: [Projects]
+categories: [tests]
 ---
 
 This is my first post, how exciting!

@@ -22,14 +22,14 @@ description: Intellectual Research
 navbar-links:
   About Me: "aboutme"
   Posts:
-    - Algorithms: "category/Posts"
-    - Machine Learning: "category/Posts"
+    - Algorithms: "category/posts"
+    - Machine Learning: "category/aosts"
   Projects:
-    - Immersion Camp Week1: "category/Projects"
-    - Immersion Camp Week2: "category/Projects"
-    - Immersion Camp Week3: "category/Projects"
-    - Immersion Camp Week4: "category/Projects"
-    - Block Coding System for AI Soccer: "category/Projects"
+    - Immersion Camp Week1: "category/projects"
+    - Immersion Camp Week2: "category/projects"
+    - Immersion Camp Week3: "category/projects"
+    - Immersion Camp Week4: "category/projects"
+    - Block Coding System for AI Soccer: "category/projects"
   Tests: "category/Tests"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
