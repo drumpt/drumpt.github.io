@@ -2,6 +2,7 @@
 layout: post
 title: To be
 subtitle: ... or not to be?
+categories: [Posts]
 tags: [books, shakespeare, test]
 ---
 
