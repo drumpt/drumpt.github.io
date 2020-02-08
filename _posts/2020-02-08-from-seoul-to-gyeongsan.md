@@ -2,7 +2,7 @@
 layout: post
 title: BOJ 서울에서 경산까지 풀이
 subtitle: Each post also has a subtitle
-categories: [Posts/Algorithms, Posts, Algorithms]
+categories: [Posts_Algorithms]
 tags: [DP, full search]
 comments: true
 ---

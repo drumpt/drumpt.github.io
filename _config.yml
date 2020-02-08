@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Posts:
     - Algorithms: "category/Posts_Algorithms"
-    - Machine Learning: "category/Posts_Machine Learning"
+    - Machine Learning: "category/Posts_Machine_Learning"
     - Extra: "category/Posts_Extra"
   Projects:
     - Immersion Camp Week1: "category/Projects"
