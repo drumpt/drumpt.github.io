@@ -52,6 +52,9 @@ layout: base
         {% if page.previous.url %}
         <li class="previous">
           <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          {% assign category = page.category | default: page.title %}
+          {% for post in site.categories[category] %}
+            {{ post }}
         </li>
         {% endif %}
         {% if page.next.url %}
