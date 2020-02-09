@@ -9,10 +9,10 @@ subtitle: Self-introduction
 ![Me](/img/pages/identification_picture.png){: width="200" height="266"}  
 </div>
 </div>
-Welcome to my blog! I'm Changhun Kim who lives in Daejeon, South Korea. I'm an undergraduate student at KAIST, majoring in both computer science and mathematics. My interests of study are artificial intelligence, information security, big data analysis and problem solving.  
+Welcome to my blog! I'm Changhun Kim who lives in Daejeon, South Korea. I'm an undergraduate student at KAIST, majoring in both computer science and mathematics. My interests of study are algorithms, machine learning, data analysis and information security.  
 
-My hobby is music. I like to singing a song and playing the guitar. I'm also interested in composition and playing the piano. I'm enterprising, goal-oriented and sociable person.  
-This blog is for recording my career, posting some research of my study or something and sharing some interesting projects. Below is a brief description of my career.
+My hobby is music. I like to singing a song and playing the guitar. I'm also interested in playing the piano and composition. I'm enterprising, goal-oriented and sociable person.  
+This blog is for recording my career, posting some of my studies and projects and sharing something. Below is a brief description of my career.
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
