@@ -62,11 +62,11 @@ layout: base
         <li class="next">
           <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
         </li>
-          {% assign category = page.category | default: page.title %}
+          <!-- {% assign category = page.category | default: page.title %}
           {% for page in site.categories[category] %}
             <script>
               console.log(page);
-            </script>
+            </script> -->
         {% endif %}
       </ul>
     </div>
