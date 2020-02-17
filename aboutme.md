@@ -16,30 +16,30 @@ This blog is for recording my career, posting some of my studies and projects an
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
-**[KAIST](http://www.kaist.ac.kr/html/kr/index.html)**  
-<em>- B.S. in [Computer Science](http://cs.kaist.ac.kr/) and [Mathematics](http://mathsci.kaist.ac.kr/home/)</em>  
+**[KAIST](http://www.kaist.ac.kr/html/kr/index.html){: target="_blank"}**  
+<em>- B.S. in [Computer Science](http://cs.kaist.ac.kr/){: target="_blank"} and [Mathematics](http://mathsci.kaist.ac.kr/home/){: target="_blank"}</em>  
 <em>- February 2017 ~ Now</em>
 
 ![BSHS_LOGO](/img/pages/bshs_logo.jpg){: width="150" height="150"}  
-**[Busan Science High School](http://bss.hs.kr)**  
+**[Busan Science High School](http://bss.hs.kr){: target="_blank"}**  
 <em>- May 2014 ~ February 2017</em>  
 
 ## Experiences
 ![Netmarble_LOGO](/img/pages/netmarble_logo.jpg){: width="150" height="150"}  
-**[Netmarble](http://www.netmarble.net/)**  
+**[Netmarble](http://www.netmarble.net/){: target="_blank"}**  
 <em>- Internship, Data Engineer</em>  
 <em>- June 2019 ~ August 2019</em>  
 
 ![Madcamp_LOGO](/img/pages/madcamp_logo.png){: height="80"}  
-**[Immersion Camp](http://madcamp.io/)**  
+**[Immersion Camp](http://madcamp.io/){: target="_blank"}**  
 <em>- December 2019 ~ January 2020</em>  
 
 ![VIL_LOGO](/img/pages/vil_logo.png){: height=""}  
-**[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/) in [KAIST](http://www.kaist.ac.kr/html/kr/index.html)**  
+**[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/){: target="_blank"} in [KAIST](http://www.kaist.ac.kr/html/kr/index.html){: target="_blank"}**  
 <em>- Undergraduate researcher</em>  
 <em>- October 2019 ~ February 2020</em>  
 
 ![KIT_LOGO](/img/pages/kit_logo.png){: width="210" height="80"}  
-**[Karlsruhe Institute of Technology](http://www.kit.edu/english/)**  
+**[Karlsruhe Institute of Technology](http://www.kit.edu/english/){: target="_blank"}**  
 <em>- Outbound Exchange Student, Mathematics</em>  
 <em>- March 2020 ~ August 2020</em>
