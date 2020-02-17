@@ -16,7 +16,7 @@ This blog is for recording my career, posting some of my studies and projects an
 
 ## Education
 ![KAIST_LOGO](/img/pages/kaist_logo.png){: width="150" height="150"}  
-**[KAIST](http://www.kaist.ac.kr/html/kr/index.html){: target="_blank"}**  
+**[KAIST](http://kaist.ac.kr/kr/){: target="_blank"}**  
 <em>- B.S. in [Computer Science](http://cs.kaist.ac.kr/){: target="_blank"} and [Mathematics](http://mathsci.kaist.ac.kr/home/){: target="_blank"}</em>  
 <em>- February 2017 ~ Now</em>
 
@@ -35,7 +35,7 @@ This blog is for recording my career, posting some of my studies and projects an
 <em>- December 2019 ~ January 2020</em>  
 
 ![VIL_LOGO](/img/pages/vil_logo.png){: height=""}  
-**[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/){: target="_blank"} in [KAIST](http://www.kaist.ac.kr/html/kr/index.html){: target="_blank"}**  
+**[Vehicular Intelligence Lab](http://vil.kaist.ac.kr/){: target="_blank"} in [KAIST](http://kaist.ac.kr/kr/){: target="_blank"}**  
 <em>- Undergraduate researcher</em>  
 <em>- October 2019 ~ February 2020</em>  
 
