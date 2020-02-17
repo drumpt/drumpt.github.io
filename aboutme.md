@@ -5,9 +5,7 @@ subtitle: Self-introduction
 ---
 
 <div align="center">
-<div markdown="1">
-![Me](/img/pages/identification_picture.png){: width="200" height="266"}  
-</div>
+    <div markdown="1">![Me](/img/pages/identification_picture.png){: width="200" height="266"}</div>
 </div>
 Welcome to my blog! I'm Changhun Kim who lives in Daejeon, South Korea. I'm an undergraduate student at KAIST, majoring in both computer science and mathematics. My interests of study are algorithms, machine learning, data analysis and information security.  
 
