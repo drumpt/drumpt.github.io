@@ -50,7 +50,7 @@ layout: base
 
       {% assign category = page.categories[0] | default: page.title %}
       {% for post in site.categories[category] %}
-        {% ifequal post.title page.title %}
+        {% if post.title == page.title %}
           {{ forloop.counter0 }}
         {% endif %}
       {% endfor %}
