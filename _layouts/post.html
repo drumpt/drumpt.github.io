@@ -51,10 +51,10 @@ layout: base
       {% assign category = page.categories[0] | default: page.title %}
       {% assign index = 0 %}
       {% for post in site.categories[category] %}
-        {% if eq site.categories[category][index].title page.title %}
+        {% if eq post.title page.title %}
           {{ page.title }}
         {% endif %}
-        {% index = index + 1 %}
+        {% assign index = index + 1 %}
       {% endfor %}
       <!-- {% assign page = site.categories[category] %} -->
       <!-- {% assign length = site.categories[category]|length %} -->
