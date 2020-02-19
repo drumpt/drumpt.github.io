@@ -2,6 +2,7 @@
 layout: post
 title: To do lists for jekyll blog
 categories: [Extra]
+tages: [jekyll-blog]
 ---
 
 # 200208(토) 한 일
