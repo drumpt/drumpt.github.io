@@ -50,6 +50,7 @@ layout: base
 
       {% assign category = page.categories[0] | default: page.title %}
       {{ category }}
+      {{ site.categories[category][0] }}
       {% for post in site.categories[category] %}
         {{ post.title }}
       {% endfor %}
