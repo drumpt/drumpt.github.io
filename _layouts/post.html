@@ -51,6 +51,7 @@ layout: base
       {% assign category = page.categories[0] | default: page.title %}
       {% for post in site.categories[category] %}
         {% if post.title == page.title %}
+          {{ site.categories[category|length] }}
           {{ forloop.counter0 }}
         {% endif %}
       {% endfor %}
