@@ -50,7 +50,7 @@ layout: base
 
       {% assign category = page.categories[0] | default: page.title %}
       {{ category }}
-      {% aassign page = site.categories[category] %}
+      {% assign page = site.categories[category] %}
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
