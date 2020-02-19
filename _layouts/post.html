@@ -53,6 +53,7 @@ layout: base
       <!-- {% assign page = site.categories[category] %} -->
       {% assign length = site.categories[category].length %}
       {{ length }}
+      {{ category }}
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
