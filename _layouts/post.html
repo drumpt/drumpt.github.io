@@ -53,6 +53,11 @@ layout: base
       <!-- {% assign page = site.categories[category] %} -->
       <!-- {% assign length = site.categories[category]|length %} -->
       {{ site.categories[category].count }}
+      {% if site.categories[category] %}
+        Number of posts: {{ site.categories[category]|length }}
+      {% else %}
+        No posts.
+      {% endif %}
       {{ category }}
 
       <ul class="pager blog-pager">
