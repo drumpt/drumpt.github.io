@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Extra
-permalink: "/Extra"
+# permalink: "/Extra"
 pagination: 
   enabled: true
   category: "Extra"

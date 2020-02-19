@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Tests
-permalink: "/Tests"
+# permalink: "/Tests"
 pagination: 
   enabled: true
   category: "Tests"

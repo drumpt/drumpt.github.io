@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Algorithms
-permalink: "/Algorithms"
+# permalink: "/Algorithms"
 pagination: 
   enabled: true
   category: "Algorithms"
