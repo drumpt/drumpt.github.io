@@ -48,11 +48,9 @@ layout: base
         </div>
       {% endif %}
 
-      <!-- {% assign category = page.category %} -->
       {% assign category = page.categories[0] | default: page.title %}
       {{ category }}
-      {{ site.categories[category] }}
-
+      {% aassign page = site.categories[category] %}
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
