@@ -53,6 +53,7 @@ layout: base
       <!-- {% assign page = site.categories[category] %} -->
       <!-- {% assign length = site.categories[category]|length %} -->
       {{ site.categories[category].count }}
+      {{ site.categories[category] ? site.categories[category].length : '0' }}
       {% if site.categories[category] %}
         Number of posts: {{ site.categories[category]|length }}
       {% else %}
