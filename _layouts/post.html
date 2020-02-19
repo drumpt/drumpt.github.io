@@ -48,14 +48,6 @@ layout: base
         </div>
       {% endif %}
 
-      {% assign category = page.categories[0] | default: page.title %}
-      {% for post in site.categories[category] %}
-        {% if eq post.title page.title %}
-          {{ page.title }}
-          <!-- {{ forloop.counter0 }} -->
-        {% endif %}
-      {% endfor %}
-
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
