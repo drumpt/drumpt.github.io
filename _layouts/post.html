@@ -48,14 +48,15 @@ layout: base
         </div>
       {% endif %}
 
+      <!-- {% assign category = page.category %} -->
+      {% assign category = page.categories | default: page.title %}
+      {{ category }}
+      <!-- {{ site.categories }} -->
+
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
           <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-          <!-- {% assign category = page.category %} -->
-          {% assign category = post.categories | default: post.title %}
-          {{ category }}
-          <!-- {{ site.categories }} -->
         </li>
         {% endif %}
         {% if page.next.url %}
