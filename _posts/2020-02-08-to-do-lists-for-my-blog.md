@@ -24,7 +24,7 @@ categories: [Extra]
 # 앞으로 해야할 일
 1. ~~posts 본문 글꼴 변경 -> css/main.css의 body, h1,h2,h3,h4,h5,h6의 font-family에 나눔고딕 추가해서 완료.~~
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게 -> 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
-1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기 -> paginator를 이용하면 될 것 같다.
+1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기 -> paginator를 이용하면 될 것 같다. 안될 것 같다. 사실 없어도 됨.
 1. 서울에서 경산까지 풀이 업로드
 1. Find markdown editor(build와 preview가 가능하면 매우 좋을 것 같다)
 1. Projects 정리하기 + github repository에도 추가하기
