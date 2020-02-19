@@ -52,7 +52,7 @@ layout: base
       {{ category }}
       <!-- {% assign page = site.categories[category] %} -->
       <!-- {% assign length = site.categories[category]|length %} -->
-      {{ site.categories[category]|length }}
+      {{ site.categories[category].count }}
       {{ category }}
 
       <ul class="pager blog-pager">
