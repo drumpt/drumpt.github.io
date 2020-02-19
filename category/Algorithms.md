@@ -2,8 +2,8 @@
 layout: category
 title: Algorithms
 # permalink: "/Algorithms"
-pagination: 
-  enabled: true
-  category: "Algorithms"
-  permalink: /:num/
+# pagination: 
+#   enabled: true
+#   category: "Algorithms"
+#   permalink: /:num/
 ---
