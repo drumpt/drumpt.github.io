@@ -49,9 +49,9 @@ layout: base
       {% endif %}
 
       <!-- {% assign category = page.category %} -->
-      {% assign category = page.categories | default: page.title %}
+      {% assign category = page.categories[0] | default: page.title %}
       {{ category }}
-      <!-- {{ site.categories }} -->
+      {{ site.categories[category] }}
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
