@@ -51,19 +51,10 @@ layout: base
       {% assign category = page.categories[0] | default: page.title %}
       {% for post in site.categories[category] %}
         {% if eq post.title page.title %}
-          {{ forloop.counter0 }}
+          {{ page.title }}
+          <!-- {{ forloop.counter0 }} -->
         {% endif %}
       {% endfor %}
-      <!-- {% assign page = site.categories[category] %} -->
-      <!-- {% assign length = site.categories[category]|length %} -->
-      <!-- {{ site.categories[category].count }}
-      {{ site.categories[category] ? site.categories[category].length : '0' }}
-      {% if site.categories[category] %}
-        Number of posts: {{ site.categories[category]|length }}
-      {% else %}
-        No posts.
-      {% endif %}
-      {{ category }} -->
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
