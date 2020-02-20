@@ -32,6 +32,7 @@ navbar-links:
     - Immersion Camp Week4: "category/Projects"
     - Block Coding System for AI Soccer: "category/Projects"
   Tests: "category/Tests"
+  Tags: "tags"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
