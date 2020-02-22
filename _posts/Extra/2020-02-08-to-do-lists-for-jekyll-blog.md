@@ -37,7 +37,7 @@ tages: [jekyll-blog]
 1. SNS 계정 추가
 	- github 계정 추가 완료. facebook과 instagram의 경우에는 보안상의 문제로 추가하지 않음.  
 1. 서울에서 경산까지 풀이 업로드
-	- MathJax를 이용해 markdown에 수식 입력 완료
+	- MathJax를 이용해 markdown에 수식 입력 중..
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게 -> 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
 1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기 -> paginator를 이용하면 될 것 같다. 안될 것 같다. 사실 없어도 됨.
 1. Projects 정리하기 + github repository에도 추가하기
