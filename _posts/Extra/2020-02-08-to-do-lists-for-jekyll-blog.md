@@ -12,13 +12,13 @@ comments: true
 		- Algorithms
 		- Machine Learning
 		- Extra  
+		- Tests(default posts :: 참고용)
 	- Projects
 		- Immersion Camp Week1
 		- Immersion Camp Week2
 		- Immersion Camp Week3
 		- Immersion Camp Week4
 		- AI World Cup Code Generator
-	- Tests(default posts :: 참고용)
 	- Tags
 1. 카테고리별로 그 카테고리에 해당하는 게시물들만 보여줄 수 있도록 layout 설정 완료
 1. Add Lab. Experience
@@ -61,7 +61,7 @@ comments: true
 	- jekyll-paginate-v2를 이용하여 카테고리별로 페이지를 분류할 수 있을 것 같다.
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
 	- 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
-	- 시도했으나 쉽지는 않음.
+	- 시도했으나 쉽지는 않음. post.html에서 previous page와 next page를 정의한다면 index.html에서 왔는지, category.html에서 왔는지를 구분할 수 없기 때문.
 1. Projects category 정리하기 + github repository에도 추가하기
 1. Design customizing
 	- beautiful-jekyll theme의 경우 기본적으로 디자인이 깔끔해 마음에 든다.
