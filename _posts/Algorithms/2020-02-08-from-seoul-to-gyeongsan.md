@@ -3,6 +3,7 @@ layout: post
 title: BOJ 서울에서 경산까지
 categories: [Algorithms]
 tags: [DP, full search]
+comments: true
 ---
 
 ## [문제](https://www.acmicpc.net/problem/14863){: target="_blank"}
