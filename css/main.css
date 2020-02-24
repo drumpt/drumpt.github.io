@@ -8,7 +8,8 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif;
+  /* font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif; */
+  font-family: 'Nanum Gothic';
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -49,12 +50,10 @@ hr.small {
 }
 
 .main-content {
-  font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif;
   padding-top: 80px;
 }
 @media only screen and (min-width: 768px) {
   .main-content {
-    font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif;
     padding-top: 130px;
   }
 }
@@ -92,13 +91,13 @@ img {
 }
 
 .disqus-comments {
-  margin-top: 30px;
+  margin-top: 50px;
   max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .disqus-comments {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 
@@ -395,6 +394,7 @@ footer .theme-by {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #999;
   font-size: 15px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
