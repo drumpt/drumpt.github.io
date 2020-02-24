@@ -17,15 +17,15 @@ comments: true
 		- Immersion Camp Week2
 		- Immersion Camp Week3
 		- Immersion Camp Week4
-		- Block Coding System for AI Soccer
-	- Tests  
-	- Default posts(참고용)
+		- AI World Cup Code Generator
+	- Tests(default posts :: 참고용)
+	- Tags
 1. 카테고리별로 그 카테고리에 해당하는 게시물들만 보여줄 수 있도록 layout 설정 완료
 1. Add Lab. Experience
 
 # 200223(일) 한 일
 1. posts 본문 글꼴 변경
-	- css/main.css에 존재하는 body의 font-family에 나눔고딕을 추가하고 import하여 완료. import를 제대로 하니 완전히 잘 된다.
+	- css/main.css에 존재하는 body의 font-family에 나눔고딕을 추가하고 import하여 완료. import를 제대로 하니 잘 된다.
 	- **GitHub에 push하면 글꼴이 바뀌는 문제 발생.. 시간을 두고 확인하자.**
 1. Tags category가 필요할까? 쉽게 넣을 수 있을 것 같긴 한데..
 	- _config.yml 파일의 navbar-links에 Tags 추가 완료
@@ -64,4 +64,4 @@ comments: true
 	- paginator로 잘 안된다. 사실 없어도 되는 기능이긴 하다.
 1. Projects category 정리하기 + github repository에도 추가하기
 1. Design customizing
-	- beautiful-jekyll theme의 경우 기본적으로 깔끔해 마음에 든다.
+	- beautiful-jekyll theme의 경우 기본적으로 디자인이 깔끔해 마음에 든다.
