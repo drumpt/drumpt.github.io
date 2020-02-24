@@ -2,7 +2,8 @@
 layout: post
 title: To do lists for jekyll blog
 categories: [Extra]
-tages: [jekyll-blog]
+tags: [jekyll-blog]
+comments: true
 ---
 
 # 200208(토) 한 일
@@ -22,7 +23,7 @@ tages: [jekyll-blog]
 1. 카테고리별로 그 카테고리에 해당하는 게시물들만 보여줄 수 있도록 layout 설정 완료
 1. Add Lab. Experience
 
-# 200224(일) 한 일
+# 200223(일) 한 일
 1. posts 본문 글꼴 변경
 	- css/main.css에 존재하는 body의 font-family에 나눔고딕을 추가하고 import하여 완료. import를 제대로 하니 완전히 잘 된다.
 1. Tags category가 필요할까? 쉽게 넣을 수 있을 것 같긴 한데..
@@ -42,14 +43,20 @@ tages: [jekyll-blog]
 	- MathJax를 이용해 markdown에 수식 입력 가능하게 함.
 	- 업로드 완료.
 
-# 앞으로 해야할 일
+# 200224(월) 한 일
 1. 블로그를 검색 가능하게 만들기
-	- 구글 사이트맵 등록을 이용해 drumpt.github.io로 구글에서 검색 가능하게 함. 테스트해보지는 않음.
+	- 구글 사이트맵 등록을 이용해 게시물들을 구글에서 검색 가능하게 함. 추후 BOJ 서울에서 경산까지를 입력하여 제대로 되었는지 확인하면 될 듯.
 	- 네이버와 다음의 경우에도 비슷한 방법으로 검색되게 할 수 있는 것을 확인. 추후 필요성을 느끼면 구현할 예정.
 1. 댓글 기능 추가하기
-	- disqus를 이용하여 가능한 것을 확인
+	- disqus를 이용하여 구현 완료.
+
+# 앞으로 해야할 일
 1. favicon 추가
-1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게 -> 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
-1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기 -> paginator를 이용하면 될 것 같다. 안될 것 같다. 사실 없어도 됨.
+1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
+	- 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
+	- 시도했으나 쉽지는 않음.
+1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기
+	- paginator를 이용하면 될 것 같다.
+	- paginator를 이용했지만 잘 안된다. 사실 없어도 듸는 기능이긴 해.
 1. Projects category 정리하기 + github repository에도 추가하기
 1. Design customizing
