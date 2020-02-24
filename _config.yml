@@ -25,13 +25,13 @@ navbar-links:
     - Algorithms: "category/Algorithms"
     - Machine Learning: "category/Machine_Learning"
     - Extra: "category/Extra"
+    - Tests: "category/Tests"
   Projects:
     - Immersion Camp Week1: "category/Projects"
     - Immersion Camp Week2: "category/Projects"
     - Immersion Camp Week3: "category/Projects"
     - Immersion Camp Week4: "category/Projects"
     - AI World Cup Code Generator: "category/Projects"
-  Tests: "category/Tests"
   Tags: "tags"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"

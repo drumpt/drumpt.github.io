@@ -26,7 +26,8 @@ comments: true
 # 200223(일) 한 일
 1. posts 본문 글꼴 변경
 	- css/main.css에 존재하는 body의 font-family에 나눔고딕을 추가하고 import하여 완료. import를 제대로 하니 잘 된다.
-	- **GitHub에 push하면 글꼴이 바뀌는 문제 발생.. 시간을 두고 확인하자.**
+	- GitHub에 push하면 글꼴이 바뀌는 문제 발생.. 시간을 두고 확인하자.
+	- 문제의 원인을 찾은 것 같다. body font의 경우 web browser의 default font에 의해 결정되기 때문에 어쩔 수 없게 되는 것. 이는 다른 블로그에 들어가서 확인했다. 결국 body의 font-fmaily에 나눔고딕을 추가하는 것보다 더 많은 것을 할 수 없는 것 같다.
 1. Tags category가 필요할까? 쉽게 넣을 수 있을 것 같긴 한데..
 	- _config.yml 파일의 navbar-links에 Tags 추가 완료
 1. Find markdown editor and local build system(build와 preview가 가능하면 좋을 것 같다)
@@ -56,12 +57,11 @@ comments: true
 	- head.html에 추가하여 완료.
 
 # 앞으로 해야할 일
+1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기
+	- paginator를 이용하여 카테고리를 분류하면 될 것 같다.
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
 	- 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
 	- 시도했으나 쉽지는 않음.
-1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기
-	- paginator를 이용하면 될 것 같다.
-	- paginator로 잘 안된다. 사실 없어도 되는 기능이긴 하다.
 1. Projects category 정리하기 + github repository에도 추가하기
 1. Design customizing
 	- beautiful-jekyll theme의 경우 기본적으로 디자인이 깔끔해 마음에 든다.
