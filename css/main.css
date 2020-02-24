@@ -49,10 +49,12 @@ hr.small {
 }
 
 .main-content {
+  font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif;
   padding-top: 80px;
 }
 @media only screen and (min-width: 768px) {
   .main-content {
+    font-family: 'Nanum Gothic', 'Lora', 'Times New Roman', serif;
     padding-top: 130px;
   }
 }
