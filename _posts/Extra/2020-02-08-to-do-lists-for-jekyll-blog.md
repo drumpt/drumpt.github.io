@@ -58,10 +58,11 @@ comments: true
 
 # 앞으로 해야할 일
 1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기
-	- paginator를 이용하여 카테고리를 분류하면 될 것 같다.
+	- jekyll-paginate-v2를 이용하여 카테고리별로 페이지를 분류할 수 있을 것 같다.
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
 	- 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
 	- 시도했으나 쉽지는 않음.
 1. Projects category 정리하기 + github repository에도 추가하기
 1. Design customizing
 	- beautiful-jekyll theme의 경우 기본적으로 디자인이 깔끔해 마음에 든다.
+	- 아이디어 1 : 상단, 하단 배경색을 진하게 바꾸고 글씨를 흰 색으로 바꾸기만 해도 크게 예뻐질 것 같다.
