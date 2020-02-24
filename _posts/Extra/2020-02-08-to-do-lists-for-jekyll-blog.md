@@ -26,6 +26,7 @@ comments: true
 # 200223(일) 한 일
 1. posts 본문 글꼴 변경
 	- css/main.css에 존재하는 body의 font-family에 나눔고딕을 추가하고 import하여 완료. import를 제대로 하니 완전히 잘 된다.
+	- **GitHub에 push하면 글꼴이 바뀌는 문제 발생.. 시간을 두고 확인하자.**
 1. Tags category가 필요할까? 쉽게 넣을 수 있을 것 같긴 한데..
 	- _config.yml 파일의 navbar-links에 Tags 추가 완료
 1. Find markdown editor and local build system(build와 preview가 가능하면 좋을 것 같다)
@@ -45,11 +46,13 @@ comments: true
 
 # 200224(월) 한 일
 1. 블로그를 검색 가능하게 만들기
-	- 구글 사이트맵 등록을 이용해 게시물들을 구글에서 검색 가능하게 함. 추후 BOJ 서울에서 경산까지를 입력하여 제대로 되었는지 확인하면 될 듯.
+	- 구글 사이트맵 등록을 이용해 게시물들을 구글에서 검색 가능하게 함. 
+	- **추후 BOJ 서울에서 경산까지를 입력하여 제대로 되었는지 확인하면 될 듯.**
 	- 네이버와 다음의 경우에도 비슷한 방법으로 검색되게 할 수 있는 것을 확인. 추후 필요성을 느끼면 구현할 예정.
 1. 댓글 기능 추가하기
 	- disqus를 이용하여 구현 완료.
 1. favicon 추가
+	- head.html에 추가하여 완료.
 
 # 앞으로 해야할 일
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
