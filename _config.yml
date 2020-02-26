@@ -24,13 +24,10 @@ navbar-links:
   Posts:
     - Algorithms: "category/Algorithms"
     - Machine Learning: "category/Machine_Learning"
-    - Extra: "category/Extra"
     - Tests: "category/Tests"
-  Projects:
-    - Immersion Camp Week1: "category/Projects"
-    - Immersion Camp Week2: "category/Projects"
-    - Immersion Camp Week3: "category/Projects"
-    - Immersion Camp Week4: "category/Projects"
+    - Extra: "category/Extra"
+    Projects:
+    - Immersion Camp: "category/Immersion_Camp"
     - AI World Cup Code Generator: "category/Projects"
   Tags: "tags"
   # Resources:
