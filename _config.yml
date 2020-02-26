@@ -26,7 +26,7 @@ navbar-links:
     - Machine Learning: "category/Machine_Learning"
     - Tests: "category/Tests"
     - Extra: "category/Extra"
-    Projects:
+  Projects:
     - Immersion Camp: "category/Immersion_Camp"
     - AI World Cup Code Generator: "category/Projects"
   Tags: "tags"
