@@ -28,7 +28,7 @@ This blog is for recording my career, posting some of my studies and projects an
 ![DeepNatural_LOGO](/img/pages/deepnatural_logo.jpg){: width="150" height="150"}  
 **[DeepNatural AI](http://deepnatural.ai/){: target="_blank"}**  
 <em>- Internship, Machine Learning Engineer</em>  
-<em>- September 2019 ~ Now</em>  
+<em>- September 2020 ~ Now</em>  
 
 ![Netmarble_LOGO](/img/pages/netmarble_logo.jpg){: width="150" height="150"}  
 **[Netmarble](http://www.netmarble.net/){: target="_blank"}**  
