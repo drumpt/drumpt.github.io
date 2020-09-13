@@ -59,13 +59,18 @@ comments: true
 # 200227(목) 한 일
 1. 매드캠프 프로젝트 카테고리를 만들어 디렉토리를 하나로 합침. 추후에 포스트들을 추가할 예정.
 
+# 200913(일) 한 일
+1. Design customizing
+	- 아이디어 1 : 상단, 하단 배경색을 진하게 바꾸고 글씨를 흰 색으로 바꾸기만 해도 크게 예뻐질 것 같다.
+		- 완료.
+	- 아이디어 2 : 포스트의 제목과 단락 사이의 간격을 적절하게 조정하고, 댓글창, 태그창 등등 사이에 선을 넣으면 좋을 것 같다.
+		- 포스트의 제목과 단락 사이의 간격을 늘림.
+		- 선을 넣어보았으나 별로인 것 같아서 뺐음.
+
 # 앞으로 해야할 일
+1. Projects category 정리하기 + github repository에도 추가하기
 1. 모든 posts 말고 다른 category에서도 좌우로 넘길 수 있게 만들기
 	- jekyll-paginate-v2를 이용하여 카테고리별로 posts를 넘길 수 있을 것 같다.
 1. 카테고리별로 previous, next post에 그 카테고리에 해당하는 post만 포함되게
 	- 기본적으로 하나의 post는 하나의 category에만 속하는 것으로 가정.
 	- 시도했으나 쉽지는 않음. post.html에서 previous page와 next page를 정의한다면 index.html에서 왔는지, category.html에서 왔는지를 구분할 수 없기 때문.
-1. Projects category 정리하기 + github repository에도 추가하기
-1. Design customizing
-	- 아이디어 1 : 상단, 하단 배경색을 진하게 바꾸고 글씨를 흰 색으로 바꾸기만 해도 크게 예뻐질 것 같다.
-	- 아이디어 2 : 포스트의 제목과 단락 사이의 간격을 적절하게 조정하고, 댓글창, 태그창 등등 사이에 선을 넣으면 좋을 것 같다.
