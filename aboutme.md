@@ -11,7 +11,7 @@ subtitle: Self-introduction
 </div>
 Welcome to my blog! I'm Changhun Kim who lives in Seoul, South Korea. I'm an undergraduate student at KAIST, majoring in both computer science and mathematics. My interests of study are machine learning, software engineering and information security.  
 
-My hobby is music. I like singing a song and playing the guitar. I'm also interested in playing the piano and composition. I'm enterprising, goal-oriented and sociable person.  
+My hobby is music. I like to sing a song and play the guitar. I'm also interested in playing the piano and composition. I'm enterprising, goal-oriented and sociable person.  
 This blog is for recording my career, posting some of my studies and projects and sharing something. Below is a brief description of my career.
 
 <hr>
