@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To do lists for jekyll blog
-categories: [Extra]
+categories: [extra]
 tags: [jekyll-blog]
 comments: true
 ---

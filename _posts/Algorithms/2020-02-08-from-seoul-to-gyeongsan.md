@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BOJ 서울에서 경산까지
-categories: [Algorithms]
+categories: [algorithms]
 tags: [DP, full search]
 comments: true
 ---

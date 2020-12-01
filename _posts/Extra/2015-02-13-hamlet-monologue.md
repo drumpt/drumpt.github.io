@@ -2,7 +2,7 @@
 layout: post
 title: To be
 subtitle: ... or not to be?
-categories: [Extra]
+categories: [extra]
 tags: [books, shakespeare, test]
 ---
 

@@ -1,4 +1,4 @@
 ---
 layout: category
-title: MadCamp
+title: mad_camp
 ---
