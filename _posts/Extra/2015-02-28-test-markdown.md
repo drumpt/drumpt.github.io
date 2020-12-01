@@ -4,8 +4,8 @@ title: Test markdown
 subtitle: Each post also has a subtitle
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-categories: [Tests]
-tags: [test]
+categories: [Extra]
+tags: [Extra]
 comments: true
 ---
 
