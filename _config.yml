@@ -28,10 +28,11 @@ navbar-links:
     - Extra: "category/extra"
   Projects:
     - FFPY: "category/FFPY"
-    # - Deep Reinforcement Learning on Yacht:
-    # - MR Extractor:
     - AI Soccer: "category/ai_soccer"
     - Immersion Camp: "category/mad_camp"
+    # - Deep Reinforcement Learning on Yacht:
+    # - MR Extractor:
+
   Tags: "tags"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
