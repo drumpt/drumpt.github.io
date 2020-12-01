@@ -130,7 +130,7 @@ img {
 }
 
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus ,
+.navbar-custom .navbar-brand:focus,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: {{ site.hover-col }};
@@ -763,12 +763,12 @@ pre {
 
 .navbar-default button.navbar-toggle:focus,
 .navbar-default button.navbar-toggle:hover {
-  /* background-color: initial; */
-  background-color: #FFFFFF;
+  background-color: initial;
 }
 
 .navbar-default button.navbar-toggle[aria-expanded="true"] {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
+  /* background-color: initial; */
 }
 
 /* Tags page */
