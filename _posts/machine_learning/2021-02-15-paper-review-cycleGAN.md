@@ -18,7 +18,7 @@ comments: true
 
 <div align="center">
 <div markdown="1">
-![Image-to-image translation](/img/posts/cycleGAN/_2021-02-04__3.01.43.png)
+![Image-to-image translation](/img/posts/_2021-02-04__3.01.43.png)
 </div>
 </div>
 
