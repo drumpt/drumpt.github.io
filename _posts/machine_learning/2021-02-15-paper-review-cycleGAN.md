@@ -6,8 +6,6 @@ tags: [vision, generative-model]
 comments: true
 ---
 
-# CycleGAN : Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks
-
 **[Basic Information]**
 
 - Authors : Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A. Efros (BAIR Lab. in UC Berkeley)
@@ -18,7 +16,11 @@ comments: true
 
 - Image-to-image translation
 
+<div align="center">
+<div markdown="1">
 ![Image-to-image translation](/img/posts/cycleGAN/_2021-02-04__3.01.43.png)
+</div>
+</div>
 
 - 기존의 방법은 training set으로 paired data인 (input_image, output_image)을 이용함.
 - 이 논문은 paired data의 존재 없이 $$G:X(source~domain)\rightarrow Y(target~domain)$$인 함수 $$G$$를 찾는 방법을 제안함.
