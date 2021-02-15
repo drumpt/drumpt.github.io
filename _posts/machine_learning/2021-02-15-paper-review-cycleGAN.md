@@ -89,7 +89,7 @@ comments: true
 
 **Training details**
 
-- Train $$G$$ to minimize $$\mathbb{E}_{x \sim p_{data}(x)}[(D(G(x)) - 1)^2]$$ and train $$D$$ to minimize $$\mathbb{E}_{y \sim p_{data}(y)}[(D(y) - 1)^2] + \mathbb{E}_{ㅌ \sim p_{data}(ㅌ)}[(D(G(x))^2]$$.
+- Train $$G$$ to minimize $$\mathbb{E}_{x \sim p_{data}(x)}[(D(G(x)) - 1)^2]$$ and train $$D$$ to minimize $$\mathbb{E}_{y \sim p_{data}(y)}[(D(y) - 1)^2] + \mathbb{E}_{x \sim p_{data}(x)}[(D(G(x))^2]$$.
 - Model oscillation을 줄이기 위해 Discriminator를 학습시킬 때 버퍼를 두어 이전의 생성자가 생성한 50개의 이미지들에 대해서도 진짜인지 가짜인지를 판별하게 만듦.
 - $$\lambda=10$$, Adam optimizer with learning rate = 0.0002, batch size = 1.
 
