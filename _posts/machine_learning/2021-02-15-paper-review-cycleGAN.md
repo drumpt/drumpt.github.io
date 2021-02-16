@@ -19,7 +19,7 @@ comments: true
 ![Image-to-image translation](/img/posts/cycleGAN/2021-02-04__3.01.43.png)
 
 - 기존의 방법은 training set으로 paired data인 (input_image, output_image)을 이용함.
-- 이 논문은 paired data의 존재 없이 $$G:X(source~domain)\rightarrow Y(target~domain)$$인 함수 $$G$$를 찾는 방법을 제안함.
+- 이 논문은 paired data의 존재 없이 $G:X(source~domain)\rightarrow Y(target~domain)$인 함수 $G$를 찾는 방법을 제안함.
 - Collection style transfer, object transfiguration, season transfer, photo enhencement 등의 여러 Task에 적용한 결과를 제공함.
 
 **3. Introduction**
@@ -31,9 +31,9 @@ comments: true
 
 ![Paired data and unpaired data](/img/posts/cycleGAN/2021-02-10__2.07.12.png)  
 
-- $$G:X \rightarrow \hat{Y}, ~ \hat{Y} \simeq Y$$를 만족시키는 $$G$$는 무수히 많이 존재함. 일례로, $$X$$에 속한 모든 이미지에 대해 $$Y$$ 내의 특정 이미지 하나를 대응시키는 constant mapping도 $$G$$가 될 수 있음. 실제로 optimization 과정에서 constant mapping이 되어 $$Y$$의 분포를 따르지 않는 **mode collapse**가 발생.
-- cycle consistent : $$G:X \rightarrow Y$$와 $$F:Y \rightarrow X$$가 있을 때 $$G$$, $$F$$는 서로 inverse mapping이어야 함. 즉, $$G$$는 bijection이어야 함. constant mapping의 경우 bijection이 아님.
-- cycle consistency loss : $$F(G(x)) \approx x,~G(F(y)) \approx y$$를 만족시키게 만드는 loss term. 이를 adversarial loss와 합쳐 image-to-image translation을 가능하게 함.
+- $G:X \rightarrow \hat{Y}, ~ \hat{Y} \simeq Y$를 만족시키는 $G$는 무수히 많이 존재함. 일례로, $X$에 속한 모든 이미지에 대해 $Y$ 내의 특정 이미지 하나를 대응시키는 constant mapping도 $G$가 될 수 있음. 실제로 optimization 과정에서 constant mapping이 되어 $Y$의 분포를 따르지 않는 **mode collapse**가 발생.
+- cycle consistent : $G:X \rightarrow Y$와 $F:Y \rightarrow X$가 있을 때 $G$, $F$는 서로 inverse mapping이어야 함. 즉, $G$는 bijection이어야 함. constant mapping의 경우 bijection이 아님.
+- cycle consistency loss : $F(G(x)) \approx x,~G(F(y)) \approx y$를 만족시키게 만드는 loss term. 이를 adversarial loss와 합쳐 image-to-image translation을 가능하게 함.
 
 **4. Related Work**
 
@@ -55,7 +55,7 @@ comments: true
 
 **5. Formulation**
 
-- $$\{x_i\}_{i=1}^{N}$$과 $$\{y_j\}_{j=1}^{M}$$이 학습 데이터로 존재하는 상태에서 생성자 $$G:X \rightarrow Y$$와 $$F:Y \rightarrow X$$, 판별자 $$D_X$$와 $$D_Y$$를 구하는 것이 목표임. $$D_X$$는 $$X$$에 속한 이미지들의 집합인 $$\{x\}$$와 $$Y$$로부터 생성된 이미지들의 집합인 $$\{F(y)\}$$를 구별하는 것이 목표이고, $$D_Y$$는 $$Y$$에 속한 이미지들의 집합인 $$\{y\}$$와 $$X$$로부터 생성된 이미지들의 집합인 $$\{G(x)\}$$를 구별하는 것이 목표임. 이를 위해 adversarial loss와 cycle consistency loss를 도입.
+- $\{x_i\}_{i=1}^{N}$과 $\{y_j\}_{j=1}^{M}$이 학습 데이터로 존재하는 상태에서 생성자 $G:X \rightarrow Y$와 $F:Y \rightarrow X$, 판별자 $D_X$와 $D_Y$를 구하는 것이 목표임. $D_X$는 $X$에 속한 이미지들의 집합인 $\{x\}$와 $Y$로부터 생성된 이미지들의 집합인 $\{F(y)\}$를 구별하는 것이 목표이고, $D_Y$는 $Y$에 속한 이미지들의 집합인 $\{y\}$와 $X$로부터 생성된 이미지들의 집합인 $\{G(x)\}$를 구별하는 것이 목표임. 이를 위해 adversarial loss와 cycle consistency loss를 도입.
 - Adversarial Loss
     - 생성된 이미지들의 분포가 target domain에 속한 이미지들의 분포와 유사하게 만듦.
     - Discriminator는 주어진 이미지가 진짜 이미지일 확률을 반환.
@@ -63,7 +63,7 @@ comments: true
 ![adversarial loss](/img/posts/cycleGAN/2021-02-10__4.36.38.png)
 
 - Cycle Consistency Loss
-    - $$G$$와 $$F$$가 서로의 inverse mapping이 되어 $$F(G(x))=x$$, $$G(F(y))=y$$를 만족시킬 경우 mode collapse 등의 문제점을 없앨 수 있을 것임.
+    - $G$와 $F$가 서로의 inverse mapping이 되어 $F(G(x))=x$, $G(F(y))=y$를 만족시킬 경우 mode collapse 등의 문제점을 없앨 수 있을 것임.
 
 ![cycle consistency loss](/img/posts/cycleGAN/2021-02-11__3.06.01.png)
 
@@ -89,9 +89,9 @@ comments: true
 
 **Training details**
 
-- Train $$G$$ to minimize $$\mathbb{E}_{x \sim p_{data}(x)}[(D(G(x)) - 1)^2]$$ and train $$D$$ to minimize $$\mathbb{E}_{y \sim p_{data}(y)}[(D(y) - 1)^2] + \mathbb{E}_{x \sim p_{data}(x)}[(D(G(x))^2]$$.
+- Train $G$ to minimize $\mathbb{E}_{x \sim p_{data}(x)}[(D(G(x)) - 1)^2]$ and train $D$ to minimize $\mathbb{E}_{y \sim p_{data}(y)}[(D(y) - 1)^2] + \mathbb{E}_{x \sim p_{data}(x)}[(D(G(x))^2]$.
 - Model oscillation을 줄이기 위해 Discriminator를 학습시킬 때 버퍼를 두어 이전의 생성자가 생성한 50개의 이미지들에 대해서도 진짜인지 가짜인지를 판별하게 만듦.
-- $$\lambda=10$$, Adam optimizer with learning rate = 0.0002, batch size = 1.
+- $\lambda=10$, Adam optimizer with learning rate = 0.0002, batch size = 1.
 
 **7. Evaluation**
 
