@@ -150,7 +150,7 @@ Customize the slide style and background
 
 Let's make headers navy colored.
 
-Create `assets/css/reveal_custom.css` with:
+Create `assets/css/reveal_custom` with:
 
 ```css
 .reveal section h1,
