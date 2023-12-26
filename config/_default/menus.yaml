@@ -12,6 +12,9 @@ main:
   - name: News
     url: '#news'
     weight: 20
+  - name: Experience
+    url: '#experience'
+    weight: 25
   - name: Publications
     url: '#publication'
     weight: 30
@@ -21,9 +24,6 @@ main:
   - name: Posts
     url: '#posts'
     weight: 50
-  # - name: Contact
-  #   url: '#contact'
-  #   weight: 60
   - name: CV
-    url: uploads/resume.pdf
+    url: uploads/CV_ChanghunKim.pdf
     weight: 60

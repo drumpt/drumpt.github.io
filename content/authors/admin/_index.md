@@ -34,15 +34,15 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    # - course: Ph.D. in Artificial Intelligence
+    # - course: Ph.D. in Computer Science
     #   institution: Stanford University
-    #   year: 2012
+    #   year: 2027 - Present
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2022-2024
+      year: 2022 - Present
     - course: B.S. in Computer Science and Mathematics
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2017-2022
+      year: 2017 - 2022
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -66,7 +66,7 @@ social:
     link: https://twitter.com/hoonine__
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'changhun.kim@kaist.ac.kr'
