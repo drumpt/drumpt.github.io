@@ -29,7 +29,7 @@ sections:
   #         icon_pack: fas
   - block: experience
     content:
-      title: Experience
+      title: Research Experience
       # Date format for experience
       #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
@@ -39,32 +39,39 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
+        - title: Machine Learning Researcher
+          company: Medical AI Division, AITRICS
+          company_url: 'https://en.aitrics.com/'
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
-          description: |2-
-              Responsibilities include:
+          location: Seoul, South Korea
+          date_start: '2023-11-20'
+          # description: |2-
+          #     Responsibilities include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
+          #     * Analysing
+          #     * Modelling
+          #     * Deploying
+        - title: Research Intern
+          company: Machine Learning and Intelligence Laboratory, KAIST
+          company_url: 'https://mli.kaist.ac.kr/'
           company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          location: Daejeon, South Korea
+          date_start: '2021-06-28'
+          date_end: '2022-02-25'
+          # description: Taught electronic engineering and researched semiconductor physics.
+        - title: Research and Development Intern
+          company: Vehicular Intelligence Laboratory, KAIST
+          company_url: 'https://vil.kaist.ac.kr/'
+          company_logo: org-x
+          location: Daejeon, South Korea
+          date_start: '2019-10-15'
+          date_end: '2020-08-15'
+          # description: Taught electronic engineering and researched semiconductor physics.
     design:
       columns: '2'
   - block: collection
     content:
-      title: Recent Publications
+      title: Publications
       text: |-
         {{% callout note %}}
         Quickly discover relevant content by [filtering publications](./publication/).
@@ -72,10 +79,40 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true
+        # exclude_featured: true
     design:
       columns: '2'
       view: citation
+  - block: experience
+    content:
+      title: Work Experience
+      # Date format for experience
+      #   Refer to https://wowchemy.com/docs/customization/#date-format
+      date_format: Jan 2006
+      # Experiences.
+      #   Add/remove as many `experience` items below as you like.
+      #   Required fields are `title`, `company`, and `date_start`.
+      #   Leave `date_end` empty if it's your current employer.
+      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+      items:
+        - title: Machine Learning Engineer Intern
+          company: MLOps Squad, DeepNatural AI
+          company_url: 'https://labelr.io/'
+          company_logo: org-x
+          location: Seoul, South Korea
+          date_start: '2020-09-14'
+          date_end: '2021-02-26'
+          # description: Taught electronic engineering and researched semiconductor physics.
+        - title: Data Engineer Intern
+          company: Big Data Center, Netmarble
+          company_url: 'https://www.netmarble.net/'
+          company_logo: org-x
+          location: Seoul, South Korea
+          date_start: '2020-06-24'
+          date_end: '2021-08-16'
+          # description: Taught electronic engineering and researched semiconductor physics.
+    design:
+      columns: '2'
 # - block: accomplishments
   #   content:
   #     # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
@@ -145,7 +182,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: Recent Posts
+      title: Posts
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
