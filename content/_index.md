@@ -11,6 +11,7 @@ sections:
       title: Biography
       username: admin
   - block: experience
+    id: experience
     content:
       title: Experience
       date_format: Jan 2006
@@ -63,19 +64,20 @@ sections:
     design:
       columns: '2'
   - block: collection
+    id: publication
     content:
       title: Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      # text: |-
+      #   {{% callout note %}}
+      #   Quickly discover relevant content by [filtering publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
         # exclude_featured: true
     design:
-      columns: '2'
-      view: citation
+      columns: '1'
+      view: citation # citation
   - block: portfolio
     id: projects
     content:
@@ -92,7 +94,7 @@ sections:
       # To remove the toolbar, delete the entire `filter_button` block.
       buttons:
         - name: All
-          tag: '*'
+          tag: '*'  
         - name: Deep Learning
           tag: Deep Learning
         - name: Other
@@ -128,6 +130,6 @@ sections:
       order: desc
     design:
       # Choose a layout view
+      columns: '1'
       view: compact
-      columns: '2'
 ---
