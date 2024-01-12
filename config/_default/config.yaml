@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Changhun Kim # Website name
-baseURL: 'https://changhun.kim/' # Website URL
+baseURL: 'https://drumpt.github.io/' # Website URL
 
 ############################
 ## LANGUAGE

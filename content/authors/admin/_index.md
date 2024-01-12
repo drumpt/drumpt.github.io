@@ -74,5 +74,5 @@ email: 'changhun.kim@kaist.ac.kr'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a master's student at [KAIST AI](https://gsai.kaist.ac.kr/) and a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications with some emphasis on theoretical aspects. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning.
+I am a master's student at [KAIST AI](https://gsai.kaist.ac.kr/) and a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning.
 {style="text-align: justify;"}
