@@ -60,7 +60,7 @@ social:
     link: https://github.com/drumpt
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/changhun-kim-84051124a/
+    link: https://www.linkedin.com/in/changhun-kim/
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/hoonine__
