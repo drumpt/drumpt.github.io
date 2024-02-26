@@ -14,12 +14,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: M.S. Student
+role: Machine Learning Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: KAIST
-    url: https://kaist.ac.kr/en/
+  - name: AITRICS
+    url: https://en.aitrics.com/?redirect=no
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -34,12 +34,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    # - course: Ph.D. in Computer Science
-    #   institution: Stanford University
-    #   year: 2027 - Present
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2022 - Present
+      year: 2022 - 2024
     - course: B.S. in Computer Science and Mathematics
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2017 - 2022
@@ -51,7 +48,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:changhun.kim@kaist.ac.kr'
+    link: 'mailto:changhun.kim@aitrics.com'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
@@ -69,10 +66,10 @@ social:
     link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'changhun.kim@kaist.ac.kr'
+email: 'changhun.kim@aitrics.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a master's student at [KAIST AI](https://gsai.kaist.ac.kr/) and a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning.
+I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning.
 {style="text-align: justify;"}

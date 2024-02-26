@@ -24,7 +24,7 @@ sections:
         - title: Machine Learning Researcher
           company: Medical AI Division, AITRICS
           company_url: 'https://en.aitrics.com/'
-          # company_logo: org-gc
+          company_logo: aitrics_logo
           location: Seoul, South Korea
           date_start: '2023-11-20'
           # description: |2-
@@ -36,28 +36,29 @@ sections:
         - title: Research Intern
           company: Machine Learning and Intelligence Laboratory, KAIST
           company_url: 'https://mli.kaist.ac.kr/'
-          # company_logo: org-x
+          company_logo: mlilab_logo
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
           # description: Taught electronic engineering and researched semiconductor physics.
-        - title: Machine Learning Engineer Intern
+        - title: Machine Learning Engineer
           company: MLOps Squad, DeepNatural AI
           company_url: 'https://deepnatural.ai/'
-          # company_logo: org-x
+          company_logo: deepnatural_logo
           location: Seoul, South Korea
           date_start: '2020-09-14'
           date_end: '2021-02-26'
         - title: Research Intern
           company: Vehicular Intelligence Laboratory, KAIST
           company_url: 'https://vil.kaist.ac.kr/'
+          company_logo: vil_logo
           location: Daejeon, South Korea
           date_start: '2019-10-15'
           date_end: '2020-08-15'
-        - title: Data Engineer Intern
+        - title: Data Engineer
           company: Big Data Center, Netmarble
           company_url: 'https://www.netmarble.net/'
-          # company_logo: org-x
+          company_logo: netmarble_logo
           location: Seoul, South Korea
           date_start: '2019-06-24'
           date_end: '2019-08-16'
