@@ -48,7 +48,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:changhun.kim@aitrics.com'
+    link: 'mailto:chan9hun.k1m@gmail.com'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
@@ -71,5 +71,5 @@ email: 'changhun.kim@aitrics.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning.
+I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning. If you wish to collaborate, please do not hesitate to contact me!
 {style="text-align: justify;"}
