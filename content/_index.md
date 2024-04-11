@@ -22,7 +22,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: Machine Learning Researcher
-          company: Medical AI Division, AITRICS
+          company: AITRICS
           company_url: 'https://en.aitrics.com/'
           company_logo: aitrics_logo
           location: Seoul, South Korea
@@ -34,28 +34,28 @@ sections:
           #     * Modelling
           #     * Deploying
         - title: Research Intern
-          company: Machine Learning and Intelligence Laboratory, KAIST
+          company: Machine Learning and Intelligence Lab, KAIST
           company_url: 'https://mli.kaist.ac.kr/'
           company_logo: mlilab_logo
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
           # description: Taught electronic engineering and researched semiconductor physics.
-        - title: Machine Learning Engineer
-          company: MLOps Squad, DeepNatural AI
+        - title: Machine Learning Engineer Intern
+          company: DeepNatural
           company_url: 'https://deepnatural.ai/'
           company_logo: deepnatural_logo
           location: Seoul, South Korea
           date_start: '2020-09-14'
           date_end: '2021-02-26'
         - title: Research Intern
-          company: Vehicular Intelligence Laboratory, KAIST
+          company: Vehicular Intelligence Lab, KAIST
           company_url: 'https://vil.kaist.ac.kr/'
           company_logo: vil_logo
           location: Daejeon, South Korea
           date_start: '2019-10-15'
           date_end: '2020-08-15'
-        - title: Data Engineer
+        - title: Data Engineer Intern
           company: Big Data Center, Netmarble
           company_url: 'https://www.netmarble.net/'
           company_logo: netmarble_logo
