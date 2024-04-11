@@ -56,7 +56,7 @@ sections:
           date_start: '2019-10-15'
           date_end: '2020-08-15'
         - title: Data Engineer Intern
-          company: Big Data Center, Netmarble
+          company: Netmarble
           company_url: 'https://www.netmarble.net/'
           company_logo: netmarble_logo
           location: Seoul, South Korea
