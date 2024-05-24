@@ -27,9 +27,9 @@ bio:
 
 # Interests to show in About widget
 interests:
-  - Generalizable Deep Learning
+  - OOD Generalization
   - Generative Models
-  - Bayesian Machine Learning
+  - Statistical Machine Learning
 
 # Education to show in About widget
 education:
@@ -61,15 +61,15 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/hoonine__
-  - icon: cv
-    icon_pack: ai
-    link: uploads/CV_ChanghunKim.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'changhun.kim@aitrics.com'
+email: 'chan9hun.k1m@gmail.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by generalizable deep learning, generative models, and Bayesian machine learning. If you wish to collaborate, please do not hesitate to contact me!
+I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by out-of-distribution (OOD) generalization, generative models, and statistical machine learning. If you wish to collaborate, please do not hesitate to contact me!
 {style="text-align: justify;"}
