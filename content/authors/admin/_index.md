@@ -48,7 +48,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:chan9hun.k1m@gmail.com'
+    link: 'mailto:changhun.a.kim@gmail.com'
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
@@ -66,7 +66,7 @@ social:
   #   link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'chan9hun.k1m@gmail.com'
+email: 'changhun.a.kim@gmail.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
