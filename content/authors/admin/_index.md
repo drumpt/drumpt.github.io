@@ -28,8 +28,8 @@ bio:
 # Interests to show in About widget
 interests:
   - Out-of-Distribution Generalization
-  - Generative Models
-  - Statistical Machine Learning
+  - Deep Generative Models
+  - Statistical Learning Theory
 
 # Education to show in About widget
 education:
