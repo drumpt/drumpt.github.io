@@ -33,13 +33,20 @@ sections:
           #     * Analysing
           #     * Modelling
           #     * Deploying
-        - title: Research Intern
+        - title: Undergraduate Researcher
           company: Machine Learning and Intelligence Lab, KAIST
           company_url: 'https://mli.kaist.ac.kr/'
           company_logo: mlilab_logo
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
+        - title: Developer Intern
+          company: Applied Artificial Intelligence Lab, KAIST
+          company_url: 'https://aai.kaist.ac.kr/'
+          company_logo: 
+          location: Daejeon, South Korea
+          date_start: '2021-09-20'
+          date_end: '2022-01-20'
           # description: Taught electronic engineering and researched semiconductor physics.
         - title: Machine Learning Engineer Intern
           company: DeepNatural
@@ -48,7 +55,7 @@ sections:
           location: Seoul, South Korea
           date_start: '2020-09-14'
           date_end: '2021-02-26'
-        - title: Research Intern
+        - title: Undergraduate Researcher
           company: Vehicular Intelligence Lab, KAIST
           company_url: 'https://vil.kaist.ac.kr/'
           company_logo: vil_logo
