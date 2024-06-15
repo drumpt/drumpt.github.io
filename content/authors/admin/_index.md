@@ -28,8 +28,8 @@ bio:
 # Interests to show in About widget
 interests:
   - Out-of-Distribution Generalization
-  - Generative Models
-  - Statistical Machine Learning
+  - Deep Generative Models
+  - Statistical Learning Theory
 
 # Education to show in About widget
 education:
@@ -71,5 +71,5 @@ email: 'changhun.a.kim@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by out-of-distribution generalization, generative models, and statistical machine learning. If you wish to collaborate, please do not hesitate to contact me!
+I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), working under the supervision of Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). My research interests lie in developing scalable and provable machine learning algorithms for various applications. Currently, I am particularly intrigued by out-of-distribution generalization, deep generative models, and statistical learning theory. If you wish to collaborate, please do not hesitate to contact me!
 {style="text-align: justify;"}
