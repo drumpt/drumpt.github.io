@@ -36,10 +36,10 @@ education:
   courses:
     - course: M.S. in Artificial Intelligence
       institution: KAIST
-      year: 2022 - 2024
+      year: 2024
     - course: B.S. in Computer Science and Mathematics
       institution: KAIST
-      year: 2017 - 2022
+      year: 2022
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons

@@ -43,7 +43,7 @@ sections:
         - title: Developer Intern
           company: Applied Artificial Intelligence Lab, KAIST
           company_url: 'https://aai.kaist.ac.kr/'
-          company_logo: 
+          company_logo: aailab_logo
           location: Daejeon, South Korea
           date_start: '2021-09-20'
           date_end: '2022-01-20'
