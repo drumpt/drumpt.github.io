@@ -33,6 +33,13 @@ sections:
           #     * Analysing
           #     * Modelling
           #     * Deploying
+        - title: Master's Student Researcher
+          company: Machine Learning and Intelligence Lab, KAIST
+          company_url: 'https://mli.kaist.ac.kr/'
+          company_logo: 
+          location: Daejeon, South Korea
+          date_start: '2022-03-02'
+          date_end: '2024-02-27'
         - title: Undergraduate Researcher
           company: Machine Learning and Intelligence Lab, KAIST
           company_url: 'https://mli.kaist.ac.kr/'
