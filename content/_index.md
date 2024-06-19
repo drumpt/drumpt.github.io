@@ -45,8 +45,8 @@ sections:
           company_url: 'https://aai.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
-          date_start: '2021-09-20'
-          date_end: '2022-01-20'
+          date_start: '2021-09-07'
+          date_end: '2022-01-11'
           # description: Taught electronic engineering and researched semiconductor physics.
         - title: Machine Learning Engineer
           company: DeepNatural
