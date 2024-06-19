@@ -24,7 +24,7 @@ sections:
         - title: Machine Learning Researcher
           company: AITRICS
           company_url: 'https://en.aitrics.com/'
-          company_logo: aitrics_logo
+          company_logo: 
           location: Seoul, South Korea
           date_start: '2023-11-20'
           # description: |2-
@@ -36,36 +36,36 @@ sections:
         - title: Undergraduate Researcher
           company: Machine Learning and Intelligence Lab, KAIST
           company_url: 'https://mli.kaist.ac.kr/'
-          company_logo: mlilab_logo
+          company_logo: 
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
-        - title: Developer Intern
+        - title: Developer
           company: Applied Artificial Intelligence Lab, KAIST
           company_url: 'https://aai.kaist.ac.kr/'
-          company_logo: aailab_logo
+          company_logo: 
           location: Daejeon, South Korea
           date_start: '2021-09-20'
           date_end: '2022-01-20'
           # description: Taught electronic engineering and researched semiconductor physics.
-        - title: Machine Learning Engineer Intern
+        - title: Machine Learning Engineer
           company: DeepNatural
           company_url: 'https://deepnatural.ai/'
-          company_logo: deepnatural_logo
+          company_logo: 
           location: Seoul, South Korea
           date_start: '2020-09-14'
           date_end: '2021-02-26'
         - title: Undergraduate Researcher
           company: Vehicular Intelligence Lab, KAIST
           company_url: 'https://vil.kaist.ac.kr/'
-          company_logo: vil_logo
+          company_logo: 
           location: Daejeon, South Korea
           date_start: '2019-10-15'
           date_end: '2020-08-15'
-        - title: Data Engineer Intern
+        - title: Data Engineer
           company: Netmarble
           company_url: 'https://www.netmarble.net/'
-          company_logo: netmarble_logo
+          company_logo: 
           location: Seoul, South Korea
           date_start: '2019-06-24'
           date_end: '2019-08-16'
