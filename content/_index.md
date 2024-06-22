@@ -34,21 +34,21 @@ sections:
           #     * Modelling
           #     * Deploying
         - title: Master's Student Researcher
-          company: Machine Learning and Intelligence Lab, KAIST
+          company: KAIST Machine Learning and Intelligence Lab
           company_url: 'https://mli.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
           date_start: '2022-03-02'
           date_end: '2024-02-27'
         - title: Undergraduate Researcher
-          company: Machine Learning and Intelligence Lab, KAIST
+          company: KAIST Machine Learning and Intelligence Lab
           company_url: 'https://mli.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
         - title: Developer
-          company: Applied Artificial Intelligence Lab, KAIST
+          company: KAIST Applied Artificial Intelligence Lab
           company_url: 'https://aai.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
@@ -63,7 +63,7 @@ sections:
           date_start: '2020-09-14'
           date_end: '2021-02-26'
         - title: Undergraduate Researcher
-          company: Vehicular Intelligence Lab, KAIST
+          company: KAIST Vehicular Intelligence Lab
           company_url: 'https://vil.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
