@@ -33,22 +33,29 @@ sections:
           #     * Analysing
           #     * Modelling
           #     * Deploying
+        - title: Master's Student Researcher
+          company: KAIST Machine Learning and Intelligence Lab
+          company_url: 'https://mli.kaist.ac.kr/'
+          company_logo: 
+          location: Daejeon, South Korea
+          date_start: '2022-03-02'
+          date_end: '2024-02-27'
         - title: Undergraduate Researcher
-          company: Machine Learning and Intelligence Lab, KAIST
+          company: KAIST Machine Learning and Intelligence Lab
           company_url: 'https://mli.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
           date_start: '2021-06-28'
           date_end: '2022-02-25'
-        - title: Developer
-          company: Applied Artificial Intelligence Lab, KAIST
+        - title: Developer Intern
+          company: KAIST Applied Artificial Intelligence Lab
           company_url: 'https://aai.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
           date_start: '2021-09-07'
           date_end: '2022-01-11'
           # description: Taught electronic engineering and researched semiconductor physics.
-        - title: Machine Learning Engineer
+        - title: Machine Learning Engineer Intern
           company: DeepNatural
           company_url: 'https://deepnatural.ai/'
           company_logo: 
@@ -56,13 +63,13 @@ sections:
           date_start: '2020-09-14'
           date_end: '2021-02-26'
         - title: Undergraduate Researcher
-          company: Vehicular Intelligence Lab, KAIST
+          company: KAIST Vehicular Intelligence Lab
           company_url: 'https://vil.kaist.ac.kr/'
           company_logo: 
           location: Daejeon, South Korea
           date_start: '2019-10-15'
           date_end: '2020-08-15'
-        - title: Data Engineer
+        - title: Data Engineer Intern
           company: Netmarble
           company_url: 'https://www.netmarble.net/'
           company_logo: 
