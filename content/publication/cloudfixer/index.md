@@ -1,21 +1,20 @@
 ---
-title: 'SGEM: Test-Time Adaptation for Automatic Speech Recognition via Sequential-Level Generalized Entropy Minimization'
+title: 'CloudFixer: Test-Time Adaptation for 3D Point Clouds via Diffusion-Guided Geometric Transformation'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
-  - Joonhyung Park
   - Hajin Shim
+  - admin
   - Eunho Yang
 
 # Author notes (optional)
 author_notes:
-  # - 'Equal contribution'
-  # - 'Equal contribution'
+  - 'Equal contribution'
+  - 'Equal contribution'
 
-date: '2023-07-03T00:00:00Z'
+date: '2024-09-29T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -27,10 +26,10 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Conference of the International Speech Communication Association (INTERSPEECH) 2023*
-publication_short: In *Conference of the International Speech Communication Association (INTERSPEECH) 2023*
+publication: In **European Conference on Computer Vision (ECCV) 2024**
+publication_short: In *European Conference on Computer Vision (ECCV) 2024*
 
-abstract: Automatic speech recognition (ASR) models are frequently exposed to data distribution shifts in many real-world scenarios, leading to erroneous predictions. To tackle this issue, an existing test-time adaptation (TTA) method has recently been proposed to adapt the pre-trained ASR model on unlabeled test instances without source data. Despite decent performance gain, this work relies solely on naive greedy decoding and performs adaptation across timesteps at a frame level, which may not be optimal given the sequential nature of the model output. Motivated by this, we propose a novel TTA framework, dubbed SGEM, for general ASR models. To treat the sequential output, SGEM first exploits beam search to explore candidate output logits and selects the most plausible one. Then, it utilizes generalized entropy minimization and negative sampling as unsupervised objectives to adapt the model. SGEM achieves state-of-the-art performance for three mainstream ASR models under various domain shifts.
+abstract:
 
 # Summary. An optional shortened abstract.
 summary:
@@ -45,8 +44,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2306.01981'
-url_code: 'https://github.com/drumpt/SGEM'
+# url_pdf: ''
+# url_code: ''
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
