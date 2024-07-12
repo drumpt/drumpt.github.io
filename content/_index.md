@@ -5,12 +5,38 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: about.biography
+  - block: github.drumpt.about
     id: about
     content:
-      title: Biography
+      title:
       username: admin
-  - block: experience
+  - block: github.drumpt.collection
+    id: news
+    content:
+      title: News
+      filters:
+        folders:
+          - news
+        # exclude_featured: true
+    design:
+      columns: '1'
+      view: news
+  - block: github.drumpt.collection
+    id: publication
+    content: 
+      title: Publications
+      # text: |-
+      #   {{% callout note %}}
+      #   Quickly discover relevant content by [filtering publications](./publication/).
+      #   {{% /callout %}}
+      filters:
+        folders:
+          - publication
+        # exclude_featured: true
+    design:
+      columns: '1'
+      view: publication # citation, compact, showcase, news, publication
+  - block: github.drumpt.experience
     id: experience
     content:
       title: Experience
@@ -76,23 +102,6 @@ sections:
           location: Seoul, South Korea
           date_start: '2019-06-24'
           date_end: '2019-08-16'
-    design:
-      columns: '2'
-  - block: collection
-    id: publication
-    content:
-      title: Publications
-      # text: |-
-      #   {{% callout note %}}
-      #   Quickly discover relevant content by [filtering publications](./publication/).
-      #   {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        # exclude_featured: true
-    design:
-      columns: '1'
-      view: citation # citation, compact, showcase
   # - block: portfolio
   #   id: projects
   #   content:
@@ -120,7 +129,7 @@ sections:
   #     view: showcase
   #     # For Showcase view, flip alternate rows?
   #     flip_alt_rows: false
-  # - block: collection
+  # - block: 'github.drumpt.collection'
   #   id: posts
   #   content:
   #     title: Posts

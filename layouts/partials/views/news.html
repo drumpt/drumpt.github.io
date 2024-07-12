@@ -1,0 +1,7 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+<i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
+[{{ time.Format "Jan 2006" $item.Date }}]
+{{ $item.Title }}
+<br>
