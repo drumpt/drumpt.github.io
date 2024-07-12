@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "hugo-bin": "^0.108.0",
+    "hugo-bin-extended": "^0.111.3",
+    "hugo-extended": "^0.64.1"
+  }
+}

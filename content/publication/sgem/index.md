@@ -27,8 +27,10 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Conference of the International Speech Communication Association (INTERSPEECH) 2023*
-publication_short: In *Conference of the International Speech Communication Association (INTERSPEECH) 2023*
+publication: Conference of the International Speech Communication Association (**INTERSPEECH**), 2023
+publication_short: INTERSPEECH 2023
+
+note: Oral Presentation, 348/2293=15.18%
 
 abstract:
 
@@ -45,7 +47,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2306.01981'
+url_pdf: 'https://www.isca-archive.org/interspeech_2023/kim23f_interspeech.html'
+url_preprint: 'https://arxiv.org/pdf/2306.01981'
 url_code: 'https://github.com/drumpt/SGEM'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
@@ -85,4 +88,4 @@ Click the _Cite_ button above to demo the feature to enable visitors to import p
 Create your slides in Markdown - click the _Slides_ button to check out the example.
 {{% /callout %}} -->
 
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+<!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->

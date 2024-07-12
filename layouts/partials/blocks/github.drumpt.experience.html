@@ -1,0 +1,56 @@
+{{/* Hugo Blox: Experience */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.design.columns | default "1" }}
+
+{{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
+{{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+
+{{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
+
+{{ if $block.content.items }}
+{{ $exp_len := len $block.content.items }}
+
+{{/* Default to user's custom order (as requested in #1761) as Hugo doesn't support multiple sorts on params. */}}
+{{ range $idx, $key := $block.content.items }}
+<div style="margin-bottom: 1.5rem"></div>
+        {{- if .company_logo}}
+        {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" .company_logo) -}}
+
+        {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" .company_logo }}{{end}}
+          {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+          <img src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{.company | plainify}}" loading="lazy">
+          {{- with .company_url}}</a>{{end -}}
+        {{ end }}
+
+        <div class="my-0" style="font-weight: bold;">
+          {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{.company | markdownify | emojify}}{{with .company_url}}</a>{{end -}}
+        </div>
+
+        {{.title | markdownify | emojify}}<br>
+        {{ (time .date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
+        {{ if .date_end}}
+          {{ (time .date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }},
+        {{else}}
+          {{ i18n "Present" | default "Present" }},
+        {{end}}
+        {{with .location}}
+          <span>{{.}}</span>
+        {{end}}
+
+        {{- if .company_logo}}
+          </div>
+        </div>
+        {{end}}
+
+        {{with .description}}
+          <div class="card-text">
+            {{. | markdownify | emojify}}
+          </div>
+        {{end}}
+{{end}}
+{{end}}

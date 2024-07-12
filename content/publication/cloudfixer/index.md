@@ -26,8 +26,10 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In **European Conference on Computer Vision (ECCV) 2024**
-publication_short: In *European Conference on Computer Vision (ECCV) 2024*
+publication: European Conference on Computer Vision (**ECCV**), 2024
+publication_short: ECCV 2024
+
+note: 
 
 abstract:
 
@@ -44,8 +46,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: ''
-# url_code: ''
+url_pdf: ''
+url_preprint: ''
+url_code: ''
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
@@ -84,4 +87,4 @@ Click the _Cite_ button above to demo the feature to enable visitors to import p
 Create your slides in Markdown - click the _Slides_ button to check out the example.
 {{% /callout %}} -->
 
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+<!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->

@@ -5,12 +5,12 @@
 
 # Appearance
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  theme_day: ocean
+  theme_night: 
   font: minimal
-  font_size: L
-  mode: light
-  color: river
+  font_size: s
+  mode:
+  color:
 
 # SEO
 marketing:
@@ -37,11 +37,12 @@ header:
     show_logo: true
     show_language: false
     show_day_night: false
-    show_search: true
+    show_search: false
     highlight_active_link: true
 
 # Site footer
 footer:
+  block: minimal
   copyright:
     # notice: '© {year} Me. This work is licensed under {license}'
     license:
@@ -50,9 +51,10 @@ footer:
       share_alike: false
       allow_commercial: false
 
+
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Mar. 20, 1998'
   time_format: '3:04 PM'
   address_format: en-us
 
