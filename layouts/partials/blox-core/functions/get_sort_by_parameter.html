@@ -17,8 +17,8 @@
 {{ $first := substr $param 0 }}
 {{/* Check if it is lowercase */}}
 {{ if eq $first (lower $first) }}
-    {{/* Add 'Params.' prefix */}}
-    {{ $param = printf "Params.%s" $param }}
+{{/* Add 'Params.' prefix */}}
+{{ $param = printf "Params.%s" $param }}
 {{ end }}
 
 {{ return $param }}

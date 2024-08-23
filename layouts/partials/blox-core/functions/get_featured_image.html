@@ -12,12 +12,12 @@
 {{/* Search for an image "*featured*" in post folder */}}
 {{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
 {{ if eq $resource nil }}
-  {{/* Otherwise fall back the image file specified in front matter */}}
-  {{ $filename := .Params.image.filename }}
-  {{/* Search in post folder */}}
-  {{ $resource = (.Resources.ByType "image").GetMatch $filename }}
-  {{/* Otherwise in `assets/media/` folder */}}
-  {{ if eq $resource nil }} {{ $resource = resources.GetMatch (path.Join "media" $filename) }} {{ end }}
+{{/* Otherwise fall back the image file specified in front matter */}}
+{{ $filename := .Params.image.filename }}
+{{/* Search in post folder */}}
+{{ $resource = (.Resources.ByType "image").GetMatch $filename }}
+{{/* Otherwise in `assets/media/` folder */}}
+{{ if eq $resource nil }} {{ $resource = resources.GetMatch (path.Join "media" $filename) }} {{ end }}
 {{ end }}
 
 {{ return $resource }}

@@ -1,12 +1,12 @@
 ---
-title: I am attending ECCV 2024 in person. See you in Milano!
+title: I am attending KOSMI 2024 in person. See you in Seoul!
 
 event:
 event_url:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-09-29'
+date: '2024-06-19'
 date_end:
 all_day: true
 
@@ -22,7 +22,7 @@ summary:
 abstract:
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-07-29'
+publishDate:
 
 authors: []
 tags: []

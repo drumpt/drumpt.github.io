@@ -46,16 +46,16 @@
             <rt>{{ $person.name_pronunciation }}</rt>
             </ruby>
         {{- else -}}
-            {{- $person_page.Title -}}
+            <div style="font-weight: normal;">{{- $person_page.Title -}}</div>
         {{- end -}}
         </h2>
 
-        {{ with $person.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
+        {{ with $person.role }}<h3 style="font-weight: normal;">{{ . | markdownify | emojify }}</h3>{{ end }}
 
         {{ range $person.organizations }}
         <h3>
         {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-        <span>{{ .name }}</span>
+        <span style="font-weight: normal;">{{ .name }}</span>
         {{ if .url }}</a>{{ end }}
         </h3>
         {{ end }}

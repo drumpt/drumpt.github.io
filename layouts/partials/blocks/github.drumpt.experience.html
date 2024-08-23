@@ -8,49 +8,49 @@
 {{ $columns := $block.design.columns | default "1" }}
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
-{{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+{{ with $block.content.title }}
+<h2>{{ . | markdownify | emojify }}</h2>
+{{ end }}
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
 
 {{ if $block.content.items }}
 {{ $exp_len := len $block.content.items }}
+{{ range $idx, $company := $block.content.items }}
+    {{- if $company.company_logo }}
+    {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" $company.company_logo) -}}
+    {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" $company.company_logo }}{{end}}
+    {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+    <img src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{ $company.company | plainify }}" loading="lazy">
+    {{- with $company.company_url}}</a>{{end -}}
+    {{ end }}
 
-{{/* Default to user's custom order (as requested in #1761) as Hugo doesn't support multiple sorts on params. */}}
-{{ range $idx, $key := $block.content.items }}
-<div style="margin-bottom: 1.5rem"></div>
-        {{- if .company_logo}}
-        {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" .company_logo) -}}
-
-        {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" .company_logo }}{{end}}
-          {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
-          <img src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{.company | plainify}}" loading="lazy">
-          {{- with .company_url}}</a>{{end -}}
+    <span style="font-weight: bold;">{{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{ $company.company | markdownify | emojify }}{{ with $company.company_url }}</a>{{end -}}</span>, {{ $company.location | markdownify | emojify }}<br>
+    
+    {{- if (isset $company "items") -}}
+        {{ range $role_idx, $role := $company.items }}
+            <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
+            {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
+            {{ if $role.date_end }}
+                {{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}
+            {{ else }}
+                {{ i18n "Present" | default "Present" }}
+            {{ end }}
+            {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub $exp_len 1))) }}
+                <br>
+            {{ end }}
         {{ end }}
+    {{- end }}
 
-        <div class="my-0" style="font-weight: bold;">
-          {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{.company | markdownify | emojify}}{{with .company_url}}</a>{{end -}}
-        </div>
+    {{ with $company.description }}
+    <div class="card-text">
+        {{ . | markdownify | emojify }}
+    </div>
+    {{ end }}
 
-        {{.title | markdownify | emojify}}<br>
-        {{ (time .date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
-        {{ if .date_end}}
-          {{ (time .date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }},
-        {{else}}
-          {{ i18n "Present" | default "Present" }},
-        {{end}}
-        {{with .location}}
-          <span>{{.}}</span>
-        {{end}}
+    {{ if not (eq $idx (sub $exp_len 1)) }}
+        <br>
+    {{ end }}
 
-        {{- if .company_logo}}
-          </div>
-        </div>
-        {{end}}
-
-        {{with .description}}
-          <div class="card-text">
-            {{. | markdownify | emojify}}
-          </div>
-        {{end}}
-{{end}}
-{{end}}
+{{ end }}
+{{ end }}

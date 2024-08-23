@@ -5,155 +5,182 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: github.drumpt.about
-    id: about
-    content:
-      title:
-      username: admin
-  - block: github.drumpt.collection
-    id: news
-    content:
-      title: News
-      filters:
-        folders:
-          - news
-        # exclude_featured: true
-    design:
-      columns: '1'
-      view: news
-  - block: github.drumpt.collection
-    id: publication
-    content: 
-      title: Publications
-      # text: |-
-      #   {{% callout note %}}
-      #   Quickly discover relevant content by [filtering publications](./publication/).
-      #   {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        # exclude_featured: true
-    design:
-      columns: '1'
-      view: publication # citation, compact, showcase, news, publication
-  - block: github.drumpt.experience
-    id: experience
-    content:
-      title: Experience
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: Machine Learning Researcher
-          company: AITRICS
-          company_url: 'https://en.aitrics.com/'
-          company_logo: 
-          location: Seoul, South Korea
-          date_start: '2023-11-20'
-          # description: |2-
-          #     Responsibilities include:
+    - block: github.drumpt.about
+      id: about
+      content:
+          title:
+          username: admin
+    
+    - block: github.drumpt.collection
+      id: news
+      content:
+          title: News
+          filters:
+              folders:
+                  - news
+      design:
+          columns: "1"
+          view: news
+    
+    - block: github.drumpt.collection
+      id: publication
+      content:
+          title: Publications
+          filters:
+              folders:
+                  - publication
+              # exclude_featured: true
+      design:
+          columns: "1"
+          view: publication # citation, compact, showcase, news, publication
+    
+    - block: github.drumpt.experience
+      id: experience
+      content:
+          title: Professional Experience
+          date_format: Jan 2006
+          items:
+              - company: AITRICS
+                company_logo:
+                company_url: "https://en.aitrics.com/"
+                location: Seoul, South Korea
+                items:
+                  - title: Machine Learning Researcher
+                    date_start: "2023-11-20"
+              - company: KAIST Machine Learning and Intelligence Lab
+                company_logo:
+                company_url: "https://mli.kaist.ac.kr/"
+                location: Daejeon, South Korea
+                items:
+                  - title: Master's Student Researcher
+                    date_start: "2022-03-02"
+                    date_end: "2024-02-27"
+                  - title: Undergraduate Researcher
+                    date_start: "2021-06-28"
+                    date_end: "2022-02-25"
+              - company: KAIST Applied Artificial Intelligence Lab
+                company_logo:
+                company_url: "https://aai.kaist.ac.kr/"
+                location: Daejeon, South Korea
+                items:
+                  - title: Developer
+                    date_start: "2021-09-07"
+                    date_end: "2022-01-11"
+              - company: DeepNatural
+                company_logo:
+                company_url: "https://deepnatural.ai/"
+                location: Seoul, South Korea
+                items:
+                  - title: Machine Learning Engineer
+                    date_start: "2020-09-14"
+                    date_end: "2021-02-26"
+              - company: KAIST Vehicular Intelligence Lab
+                company_logo:
+                company_url: "https://vil.kaist.ac.kr/"
+                location: Daejeon, South Korea
+                items:
+                  - title: Undergraduate Researcher
+                    date_start: "2019-10-15"
+                    date_end: "2020-08-15"
+              - company: Netmarble
+                company_logo:
+                company_url: "https://www.netmarble.net/"
+                location: Seoul, South Korea
+                items:
+                  - title: Data Engineer
+                    date_start: "2019-06-24"
+                    date_end: "2019-08-16"
+    
+    - block: github.drumpt.others
+      id: honors
+      content:
+          title: Honors
+          items:
+              - title: Dongwon Full Masters Scholarship
+                organization: Dongwon Group
+                date: Spring 2022 – Fall 2023
+              - title: Silver Prize
+                organization: Korean Undergraduate Mathematics Competition, Korean Mathematics Society
+                date: Jan 2022
+              - title: National Full Undergraduate Scholarship
+                organization: Korea Student Aid Foundation
+                date: Spring 2017 – Fall 2021
+              - title: KAIST Convergence AMP Scholarship
+                organization: KAIST School of Computing
+                date: Mar 2019
 
-          #     * Analysing
-          #     * Modelling
-          #     * Deploying
-        - title: Master's Student Researcher
-          company: KAIST Machine Learning and Intelligence Lab
-          company_url: 'https://mli.kaist.ac.kr/'
-          company_logo: 
-          location: Daejeon, South Korea
-          date_start: '2022-03-02'
-          date_end: '2024-02-27'
-        - title: Undergraduate Researcher
-          company: KAIST Machine Learning and Intelligence Lab
-          company_url: 'https://mli.kaist.ac.kr/'
-          company_logo: 
-          location: Daejeon, South Korea
-          date_start: '2021-06-28'
-          date_end: '2022-02-25'
-        - title: Developer Intern
-          company: KAIST Applied Artificial Intelligence Lab
-          company_url: 'https://aai.kaist.ac.kr/'
-          company_logo: 
-          location: Daejeon, South Korea
-          date_start: '2021-09-07'
-          date_end: '2022-01-11'
-          # description: Taught electronic engineering and researched semiconductor physics.
-        - title: Machine Learning Engineer Intern
-          company: DeepNatural
-          company_url: 'https://deepnatural.ai/'
-          company_logo: 
-          location: Seoul, South Korea
-          date_start: '2020-09-14'
-          date_end: '2021-02-26'
-        - title: Undergraduate Researcher
-          company: KAIST Vehicular Intelligence Lab
-          company_url: 'https://vil.kaist.ac.kr/'
-          company_logo: 
-          location: Daejeon, South Korea
-          date_start: '2019-10-15'
-          date_end: '2020-08-15'
-        - title: Data Engineer Intern
-          company: Netmarble
-          company_url: 'https://www.netmarble.net/'
-          company_logo: 
-          location: Seoul, South Korea
-          date_start: '2019-06-24'
-          date_end: '2019-08-16'
-  # - block: portfolio
-  #   id: projects
-  #   content:
-  #     title: Projects
-  #     filters:
-  #       folders:
-  #         - project
-  #     # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-  #     default_button_index: 0
-  #     # Filter toolbar (optional).
-  #     # Add or remove as many filters (`filter_button` instances) as you like.
-  #     # To show all items, set `tag` to "*".
-  #     # To filter by a specific tag, set `tag` to an existing tag name.
-  #     # To remove the toolbar, delete the entire `filter_button` block.
-  #     buttons:
-  #       - name: All
-  #         tag: '*'  
-  #       - name: Deep Learning
-  #         tag: Deep Learning
-  #       - name: Other
-  #         tag: Demo
-  #   design:
-  #     # Choose how many columns the section has. Valid values: '1' or '2'.
-  #     columns: '1'
-  #     view: showcase
-  #     # For Showcase view, flip alternate rows?
-  #     flip_alt_rows: false
-  # - block: 'github.drumpt.collection'
-  #   id: posts
-  #   content:
-  #     title: Posts
-  #     subtitle: ''
-  #     text: ''
-  #     # Choose how many pages you would like to display (0 = all pages)
-  #     count: 5
-  #     # Filter on criteria
-  #     filters:
-  #       folders:
-  #         - post
-  #       author: ""
-  #       category: ""
-  #       tag: ""
-  #       exclude_featured: false
-  #       exclude_future: false
-  #       exclude_past: false
-  #       publication_type: ""
-  #     # Choose how many pages you would like to offset by
-  #     offset: 0
-  #     # Page order: descending (desc) or ascending (asc) date.
-  #     order: desc
-  #   design:
-  #     # Choose a layout view
-  #     columns: '1'
-  #     view: compact
+    - block: github.drumpt.others
+      id: teaching
+      content:
+          title: Teaching Experience
+          items:
+              - title: Teaching Assistant
+                organization: Tabular Learning, Hanwha Ocean Capstone Project
+                date: Spring 2023
+              - title: Teaching Assistant
+                organization: AI Soccer Challenge, Bokja Girls' High School AI Education Program
+                date: Fall 2020
+
+    - block: github.drumpt.others
+      id: service
+      content:
+          title: Academic Service
+          items:
+              - title: Conference Reviewer
+                items:
+                    - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
+                      date: 2024
+                    - organization: International Conference on Learning Representations (**ICLR**)
+                      date: 2025
+                    - organization: Conference on Empirical Methods in Natural Language Processing (**EMNLP**)
+                      date: 2024
+                    - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
+                      date: 2025
+              - title: Workshop Reviewer
+                items:
+                    - organization: ECCV Workshop on Women in Computer Vision (**ECCVW-WiCV**)
+                      date: 2024
+
+    # - block: portfolio
+    #   id: projects
+    #   content:
+    #       title: Projects
+    #       filters:
+    #           folders:
+    #               - project
+    #       default_button_index: 0
+    #       buttons:
+    #           - name: All
+    #             tag: "*"
+    #           - name: Deep Learning
+    #             tag: Deep Learning
+    #           - name: Other
+    #             tag: Demo
+    #   design:
+    #       columns: "1"
+    #       view: showcase
+    #       flip_alt_rows: false
+
+    # - block: github.drumpt.collection
+    #   id: blog
+    #   content:
+    #       title: Blog
+    #       subtitle: ""
+    #       text: ""
+    #       count: 5
+    #       filters:
+    #           folders:
+    #               - blog
+    #           author: ""
+    #           category: ""
+    #           tag: ""
+    #           exclude_featured: false
+    #           exclude_future: false
+    #           exclude_past: false
+    #           publication_type: ""
+    #       offset: 0
+    #       order: desc
+    #   design:
+    #       columns: "1"
+    #       view: compact
 ---

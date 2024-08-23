@@ -16,7 +16,7 @@ author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2023-02-29T00:00:00Z'
+date: '2023-06-15T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2023-02-29T00:00:00Z'
@@ -28,8 +28,8 @@ publishDate: '2023-02-29T00:00:00Z'
 publication_types: ['3']
 
 # Publication name and optional abbreviated publication name.
-publication: Manuscript, 2023
-publication_short: Manuscript 2023
+publication: Manuscript, 2024
+publication_short: Manuscript 2024
 
 note: 
 
@@ -49,8 +49,9 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_preprint: ''
-url_code: ''
+url_preprint: 'https://arxiv.org/abs/2407.10784'
+url_code: 
+# url_code: 'https://github.com/drumpt/AdapTable'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
