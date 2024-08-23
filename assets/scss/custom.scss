@@ -1,0 +1,11 @@
+.home-section {
+    padding: 20px 0px;
+}
+
+.home-section:nth-of-type(even) {
+    background: #ffffff;
+}
+
+.home-section:first-of-type {
+    padding-top: 10px;
+}

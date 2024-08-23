@@ -7,7 +7,7 @@
 appearance:
   theme_day: ocean
   theme_night: 
-  font: minimal
+  font: native
   font_size: s
   mode:
   color:

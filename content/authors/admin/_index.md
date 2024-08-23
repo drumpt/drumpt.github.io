@@ -58,7 +58,7 @@ social:
     link: https://www.linkedin.com/in/changhun-kim/
   - icon: x
     icon_pack: fab
-    link: https://twitter.com/hoonine__
+    link: https://twitter.com/hooni_ne
   # - icon: cv
   #   icon_pack: ai
   #   link: uploads/CV_ChanghunKim.pdf
@@ -78,9 +78,11 @@ education:
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
+
 ---
-I am a **machine learning researcher** at [AITRICS](http://en.aitrics.com/?redirect=no), a healthcare AI startup in South Korea, where I am completing my **alternative military service** working with Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). Before joining AITRICS, I earned my master’s degree in **artificial intelligence** from [KAIST](https://www.kaist.ac.kr/kr/) where I was fortunate to be guided by Prof. Eunho Yang. I also completed my bachelor’s degree in **computer science** and **mathematics** at KAIST.
 
-My long-term research goal is to **enhance the out-of-distribution generalization capability of machine learning models, thereby creating trustworthy AI systems that can be reliably deployed in new environments**. This goal is multidimensional, encompassing ensuring robustness under data distribution shifts (**domain adaptation and generalization**), handling unseen labels (**zero-shot learning**), and managing unseen tasks (**meta-learning**). To this end, during my master’s program, I focused on **test-time adaptation to distribution shifts across various tasks**, such as 3D point cloud classification, zero-shot classification of vision-language models, automatic speech recognition, and tabular/time series classification. These experiences also **enabled myself to adapt quickly to new modalities and tasks, leading to my interest in multimodal learning**.
+I am a **machine learning researcher** at [AITRICS](http://en.aitrics.com/?redirect=no), a healthcare AI startup in South Korea, where I am fulfilling my **alternative military service** under Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). Prior to joining AITRICS, I earned my master’s degree in **artificial intelligence** from [KAIST](https://kaist.ac.kr/en/), where I was also advised by Prof. Eunho Yang. I completed my bachelor’s degree in **computer science** and **mathematics** at KAIST. I am open to **research collaborations worldwide, including remote positions**. If you are interested in my work, please feel free to reach out!
 
-Currently, at AITRICS, my research primarily aims to **enhance the generalizability of early prediction models for severe diseases**. I am also interested in **parameter- and data-efficient adaptation of foundation models**, such as **diffusion models** and **multimodal large language models**, to downstream tasks. To achieve these goals, I focus on **developing practical algorithms that are either empirically well-motivated or theoretically provable**. Additionally, I am deeply interested in **providing theoretical insights into machine learning models** through the lens of probabilistic (**Bayesian inference**) and statistical (**generalization bounds**) frameworks.
+My long-term research objective is to **enhance the out-of-distribution generalization capability of machine learning models, thereby creating trustworthy AI systems that can be reliably deployed in new environments**. This goal is multifaceted, encompassing ensuring robustness under distribution shifts (**domain adaptation and generalization**), handling unseen labels (**zero-shot learning**), and managing unseen tasks (**cross-task generalization**). To this end, during my master’s program, I focused on **test-time adaptation to distribution shifts across various tasks**, including 3D point cloud classification, zero-shot transfer of vision-language models, automatic speech recognition, tabular learning, and time series classification. These experiences have also **enabled myself to quickly adapt to new modalities and tasks**.
+
+At AITRICS, my research centers on **improving the generalizability, robustness, and explainability of early prediction models for severity clinical outcomes** such as cardiac arrests, in-hospital mortality. I am also interested in **parameter- and data-efficient adaptation of deep generative models**, such as **diffusion models** and **large multimodal models**, to downstream tasks. To achieve these goals, I focus on **developing practical algorithms that are empirically well-grounded or theoretically provable**. Additionally, I am keen on **providing theoretical insights into machine learning models** through the lens of probabilistic (**Bayesian inference**) and statistical (**generalization bounds**) frameworks.
