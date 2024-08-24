@@ -126,6 +126,10 @@ sections:
       content:
           title: Academic Service
           items:
+              - title: Journal Reviewer
+                items:
+                    - organization: Transactions on Machine Learning Research (**TMLR**)
+                      date: 2024
               - title: Conference Reviewer
                 items:
                     - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
