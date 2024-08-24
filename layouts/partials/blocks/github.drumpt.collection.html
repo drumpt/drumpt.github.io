@@ -9,7 +9,7 @@
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
-<h2>{{ . | markdownify | emojify }}</h2><hr>{{ end }}
+<h2 style="font-weight: bold;">{{ . | markdownify | emojify }}</h2><hr>{{ end }}
 
 {{ if eq $items_count 0 }}
 {{ $items_count = 65535 }}
