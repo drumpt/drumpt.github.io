@@ -9,7 +9,7 @@
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
-<h2 style="font-weight: bold;">{{ . | markdownify | emojify }}</h2><hr>{{ end }}
+<div class="section-subheading">{{ . | markdownify | emojify }}</div><hr>{{ end }}
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
 

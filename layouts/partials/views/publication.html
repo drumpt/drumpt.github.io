@@ -13,9 +13,8 @@
 <div class="content-container">
     <div class="image-container">
         {{ with $resource }}
-        <img alt="{{ $item.Title | plainify }}"
-            class="transition-all" data-nimg="fill"
-            decoding="async" fetchpriority="high" loading="lazy" src="{{ .RelPermalink }}"
+        <img alt="{{ $item.Title | plainify }}" class="transition-all" data-nimg="fill" decoding="async"
+            fetchpriority="high" loading="lazy" src="{{ .RelPermalink }}"
             style="max-width: 100%; height: auto; object-fit: contain;">
         {{ else }}
         <div class="placeholder"></div>
@@ -73,7 +72,7 @@
 
         .text-container {
             width: 100%;
-            text-align: center;
+            text-align: left;
         }
 
         .placeholder {
