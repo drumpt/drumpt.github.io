@@ -142,6 +142,10 @@ sections:
                       date: 2025
               - title: Workshop Reviewer
                 items:
+                    - organization: NeurIPS Workshop on Mathematical Reasoning and AI (**NeurIPSW-MATH-AI**)
+                      date: 2024
+                    - organization: NeurIPS Workshop on Time Series in the Age of Large Models (**NeurIPSW-TSALM**)
+                      date: 2024
                     - organization: ECCV Workshop on Women in Computer Vision (**ECCVW-WiCV**)
                       date: 2024
 
