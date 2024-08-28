@@ -17,7 +17,8 @@
 {{ $exp_len := len $block.content.items }}
 
 {{ range $idx, $item := $block.content.items }}
-    <span style="font-weight: bold;">{{ $item.title | markdownify | emojify }}</span>{{ if $item.organization }}, {{ $item.organization | markdownify | emojify }}{{ end }}{{ if $item.date }}, {{ $item.date }}{{ end }}
+    <span style="font-weight: bold;">{{ $item.title | markdownify | emojify }}</span><br>
+    {{ if $item.organization }} {{ $item.organization | markdownify | emojify }}{{ end }}{{ if $item.date }}, {{ $item.date }}{{ end }}
     {{ if $item.items }}
         <ul style="margin-bottom: 0px">
         {{ range $subidx, $subitem := $item.items }}
@@ -26,6 +27,8 @@
             </li>
         {{ end }}
         </ul>
+    {{ else }}
+        <br>
     {{ end }}
     {{ if ne (add $idx 1) $exp_len }}<br>{{ end }}
 {{ end }}

@@ -1,0 +1,61 @@
+{{/* Hugo Blox: Experience */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{/* Display widget title if provided */}}
+{{ with $block.content.title }}
+<div class="section-subheading">{{ . | markdownify | emojify }}</div>
+<hr>
+{{ end }}
+
+{{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
+
+{{ if $block.content.items }}
+{{ range $idx, $company := $block.content.items }}
+
+    {{- if $company.company_logo }}
+    {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" $company.company_logo) -}}
+    {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" $company.company_logo }}{{end}}
+    {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+    <img src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{ $company.company | plainify }}" loading="lazy">
+    {{- with $company.company_url}}</a>{{end -}}
+    {{ end }}
+
+    <span style="font-weight: bold;">
+        {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}
+        {{ $company.company | markdownify | emojify }}
+        {{ with $company.company_url }}</a>{{end -}}
+    </span>, {{ $company.location | markdownify | emojify }}
+    <br>
+
+    {{- if (isset $company "items") -}}
+        {{ range $role_idx, $role := $company.items }}
+            <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
+            {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
+            {{ if $role.date_end }}
+                {{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}
+            {{ else }}
+                {{ i18n "Present" | default "Present" }}
+            {{ end }}
+            {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub (len $block.content.items) 1))) }}
+                <br>
+            {{ end }}
+        {{ end }}
+    {{- end }}
+
+    {{ with $company.description }}
+    <div class="card-text">
+        {{ . | markdownify | emojify }}
+    </div>
+    {{ end }}
+
+    {{ if not (eq $idx (sub (len $block.content.items) 1)) }}
+        <br>
+    {{ end }}
+
+{{ end }}
+{{ end }}

@@ -12,12 +12,15 @@ main:
   - name: News
     url: '#news'
     weight: 2
-  - name: Publications
-    url: '#publication'
-    weight: 3
   - name: Experience
     url: '#experience'
+    weight: 3
+  - name: Publications
+    url: '#publications'
     weight: 4
+  - name: Patents
+    url: '#patents'
+    weight: 5
   - name: Honors
     url: '#honors'
     weight: 6
@@ -27,9 +30,9 @@ main:
   - name: Service
     url: '#service'
     weight: 8
-  # - name: Projects
-  #   url: '#projects'
-  #   weight: 9
+  - name: Projects
+    url: '#projects'
+    weight: 9
   # - name: Blog
   #   url: 'blog'
   #   weight: 11
