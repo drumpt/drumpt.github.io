@@ -9,7 +9,10 @@
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
-<div class="section-subheading">{{ . | markdownify | emojify }}</div><hr>{{ end }}
+<div class="section-subheading">
+  {{ . | markdownify | emojify }}<hr>
+</div>
+{{ end }}
 
 {{ if eq $items_count 0 }}
 {{ $items_count = 65535 }}
@@ -93,6 +96,7 @@
 {{ . | emojify | $page.RenderString }}
 {{ end }}
 
+
 {{ range $index, $item := $query }}
 {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design.view | default "compact") "index" $index) }}
 {{ end }}
@@ -125,8 +129,7 @@
 {{ $archive_text := "See All" }}
 <!-- <div class="see-all"> -->
   <a href="{{ $archive_link }}">
-    {{ $archive_text | emojify }}
-    <i class="fas fa-angle-right"></i>
+    {{ $archive_text | emojify }}<i class="fas fa-angle-right"></i>
   </a>
 <!-- </div> -->
 {{ end }}

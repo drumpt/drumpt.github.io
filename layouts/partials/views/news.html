@@ -1,6 +1,11 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
-<i class="far fa-newspaper pub-icon" aria-hidden="true"></i>
-<span style="font-weight: bold;">[{{ time.Format "Jan 2006" $item.Date }}]</span> {{ $item.Title }}
-<br>
+<!-- <i class="far fa-newspaper pub-icon" aria-hidden="true"></i> -->
+<li>
+    <span style="font-weight: bold;">
+        [{{ time.Format "Jan 2006" $item.Date }}]
+    </span>
+    {{ $item.Title }}
+</li>
+<!-- <br> -->
