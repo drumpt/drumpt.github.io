@@ -11,7 +11,7 @@ sections:
           title:
           username: admin
     
-    - block: github.drumpt.collection
+    - block: github.drumpt.news
       id: news
       content:
           title: News
@@ -21,19 +21,7 @@ sections:
       design:
           columns: "1"
           view: news
-    
-    - block: github.drumpt.collection
-      id: publication
-      content:
-          title: Publications
-          filters:
-              folders:
-                  - publication
-              # exclude_featured: true
-      design:
-          columns: "1"
-          view: publication # citation, compact, showcase, news, publication
-    
+
     - block: github.drumpt.experience
       id: experience
       content:
@@ -90,24 +78,61 @@ sections:
                   - title: Data Engineer
                     date_start: "2019-06-24"
                     date_end: "2019-08-16"
+
+    - block: github.drumpt.news
+      id: publications
+      content:
+          title: Publications
+          filters:
+              folders:
+                  - publications
+      design:
+          columns: "1"
+          view: publication
+    
+    - block: github.drumpt.news
+      id: patents
+      content:
+          title: Patents
+          filters:
+              folders:
+                  - patents
+      design:
+          columns: "1"
+          view: patent
     
     - block: github.drumpt.others
       id: honors
       content:
           title: Honors
           items:
+              # - title: Best Member
+              #   organization: KAIST Machine Learning and Intelligence Lab
+              #   date: Jul 2023
               - title: Dongwon Full Masters Scholarship
                 organization: Dongwon Group
                 date: Spring 2022 – Fall 2023
+              - title: Magna Cum Laude
+                organization: KAIST College of Engineering
+                date: Feb 2022
               - title: Silver Prize
                 organization: Korean Undergraduate Mathematics Competition, Korean Mathematics Society
                 date: Jan 2022
+              - title: KAIST Convergence AMP Scholarship
+                organization: KAIST
+                date: Nov 2019
+              - title: Honor Student
+                organization: KAIST College of Engineering
+                date: Sep 2019
+              - title: Representative of Student Exchange Ambassador
+                organization: KAIST School of Computing
+                date: Mar 2019
+              - title: Winner
+                organization: Science Quiz, KAIST-POSTECH Science War
+                date: Sep 2018
               - title: National Full Undergraduate Scholarship
                 organization: Korea Student Aid Foundation
                 date: Spring 2017 – Fall 2021
-              - title: KAIST Convergence AMP Scholarship
-                organization: KAIST School of Computing
-                date: Mar 2019
 
     - block: github.drumpt.others
       id: teaching
@@ -149,25 +174,47 @@ sections:
                     - organization: ECCV Workshop on Women in Computer Vision (**ECCVW-WiCV**)
                       date: 2024
 
-    # - block: portfolio
-    #   id: projects
-    #   content:
-    #       title: Projects
-    #       filters:
-    #           folders:
-    #               - project
-    #       default_button_index: 0
-    #       buttons:
-    #           - name: All
-    #             tag: "*"
-    #           - name: Deep Learning
-    #             tag: Deep Learning
-    #           - name: Other
-    #             tag: Demo
-    #   design:
-    #       columns: "1"
-    #       view: showcase
-    #       flip_alt_rows: false
+    - block: github.drumpt.others
+      id: projects
+      content:
+          title: Projects
+          items:
+              - title: Meta-Learning Applicable to Real-World Problems
+                organization: Institute of Information & Communications Technology Planning & Evaluation (IITP)
+                date: May 2023 – Feb 2024
+              - title: Development of Plug and Play Explainable Artificial Intelligence Platform
+                organization: Institute of Information \& Communications Technology Planning \& Evaluation (IITP)
+                date: Mar 2022 – Apr 2023
+              - title: Confidence Interval Estimation and Performance Relationship Analysis for Tire Performance Prediction Models
+                organization: Hankook Tire \& Technology
+                date: Nov 2023 – Jan 2024
+              - title: Integrated Tire Performance Prediction Model Using Tire Pattern Features
+                organization: Hankook Tire \& Technology
+                date: Mar 2022 – Apr 2023
+              - title: Convergence Analysis of Deep Learning Optimizers Under Generalized Smoothness
+                organization: 'KAIST AI616: Deep Learning Theory'
+                date: Sep 2023 – Dec 2023
+              - title: How Many Times are We Going to Collaborate?
+                organization: 'KAIST AI607: Graph Mining and Social Network Analysis'
+                date: Sep 2022 – Dec 2022
+              - title: Few-Shot Font Generation for Korean
+                organization: 'KAIST AI604: Deep Learning for Computer Vision'
+                date: Mar 2022 – Jun 2022
+              - title: Issue Trend Analysis and Issue Tracking Analysis
+                organization: 'KAIST CS474: Text Mining'
+                date: Mar 2021 – Jun 2021
+              - title: KAIST Educational Network System (KENSv3)
+                organization: 'KAIST CS341: Introduction to Computer Networks'
+                date: Mar 2021 – Jun 2021
+              - title: 'TinyMutator: Mutation Testing Tool for Rust'
+                organization: 'KAIST CS453: Automated Software Testing'
+                date: Mar 2020 – Jun 2020
+              - title: Immersion Camp
+                organization: 'KAIST CS496: Intensive Programming and Startup'
+                date: Dec 2019 – Jan 2020
+              - title: PintOS
+                organization: 'KAIST CS330: Operating Systems and Lab'
+                date: Mar 2019 – Jun 2019
 
     # - block: github.drumpt.collection
     #   id: blog
