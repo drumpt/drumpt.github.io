@@ -118,13 +118,13 @@ sections:
               - title: Silver Prize
                 organization: Korean Undergraduate Mathematics Competition, Korean Mathematics Society
                 date: Jan 2022
-              - title: KAIST Convergence AMP Scholarship
+              - title: Representative of Student Exchange Ambassador
                 organization: KAIST
                 date: Nov 2019
               - title: Honor Student
                 organization: KAIST College of Engineering
                 date: Sep 2019
-              - title: Representative of Student Exchange Ambassador
+              - title: KAIST Convergence AMP Scholarship
                 organization: KAIST School of Computing
                 date: Mar 2019
               - title: Winner
