@@ -23,7 +23,7 @@
         <ul style="margin-bottom: 0px">
         {{ range $subidx, $subitem := $item.items }}
             <li>
-                {{ $subitem.organization | markdownify | emojify }}, {{ $subitem.date }}
+                {{ $subitem.organization | markdownify | emojify }}{{ if $subitem.date }}, {{ $subitem.date }}{{ end }}
             </li>
         {{ end }}
         </ul>
