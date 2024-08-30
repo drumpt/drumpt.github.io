@@ -168,13 +168,13 @@
   {{ $target | safeHTMLAttr }}>
   {{ if .icon }}<i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} {{if .name}}mr-1{{end}}"></i>{{end}}
   {{- with .name }}{{ . | safeHTML }}{{ end -}}
-</a>
+</a>b
 {{ end }}
 
-{{ $resource := $page.Resources.GetMatch "cite.bib" }}
+<!-- {{ $resource := $page.Resources.GetMatch "cite.bib" }}
 {{ with $resource }}
 <a href="#" class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}} js-cite-modal"
   data-filename="{{ .RelPermalink }}">
   {{ i18n "btn_cite" }}
 </a>
-{{ end }}
+{{ end }} -->
