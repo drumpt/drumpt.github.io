@@ -48,7 +48,7 @@ featured: true
 #   url: http://example.org
 
 url_pdf: 'https://www.isca-archive.org/interspeech_2023/kim23f_interspeech.html'
-url_preprint: 'https://arxiv.org/pdf/2306.01981'
+url_preprint: 'https://arxiv.org/abs/2306.01981'
 url_code: 'https://github.com/drumpt/SGEM'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
