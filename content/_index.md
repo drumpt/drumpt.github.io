@@ -118,6 +118,9 @@ sections:
               - title: Silver Prize
                 organization: Korean Undergraduate Mathematics Competition, Korean Mathematics Society
                 date: Jan 2022
+              - title: Overseas Exchange Scholarship
+                organization: Mirae Asset
+                date: Dec 2019
               - title: Representative of Student Exchange Ambassador
                 organization: KAIST
                 date: Nov 2019
