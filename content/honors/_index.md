@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Honors
 cms_exclude: false
 
 # View.

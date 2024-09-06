@@ -10,7 +10,8 @@
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
 <div class="section-subheading">
-  {{ . | markdownify | emojify }}<hr>
+  {{ . | markdownify | emojify }}
+  <hr>
 </div>
 {{ end }}
 
@@ -96,7 +97,6 @@
 {{ . | emojify | $page.RenderString }}
 {{ end }}
 
-
 {{ range $index, $item := $query }}
 {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design.view | default "compact") "index" $index) }}
 {{ end }}
@@ -128,8 +128,8 @@
 <!-- {{ $archive_text := $block.content.archive.text | default (i18n $i18n) | default "SEE ALL" }} -->
 {{ $archive_text := "See all" }}
 <!-- <div class="see-all"> -->
-  <a href="{{ $archive_link }}">
-    {{ $archive_text | emojify }}<i class="fas fa-angle-right"></i>
-  </a>
+<a href="{{ $archive_link }}">
+  {{ $archive_text | emojify }}<i class="fas fa-angle-right"></i>
+</a>
 <!-- </div> -->
 {{ end }}
