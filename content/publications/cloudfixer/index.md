@@ -8,12 +8,12 @@ author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 date: '2024-09-29T00:00:00Z'
-publishDate: '2023-09-29T00:00:00Z'
+publishDate: '1998-03-20T00:00:00Z'
 publication_types: ['1']
 publication: European Conference on Computer Vision (**ECCV**), 2024
 publication_short: ECCV 2024
 
-url_pdf: ''
+url_pdf: 
 url_preprint: 'https://arxiv.org/abs/2407.16193'
 url_code: 'https://github.com/shimazing/CloudFixer'
 image:
