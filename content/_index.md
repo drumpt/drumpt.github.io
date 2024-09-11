@@ -168,6 +168,8 @@ sections:
                       date:
                     - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
                       date:
+                    - organization: Learning on Graphs Conference (**LoG**)
+                      date:
               - title: Workshop Reviewer
                 items:
                     - organization: NeurIPS Workshop on Mathematical Reasoning and AI (**NeurIPSW-MATH-AI**)
