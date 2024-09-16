@@ -170,6 +170,8 @@ sections:
                       date:
                     - organization: Learning on Graphs Conference (**LoG**)
                       date:
+                    - organization: Machine Learning for Health (**ML4H**)
+                      date:
               - title: Workshop Reviewer
                 items:
                     - organization: NeurIPS Workshop on Mathematical Reasoning and AI (**NeurIPSW-MATH-AI**)
