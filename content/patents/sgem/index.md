@@ -27,7 +27,7 @@ publishDate: '2023-07-03T00:00:00Z'
 publication_types: ['8']
 
 # Publication name and optional abbreviated publication name.
-publication: US Patent Application No. 18/594,442 (Pending), Korea Patent Application No. 10-2024-0006413 (Pending)
+publication: US Patent Application No. 18/594,442 (Pending), Korea Patent Application No. 10-2024-0006413 and 10-2024-0023266 (Pending)
 
 publication_short:
 
