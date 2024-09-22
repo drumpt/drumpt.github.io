@@ -164,13 +164,11 @@ sections:
                       date:
                     - organization: International Conference on Learning Representations (**ICLR**)
                       date:
-                    - organization: Conference on Empirical Methods in Natural Language Processing (**EMNLP**)
+                    - organization: International Conference on Artificial Intelligence and Statistics (**AISTATS**)
                       date:
                     - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
                       date:
                     - organization: Learning on Graphs Conference (**LoG**)
-                      date:
-                    - organization: Machine Learning for Health (**ML4H**)
                       date:
               - title: Workshop Reviewer
                 items:
