@@ -9,7 +9,8 @@
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
-<div class="section-subheading">{{ . | markdownify | emojify }}</div><hr>
+<div class="section-subheading">{{ . | markdownify | emojify }}</div>
+<hr>
 {{ end }}
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
@@ -17,40 +18,66 @@
 {{ if $block.content.items }}
 {{ $exp_len := len $block.content.items }}
 {{ range $idx, $company := $block.content.items }}
-    {{- if $company.company_logo }}
-    {{- $svg_icon := resources.Get (printf "media/icons/brands/%s.svg" $company.company_logo) -}}
-    {{ if not $svg_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.svg`" $company.company_logo }}{{end}}
-    {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
-    <img src="{{ $svg_icon.RelPermalink }}" width="56" height="56" alt="{{ $company.company | plainify }}" loading="lazy">
-    {{- with $company.company_url}}</a>{{end -}}
-    {{ end }}
 
-    <span style="font-weight: bold;">{{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{ $company.company | markdownify | emojify }}{{ with $company.company_url }}</a>{{end -}}</span>, {{ $company.location | markdownify | emojify }}<br>
-    
-    {{- if (isset $company "items") -}}
-        {{ range $role_idx, $role := $company.items }}
-            <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
-            {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
-            {{ if $role.date_end }}
-                {{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}
-            {{ else }}
-                {{ i18n "Present" | default "Present" }}
-            {{ end }}
-            {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub $exp_len 1))) }}
-                <br>
-            {{ end }}
+<div class="pub-content-container">
+    <div class="pub-image-container">
+        {{- if $company.company_logo }}
+        {{- $png_icon := resources.Get (printf "media/icons/brands/%s.png" $company.company_logo) -}}
+        {{ if not $png_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.png`" $company.company_logo }}{{end}}
+        {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+            <img src="{{ $png_icon.RelPermalink }}" width="56" height="56" alt="{{ $company.company | plainify }}"
+                loading="lazy">
+            {{- with $company.company_url}}</a>{{end -}}
         {{ end }}
-    {{- end }}
-
-    {{ with $company.description }}
-    <div class="card-text">
-        {{ . | markdownify | emojify }}
     </div>
-    {{ end }}
 
-    {{ if not (eq $idx (sub $exp_len 1)) }}
+    <div class="pub-text-container">
+        <span style="font-weight: bold;">{{- with $company.company_url}}<a href="{{.}}" target="_blank"
+                rel="noopener">{{end}}{{ $company.company | markdownify | emojify }}{{ with $company.company_url }}</a>{{end -}}</span>,
+        {{ $company.location | markdownify | emojify }}<br>
+
+        {{- if (isset $company "items") -}}
+        {{ range $role_idx, $role := $company.items }}
+        <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
+        {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
+        {{ if $role.date_end }}
+        {{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}
+        {{ else }}
+        {{ i18n "Present" | default "Present" }}
+        {{ end }}
+        {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub $exp_len 1))) }}
         <br>
-    {{ end }}
+        {{ end }}
+        {{ end }}
+        {{- end }}
 
+        {{ with $company.description }}
+        <div class="card-text">
+            {{ . | markdownify | emojify }}
+        </div>
+        {{ end }}
+
+        {{ if not (eq $idx (sub $exp_len 1)) }}
+        <br>
+        {{ end }}
+    </div>
+</div>
 {{ end }}
 {{ end }}
+
+<style>
+    .pub-content-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .pub-image-container {
+        flex: 0 0 75px;
+        margin-right: 0rem;
+    }
+
+    .pub-text-container {
+        flex: 1;
+    }
+</style>
