@@ -29,14 +29,14 @@ sections:
           date_format: Jan 2006
           items:
               - company: AITRICS
-                company_logo:
+                company_logo: aitrics
                 company_url: "https://en.aitrics.com/"
                 location: Seoul, South Korea
                 items:
                   - title: Machine Learning Researcher
                     date_start: "2023-11-20"
               - company: KAIST Machine Learning and Intelligence Lab
-                company_logo:
+                company_logo: mlilab
                 company_url: "https://mli.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
@@ -47,7 +47,7 @@ sections:
                     date_start: "2021-06-28"
                     date_end: "2022-02-25"
               - company: KAIST Applied Artificial Intelligence Lab
-                company_logo:
+                company_logo: aailab
                 company_url: "https://aai.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
@@ -55,7 +55,7 @@ sections:
                     date_start: "2021-09-07"
                     date_end: "2022-01-11"
               - company: DeepNatural
-                company_logo:
+                company_logo: deepnatural
                 company_url: "https://deepnatural.ai/"
                 location: Seoul, South Korea
                 items:
@@ -63,7 +63,7 @@ sections:
                     date_start: "2020-09-14"
                     date_end: "2021-02-26"
               - company: KAIST Vehicular Intelligence Lab
-                company_logo:
+                company_logo: vil
                 company_url: "https://vil.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
@@ -71,7 +71,7 @@ sections:
                     date_start: "2019-10-15"
                     date_end: "2020-08-15"
               - company: Netmarble
-                company_logo:
+                company_logo: netmarble
                 company_url: "https://www.netmarble.net/"
                 location: Seoul, South Korea
                 items:
