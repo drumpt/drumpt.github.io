@@ -13,7 +13,7 @@ publication_types: ['1']
 publication: European Conference on Computer Vision (**ECCV**), 2024
 publication_short: ECCV 2024
 
-url_pdf: 
+url_pdf: 'https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4603_ECCV_2024_paper.php'
 url_preprint: 'https://arxiv.org/abs/2407.16193'
 url_code: 'https://github.com/shimazing/CloudFixer'
 image:

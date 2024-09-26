@@ -10,7 +10,7 @@ sections:
       content:
           title:
           username: admin
-    
+
     - block: github.drumpt.news
       id: news
       content:
@@ -33,51 +33,51 @@ sections:
                 company_url: "https://en.aitrics.com/"
                 location: Seoul, South Korea
                 items:
-                  - title: Machine Learning Researcher
-                    date_start: "2023-11-20"
+                    - title: Machine Learning Researcher
+                      date_start: "2023-11-20"
               - company: KAIST Machine Learning and Intelligence Lab
                 company_logo: mlilab
                 company_url: "https://mli.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
-                  - title: Master's Student Researcher
-                    date_start: "2022-03-02"
-                    date_end: "2024-02-27"
-                  - title: Undergraduate Researcher
-                    date_start: "2021-06-28"
-                    date_end: "2022-02-25"
+                    - title: Master's Student Researcher
+                      date_start: "2022-03-02"
+                      date_end: "2024-02-27"
+                    - title: Undergraduate Researcher
+                      date_start: "2021-06-28"
+                      date_end: "2022-02-25"
               - company: KAIST Applied Artificial Intelligence Lab
                 company_logo: aailab
                 company_url: "https://aai.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
-                  - title: Developer
-                    date_start: "2021-09-07"
-                    date_end: "2022-01-11"
+                    - title: Developer
+                      date_start: "2021-09-07"
+                      date_end: "2022-01-11"
               - company: DeepNatural
                 company_logo: deepnatural
                 company_url: "https://deepnatural.ai/"
                 location: Seoul, South Korea
                 items:
-                  - title: Machine Learning Engineer
-                    date_start: "2020-09-14"
-                    date_end: "2021-02-26"
+                    - title: Machine Learning Engineer
+                      date_start: "2020-09-14"
+                      date_end: "2021-02-26"
               - company: KAIST Vehicular Intelligence Lab
                 company_logo: vil
                 company_url: "https://vil.kaist.ac.kr/"
                 location: Daejeon, South Korea
                 items:
-                  - title: Undergraduate Researcher
-                    date_start: "2019-10-15"
-                    date_end: "2020-08-15"
+                    - title: Undergraduate Researcher
+                      date_start: "2019-10-15"
+                      date_end: "2020-08-15"
               - company: Netmarble
                 company_logo: netmarble
                 company_url: "https://www.netmarble.net/"
                 location: Seoul, South Korea
                 items:
-                  - title: Data Engineer
-                    date_start: "2019-06-24"
-                    date_end: "2019-08-16"
+                    - title: Data Engineer
+                      date_start: "2019-06-24"
+                      date_end: "2019-08-16"
 
     - block: github.drumpt.news
       id: publications
@@ -89,7 +89,7 @@ sections:
       design:
           columns: "1"
           view: publication
-    
+
     - block: github.drumpt.news
       id: patents
       content:
@@ -100,7 +100,7 @@ sections:
       design:
           columns: "1"
           view: patent
-    
+
     - block: github.drumpt.others
       id: honors
       content:
@@ -157,7 +157,7 @@ sections:
               - title: Journal Reviewer
                 items:
                     - organization: Transactions on Machine Learning Research (**TMLR**)
-                      date: 
+                      date:
               - title: Conference Reviewer
                 items:
                     - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
@@ -197,28 +197,28 @@ sections:
                 organization: Hankook Tire \& Technology
                 date: Mar 2022 – Apr 2023
               - title: Convergence Analysis of Deep Learning Optimizers Under Generalized Smoothness
-                organization: 'KAIST AI616: Deep Learning Theory'
+                organization: "KAIST AI616: Deep Learning Theory"
                 date: Sep 2023 – Dec 2023
               - title: How Many Times are We Going to Collaborate?
-                organization: 'KAIST AI607: Graph Mining and Social Network Analysis'
+                organization: "KAIST AI607: Graph Mining and Social Network Analysis"
                 date: Sep 2022 – Dec 2022
               - title: Few-Shot Font Generation for Korean
-                organization: 'KAIST AI604: Deep Learning for Computer Vision'
+                organization: "KAIST AI604: Deep Learning for Computer Vision"
                 date: Mar 2022 – Jun 2022
               - title: Issue Trend Analysis and Issue Tracking Analysis
-                organization: 'KAIST CS474: Text Mining'
+                organization: "KAIST CS474: Text Mining"
                 date: Mar 2021 – Jun 2021
               - title: KAIST Educational Network System (KENSv3)
-                organization: 'KAIST CS341: Introduction to Computer Networks'
+                organization: "KAIST CS341: Introduction to Computer Networks"
                 date: Mar 2021 – Jun 2021
-              - title: 'TinyMutator: Mutation Testing Tool for Rust'
-                organization: 'KAIST CS453: Automated Software Testing'
+              - title: "TinyMutator: Mutation Testing Tool for Rust"
+                organization: "KAIST CS453: Automated Software Testing"
                 date: Mar 2020 – Jun 2020
               - title: Immersion Camp
-                organization: 'KAIST CS496: Intensive Programming and Startup'
+                organization: "KAIST CS496: Intensive Programming and Startup"
                 date: Dec 2019 – Jan 2020
               - title: PintOS
-                organization: 'KAIST CS330: Operating Systems and Lab'
+                organization: "KAIST CS330: Operating Systems and Lab"
                 date: Mar 2019 – Jun 2019
 
     # - block: github.drumpt.collection
