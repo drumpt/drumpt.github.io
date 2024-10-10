@@ -12,10 +12,10 @@ author_notes:
 date: '2024-09-30T00:00:00Z'
 publishDate: '1998-03-20T00:00:00Z'
 publication_types: ['3']
-publication: Manuscript, 2024
-publication_short: Manuscript 2024
+publication: NeurIPS Workshop on Table Representation Learning (**NeurIPSW-TRL**), 2024
+publication_short: NeurIPSW-TRL, 2024
 
-url_pdf: ''
+url_pdf: 'https://openreview.net/forum?id=yhD2icebZ0#discussion'
 url_preprint: 'https://arxiv.org/abs/2407.10784'
 url_code: 
 image:
