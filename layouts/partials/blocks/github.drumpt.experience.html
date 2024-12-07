@@ -39,11 +39,7 @@
         {{- if (isset $company "items") -}}
         {{ range $role_idx, $role := $company.items }}
         <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
-        {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }} –
-        {{ if $role.date_end }}
-        {{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}
-        {{ else }}
-        {{ i18n "Present" | default "Present" }}
+        {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }}–{{ if $role.date_end }}{{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}{{ else }}{{ i18n "Present" | default "Present" }}
         {{ end }}
         {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub $exp_len 1))) }}
         <br>
