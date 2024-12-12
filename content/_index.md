@@ -104,7 +104,7 @@ sections:
     - block: github.drumpt.others
       id: honors
       content:
-          title: Honors
+          title: Honors and Awards
           items:
               # - title: Best Member
               #   organization: KAIST Machine Learning and Intelligence Lab
