@@ -162,6 +162,8 @@ sections:
                 items:
                     - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
                       date: 2024
+                    - organization: International Conference on Machine Learning (**ICML**)
+                      date: 2025
                     - organization: International Conference on Learning Representations (**ICLR**)
                       date: 2025
                     # - organization: International Conference on Artificial Intelligence and Statistics (**AISTATS**)
