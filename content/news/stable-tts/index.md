@@ -6,7 +6,7 @@ event_url:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-12-28'
+date: '2024-12-20'
 date_end:
 all_day: true
 
