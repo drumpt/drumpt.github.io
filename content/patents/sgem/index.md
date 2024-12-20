@@ -27,7 +27,7 @@ publishDate: '2023-07-03T00:00:00Z'
 publication_types: ['8']
 
 # Publication name and optional abbreviated publication name.
-publication: US Patent Application No. 18/594,442, Issued 2024<br>KR Patent Application No. 10-2024-0006413 and 10-2024-0023266, Issued 2024
+publication: US Patent App. 18/594,442, 2024<br>KR Patent App. 10-2024-0006413, 2024<br>KR Patent App. 10-2024-0023266, 2024
 
 publication_short:
 
