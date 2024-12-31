@@ -158,6 +158,8 @@ sections:
                 items:
                     - organization: Transactions on Machine Learning Research (**TMLR**)
                       date: 2024
+                    - organization: IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**)
+                      date: 2025
               - title: Conference Reviewer
                 items:
                     - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
