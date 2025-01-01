@@ -15,7 +15,7 @@ publication: IEEE International Conference on Acoustics, Speech and Signal Proce
 publication_short: ICASSP 2025
 
 url_pdf:
-url_preprint:
+url_preprint: 'https://arxiv.org/pdf/2412.20155'
 url_code:
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
