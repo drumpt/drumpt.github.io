@@ -10,7 +10,7 @@ author_notes:
   - "Equal contribution"
 date: "2024-10-01T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
-publication_types: ["3"]
+publication_types: ["1"]
 publication: IEEE International Conference on Acoustics, Speech and Signal Processing (**ICASSP**), 2025
 publication_short: ICASSP 2025
 
