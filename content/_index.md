@@ -168,6 +168,8 @@ sections:
                       date: 2025
                     - organization: International Conference on Learning Representations (**ICLR**)
                       date: 2025
+                    - organization: International Joint Conferences on Artificial Intelligence (**IJCAI**)
+                      date: 2025
                     # - organization: International Conference on Artificial Intelligence and Statistics (**AISTATS**)
                     #   date: 2026
                     - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
