@@ -72,7 +72,7 @@ education:
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2024
-    - course: B.S. in Computer Science and Mathematics
+    - course: B.S. in Computer Science and Mathematical Sciences
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2022
 
@@ -81,7 +81,7 @@ highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [AITRICS](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am fulfilling my **alternative military service** under Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). Before joining AITRICS, I obtained my master’s degree in **Artificial Intelligence** from [KAIST](https://kaist.ac.kr/en/), also under the guidance of Prof. Eunho Yang. I completed my bachelor’s degree in **Computer Science** and **Mathematics** at KAIST as well. I am open to **research collaborations globally, including remote opportunities**. If you are interested in my work, please feel free to reach out!
+I am a **machine learning researcher** at [AITRICS](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am fulfilling my **alternative military service** under Prof. [Eunho Yang](https://mli.kaist.ac.kr/people/). Before joining AITRICS, I obtained my master’s degree in **Artificial Intelligence** from [KAIST](https://kaist.ac.kr/en/), also under the guidance of Prof. Eunho Yang. I completed my bachelor’s degree in **Computer Science** and **Mathematical Sciences** at KAIST as well. I am open to **research collaborations globally, including remote opportunities**. If you are interested in my work, please feel free to reach out!
 
 My long-term research objective is to **enhance the out-of-distribution generalization capability of machine learning models, thereby creating trustworthy AI systems that can be reliably deployed in new environments**. This multifaceted goal involves ensuring robustness to distribution shifts (**domain adaptation and generalization**), handling unseen labels (**zero-shot learning**), and managing unseen tasks (**cross-task generalization**). During my master’s program, I focused on **test-time adaptation to distribution shifts across various tasks**, including 3D point cloud recognition, zero-shot transfer of vision-language models, automatic speech recognition, tabular learning, and time series classification. These experiences have also **enabled myself to quickly adapt to new modalities and tasks**.
 
