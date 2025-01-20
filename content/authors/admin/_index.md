@@ -33,7 +33,7 @@ interests:
 
 contact:
   - icon: fa-li fa-solid fa-location-pin
-    text: 13F, 218, Teheran-ro, Gangnam-gu, Seoul, 06221, Korea
+    text: AP Tower 13F, 218, Teheran-ro, Gangnam-gu, Seoul 06221, Korea
   - icon: fa-li fa-solid fa-phone
     text: (+82) 10-3264-6509
   - icon: fa-li fa-solid fa-envelope
