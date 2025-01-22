@@ -17,7 +17,7 @@ publication_short: NeurIPSW-TRL 2024
 
 url_pdf: 'https://openreview.net/forum?id=yhD2icebZ0#discussion'
 url_preprint: 'https://arxiv.org/abs/2407.10784'
-url_code: 
+url_code: 'https://github.com/drumpt/AdapTable'
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
   focal_point: ''
