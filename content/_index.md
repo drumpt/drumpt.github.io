@@ -167,15 +167,9 @@ sections:
                     - organization: International Conference on Machine Learning (**ICML**)
                       date: 
                     - organization: International Conference on Learning Representations (**ICLR**)
-<<<<<<< HEAD
-                      date: 
-                    - organization: International Joint Conferences on Artificial Intelligence (**IJCAI**)
-                      date: 
-=======
                       date: 2025
                     - organization: International Joint Conference on Artificial Intelligence (**IJCAI**)
                       date: 2025
->>>>>>> 8836694 (Fix typo)
                     # - organization: International Conference on Artificial Intelligence and Statistics (**AISTATS**)
                     #   date: 2026
                     - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
