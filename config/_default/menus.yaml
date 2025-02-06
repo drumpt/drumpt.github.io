@@ -30,9 +30,9 @@ main:
   - name: Service
     url: '#service'
     weight: 8
-  - name: Projects
-    url: '#projects'
-    weight: 9
+  # - name: Projects
+  #   url: '#projects'
+  #   weight: 9
   # - name: Blog
   #   url: 'blog'
   #   weight: 11
