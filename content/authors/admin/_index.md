@@ -27,9 +27,9 @@ bio:
 
 # Interests to show in About widget
 interests:
-  - Out-of-Distribution Generalization
+  - Trustworthy Machine Learning
   - Deep Generative Models
-  - Statistical Learning Theory
+  - Machine Learning Theory
 
 contact:
   - icon: fa-li fa-solid fa-location-pin
@@ -72,7 +72,7 @@ education:
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2024
-    - course: B.S. in Computer Science and Mathematical Sciences
+    - course: B.S. in Computer Science and Mathematical Sciences (Double Major)
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: 2022
 
