@@ -40,7 +40,7 @@ sections:
                 company_url: "https://mli.kaist.ac.kr/"
                 location: Daejeon, Korea
                 items:
-                    - title: Master's Student Researcher
+                    - title: Graduate Researcher
                       date_start: "2022-03-02"
                       date_end: "2024-02-27"
                     - title: Undergraduate Researcher
