@@ -21,7 +21,7 @@ publishDate: '2022-07-03T00:00:00Z'
 # 7 = Thesis; 8 = Patent
 publication_types: ['1']
 # Publication name and optional abbreviated publication name.
-publication: Conference of the International Speech Communication Association (**INTERSPEECH**), 2023
+publication: Conference of the International Speech Communication Association (**INTERSPEECH**), 2023 (**Oral**)
 publication_short: INTERSPEECH 2023
 
 # Custom links (uncomment lines below)
@@ -44,7 +44,7 @@ image:
   focal_point: ''
   preview_only: false
 
-note: Oral Presentation
+note:
 abstract: Automatic speech recognition (ASR) models are frequently exposed to data distribution shifts in many real-world scenarios, leading to erroneous predictions. To tackle this issue, an existing test-time adaptation (TTA) method has recently been proposed to adapt the pre-trained ASR model on unlabeled test instances without source data. Despite decent performance gain, this work relies solely on naive greedy decoding and performs adaptation across timesteps at a frame level, which may not be optimal given the sequential nature of the model output. Motivated by this, we propose a novel TTA framework, dubbed SGEM, for general ASR models. To treat the sequential output, SGEM first exploits beam search to explore candidate output logits and selects the most plausible one. Then, it utilizes generalized entropy minimization and negative sampling as unsupervised objectives to adapt the model. SGEM achieves state-of-the-art performance for three mainstream ASR models under various domain shifts.
 # Summary. An optional shortened abstract.
 summary:
