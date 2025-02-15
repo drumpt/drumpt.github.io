@@ -21,8 +21,8 @@ main:
   - name: Patents
     url: '#patents'
     weight: 5
-  - name: Honors
-    url: '#honors'
+  - name: Awards
+    url: '#awards'
     weight: 6
   - name: Teaching
     url: '#teaching'
