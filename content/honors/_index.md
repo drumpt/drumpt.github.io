@@ -1,5 +1,5 @@
 ---
-title: Honors and Awards
+title: Awards and Honors
 cms_exclude: false
 
 # View.

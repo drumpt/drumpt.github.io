@@ -102,7 +102,7 @@ sections:
           view: patent
 
     - block: github.drumpt.others
-      id: Awards
+      id: awards
       content:
           title: Awards and Honors
           items:
