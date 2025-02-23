@@ -12,4 +12,9 @@ view: news
 header:
   caption: ''
   image: ''
+
+cascade:
+  _build:
+    list: true
+    render: false
 ---

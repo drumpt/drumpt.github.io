@@ -1,11 +1,8 @@
-{{/* Hugo Blox: Experience */}}
-{{/* Documentation: https://hugoblox.com/blocks/ */}}
-{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
-
+{{/* Hugo Blox: Others */}}
 {{/* Initialise */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
-{{ $columns := $block.design.columns | default "1" }}
+{{ $section := $block.id }}
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
@@ -13,23 +10,23 @@
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
 
-{{ if $block.content.items }}
-{{ $exp_len := len $block.content.items }}
-
-{{ range $idx, $item := $block.content.items }}
-    <span style="font-weight: bold;">{{ $item.title | markdownify | emojify }}</span><br>
-    {{ if $item.organization }} {{ $item.organization | markdownify | emojify }}{{ end }}{{ if $item.date }}, {{ $item.date }}{{ end }}
-    {{ if $item.items }}
-        <ul style="margin-bottom: 0px">
-        {{ range $subidx, $subitem := $item.items }}
-            <li>
-                {{ $subitem.organization | markdownify | emojify }}{{ if $subitem.date }}, {{ $subitem.date }}{{ end }}
-            </li>
-        {{ end }}
-        </ul>
+{{ if site.GetPage $section }}
+  {{ $items := sort (site.GetPage $section).Pages ".Params.weight" }}
+  {{ $items_len := len $items }}
+  {{ range $idx, $item := $items }}
+    <span style="font-weight: bold;">{{ .Params.title | markdownify | emojify }}</span><br>
+    {{ if .Params.organization }} {{ .Params.organization | markdownify | emojify }}{{ end }}{{ if .Params.date }}, {{ .Params.date }}{{ end }}
+    {{ if .Params.items }}
+      <ul style="margin-bottom: 0px">
+      {{ range $subitem := .Params.items }}
+        <li>
+          {{ $subitem.organization | markdownify | emojify }}{{ if $subitem.date }}, {{ $subitem.date }}{{ end }}
+        </li>
+      {{ end }}
+      </ul>
     {{ else }}
-        <br>
+      <br>
     {{ end }}
-    {{ if ne (add $idx 1) $exp_len }}<br>{{ end }}
-{{ end }}
+    {{ if ne (add $idx 1) $items_len }}<br>{{ end }}
+  {{ end }}
 {{ end }}

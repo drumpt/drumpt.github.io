@@ -1,17 +1,17 @@
 ---
-title:
-cms_exclude: true
+title: Awards and Honors
+cms_exclude: false
 
 # View.
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view: 2
+#   4 = Citation
 
 # Optional header image (relative to `static/media/` folder).
-header:
-    caption: ""
-    image: ""
+banner:
+  caption: ''
+  image: ''
 
 cascade:
   _build:

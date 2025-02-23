@@ -12,4 +12,9 @@ cms_exclude: false
 banner:
   caption: ''
   image: ''
+
+cascade:
+  _build:
+    list: true
+    render: false
 ---

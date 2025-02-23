@@ -1,5 +1,5 @@
 ---
-title: Awards and Honors
+title: Teaching Experience
 cms_exclude: false
 
 # View.
@@ -12,4 +12,9 @@ cms_exclude: false
 banner:
   caption: ''
   image: ''
+
+cascade:
+  _build:
+    list: true
+    render: false
 ---

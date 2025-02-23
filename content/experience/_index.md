@@ -1,10 +1,9 @@
 ---
 title: Professional Experience
 cms_exclude: true
-view: 
+type: experience
 
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ''
-  image: ''
+_build:
+  render: false
+  list: true
 ---

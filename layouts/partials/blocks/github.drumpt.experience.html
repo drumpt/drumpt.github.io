@@ -15,39 +15,40 @@
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
 
-{{ if $block.content.items }}
-{{ $exp_len := len $block.content.items }}
-{{ range $idx, $company := $block.content.items }}
+{{ if site.GetPage "experience" }}
+{{ $exp_items := sort (site.GetPage "experience").Pages ".Params.weight" }}
+{{ $exp_len := len $exp_items }}
+{{ range $idx, $company := $exp_items }}
 
 <div class="pub-content-container">
     <div class="pub-image-container">
-        {{- if $company.company_logo }}
-        {{- $png_icon := resources.Get (printf "media/icons/brands/%s.png" $company.company_logo) -}}
-        {{ if not $png_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.png`" $company.company_logo }}{{end}}
-        {{- with $company.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
-            <img src="{{ $png_icon.RelPermalink }}" width="56" height="56" alt="{{ $company.company | plainify }}"
+        {{- if .Params.company_logo }}
+        {{- $png_icon := resources.Get (printf "media/icons/brands/%s.png" .Params.company_logo) -}}
+        {{ if not $png_icon }}{{ errorf "Brand logo not found at `assets/media/icons/brands/%s.png`" .Params.company_logo }}{{end}}
+        {{- with .Params.company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end -}}
+            <img src="{{ $png_icon.RelPermalink }}" width="56" height="56" alt="{{ .Params.company | plainify }}"
                 loading="lazy">
-            {{- with $company.company_url}}</a>{{end -}}
+            {{- with .Params.company_url}}</a>{{end -}}
         {{ end }}
     </div>
 
     <div class="pub-text-container">
-        <span style="font-weight: bold;">{{- with $company.company_url}}<a href="{{.}}" target="_blank"
-                rel="noopener">{{end}}{{ $company.company | markdownify | emojify }}{{ with $company.company_url }}</a>{{end -}}</span>,
-        {{ $company.location | markdownify | emojify }}<br>
+        <span style="font-weight: bold;">{{- with .Params.company_url}}<a href="{{.}}" target="_blank"
+                rel="noopener">{{end}}{{ .Params.company | markdownify | emojify }}{{ with .Params.company_url }}</a>{{end -}}</span>,
+        {{ .Params.location | markdownify | emojify }}<br>
 
-        {{- if (isset $company "items") -}}
-        {{ range $role_idx, $role := $company.items }}
+        {{- if .Params.items -}}
+        {{ $items_len := len .Params.items }}
+        {{ range $role_idx, $role := .Params.items }}
         <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
-        {{ (time $role.date_start) | time.Format ($block.Params.date_format | default "Jan 2006") }}–{{ if $role.date_end }}{{ (time $role.date_end) | time.Format ($block.Params.date_format | default "Jan 2006") }}{{ else }}{{ i18n "Present" | default "Present" }}
-        {{ end }}
-        {{ if not (and (eq $role_idx (sub (len $company.items) 1)) (eq $idx (sub $exp_len 1))) }}
+        {{ (time $role.date_start) | time.Format ($block.content.date_format | default "Jan 2006") }}–{{ if $role.date_end }}{{ (time $role.date_end) | time.Format ($block.content.date_format | default "Jan 2006") }}{{ else }}{{ i18n "Present" | default "Present" }}{{ end }}
+        {{ if not (eq $role_idx (sub $items_len 1)) }}
         <br>
         {{ end }}
         {{ end }}
         {{- end }}
 
-        {{ with $company.description }}
+        {{ with .Params.description }}
         <div class="card-text">
             {{ . | markdownify | emojify }}
         </div>

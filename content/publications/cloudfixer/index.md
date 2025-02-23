@@ -26,5 +26,4 @@ abstract: 3D point clouds captured from real-world sensors frequently encompass 
 summary:
 tags: []
 featured: true
-
 ---
