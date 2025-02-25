@@ -10,7 +10,7 @@
 {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
-<div class="content-container">
+<div class="content-container patent-item{{ if .is_last }} last-item{{ end }}">
     <div class="text-container">
         <span style="font-weight: bold;">{{ $item.Title }}</span><br>
         <span class="article-metadata li-cite-author">{{ partial "page_metadata_authors" $item }}</span><br>
@@ -20,11 +20,16 @@
 </div>
 
 <style>
-    .content-container {
+    .content-container.patent-item {
         display: flex;
-        /* Center items vertically */
+        align-items: center; 
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; /* Add bottom margin to each patent item */
+    }
+
+    /* Remove margin from the last patent item */
+    .content-container:last-of-type {
+        margin-bottom: 0;
     }
 
     .text-container {
