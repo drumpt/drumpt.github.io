@@ -2,7 +2,7 @@
 {{ $page := .page }}
 {{ $link := "" }}
 
-{{/* ***** TODO: Deprecate `url_preprint` in favour of `url_pdf` given there's now a dedicated "Preprint" pub. type. ***** */}}
+<!-- {{/* ***** TODO: Deprecate `url_preprint` in favour of `url_pdf` given there's now a dedicated "Preprint" pub. type. ***** */}}
 {{ $pdf := "" }}
 {{ $resource := $page.Resources.GetMatch (printf "%s.pdf" $page.File.ContentBaseName) }}
 {{ with $resource }}
@@ -17,7 +17,7 @@
   rel="noopener">
   Paper
 </a>
-{{ end }}
+{{ end }} -->
 
 {{ with $page.Params.url_preprint }}
 {{ $resource := $page.Resources.GetMatch . }}
@@ -28,7 +28,7 @@
 {{ end }}
 <a class="btn btn-outline-primary btn-page-header{{ if $is_list }} btn-sm{{end}}" href="{{ $link }}" target="_blank"
   rel="noopener">
-  arXiv
+  Paper
 </a>
 {{ end }}
 
