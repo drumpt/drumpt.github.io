@@ -10,8 +10,8 @@ author_notes:
 date: "2024-10-03T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["3"]
-publication: Manuscript, 2025
-publication_short: Manuscript 2025
+publication: "ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge (**ICLRW-XAI4Science**), 2025"
+publication_short: ICLRW-XAI4Science 2025
 
 url_pdf:
 url_preprint:
