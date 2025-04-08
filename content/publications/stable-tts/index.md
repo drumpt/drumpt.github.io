@@ -17,7 +17,8 @@ publication_short: ICASSP 2025
 url_pdf:
 url_preprint: 'https://arxiv.org/abs/2412.20155'
 url_code:
-url_project: 'https://stable-tts.github.io'
+# url_project: 'https://stable-tts.github.io'
+url_project:
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""

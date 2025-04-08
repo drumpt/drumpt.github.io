@@ -41,7 +41,7 @@
         {{ $items_len := len .Params.items }}
         {{ range $role_idx, $role := .Params.items }}
         <span style="font-weight: bold;">{{ $role.title | markdownify | emojify }}</span>,
-        {{ (time $role.date_start) | time.Format ($block.content.date_format | default "Jan 2006") }}–{{ if $role.date_end }}{{ (time $role.date_end) | time.Format ($block.content.date_format | default "Jan 2006") }}{{ else }}{{ i18n "Present" | default "Present" }}{{ end }}
+        {{ (time $role.date_start) | time.Format ($block.content.date_format | default "Jan 2006") }} – {{ if $role.date_end }}{{ (time $role.date_end) | time.Format ($block.content.date_format | default "Jan 2006") }}{{ else }}{{ i18n "Present" | default "Present" }}{{ end }}
         {{ if not (eq $role_idx (sub $items_len 1)) }}
         <br>
         {{ end }}

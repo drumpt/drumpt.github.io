@@ -9,10 +9,10 @@ authors:
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
-date: '2024-10-01T00:00:00Z'
+date: '2024-10-02T00:00:00Z'
 publishDate: '1998-03-20T00:00:00Z'
 publication_types: ['3']
-publication: NeurIPS Workshop on Table Representation Learning (**NeurIPSW-TRL**), 2024
+publication: NeurIPS Workshop on Table Representation Learning, 2024
 publication_short: NeurIPSW-TRL 2024
 
 url_pdf: 'https://openreview.net/forum?id=yhD2icebZ0#discussion'

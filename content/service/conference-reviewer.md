@@ -9,6 +9,8 @@ items:
     date: 
   - organization: International Joint Conference on Artificial Intelligence (**IJCAI**)
     date: 
+  - organization: Annual Meeting of the Association for Computational Linguistics (**ACL**)
+    date: 
   - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
     date: 
   - organization: Learning on Graphs Conference (**LoG**)
