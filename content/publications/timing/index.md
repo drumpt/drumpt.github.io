@@ -1,5 +1,5 @@
 ---
-title: "Timing: Temporality-Aware Integrated Gradients for Time Series Explanation"
+title: "TIMING: Temporality-Aware Integrated Gradients for Time Series Explanation"
 authors:
   - Hyeongwon Jang
   - admin
