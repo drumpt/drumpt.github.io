@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to ICML 2025 as a spotlight presentation!
+title: One paper is accepted to ICML 2025 as a spotlight presentation.
 
 event:
 event_url:
