@@ -59,9 +59,9 @@ social:
   - icon: x
     icon_pack: fab
     link: https://twitter.com/hooni_ne
-  # - icon: cv
-  #   icon_pack: ai
-  #   link: uploads/CV_ChanghunKim.pdf
+  - icon: cv
+    icon_pack: ai
+    link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'changhun.a.kim@gmail.com'

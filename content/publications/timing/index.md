@@ -7,11 +7,11 @@ authors:
 author_notes:
   - "Equal contribution"
   - "Equal contribution"
-date: "2024-10-03T00:00:00Z"
+date: "2024-10-02T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
-publication_types: ["3"]
-publication: "ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, 2025"
-publication_short: ICLRW-XAI4Science 2025
+publication_types: ["1"]
+publication: "International Conference on Machine Learning (**ICML**) 2025 (**Spotlight**)<br>ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, 2025"
+publication_short: "ICML 2025 (Spotlight), ICLRW-XAI4Science 2025"
 
 url_pdf:
 url_preprint:

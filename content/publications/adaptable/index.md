@@ -9,7 +9,7 @@ authors:
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
-date: '2024-10-02T00:00:00Z'
+date: '2024-10-03T00:00:00Z'
 publishDate: '1998-03-20T00:00:00Z'
 publication_types: ['3']
 publication: NeurIPS Workshop on Table Representation Learning, 2024
