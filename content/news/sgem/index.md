@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to INTERSPEECH 2023 as an oral presentation.
+title: One paper is accepted to INTERSPEECH 2023 as an oral presentation!
 
 event:
 event_url:
