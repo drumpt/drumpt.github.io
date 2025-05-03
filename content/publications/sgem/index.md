@@ -21,7 +21,7 @@ publishDate: '2022-07-03T00:00:00Z'
 # 7 = Thesis; 8 = Patent
 publication_types: ['1']
 # Publication name and optional abbreviated publication name.
-publication: Conference of the International Speech Communication Association (**INTERSPEECH**), 2023 (**Oral**)
+publication: Conference of the International Speech Communication Association (**INTERSPEECH**), 2023 (**Oral, 348/2293=15.2%**)
 publication_short: INTERSPEECH 2023
 
 # Custom links (uncomment lines below)
