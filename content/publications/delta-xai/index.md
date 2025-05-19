@@ -8,6 +8,8 @@ authors:
   - Sangchul Hahn
   - Eunho Yang
 author_notes:
+  - "Equal contribution"
+  - "Equal contribution"
 date: "2024-10-06T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["3"]
