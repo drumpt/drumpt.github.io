@@ -89,8 +89,8 @@ My research has focused on the essential dimensions of **trustworthy machine lea
 - **Explainability**
 - **Uncertainty calibration**
 
-As I progress in my academic and research journey, I am particularly drawn to the development of **trustworthy deep generative models** and the **theoretical frameworks** that can demystify artificial intelligence systems. My long-term research vision aims to establish truly trustworthy machine learning systems through two complementary approaches:
+As I progress in my academic and research journey, I am particularly drawn to the development of **trustworthy deep generative models** and the **theoretical frameworks** that can demystify artificial intelligence systems, especially in terms of **generalizaion error bounds**. My long-term research vision aims to establish truly trustworthy machine learning systems through two complementary approaches:
 - **Designing empirically well-motivated and theoretically grounded practical algorithms**
-- **Conducting rigorous theoretical analyses** of empirical machine learning techniques, including **generalization error bounds**
+- **Conducting rigorous theoretical analyses of empirical machine learning techniques**
 
 I am open to **research collaborations** on a global scale and intend to pursue **doctoral studies** beginning in **Fall 2026**. Remote collaboration opportunities are welcome. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
