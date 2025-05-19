@@ -43,6 +43,7 @@ contact:
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
+
 social:
   - icon: envelope
     icon_pack: fas
@@ -81,15 +82,15 @@ highlight_name: true
 
 ---
 
-I am a machine learning researcher at [AITRICS](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am fulfilling my alternative military service under the supervision of Professor [Eunho Yang](https://mli.kaist.ac.kr/people/). Prior to joining AITRICS, I completed my Master's degree in Artificial Intelligence at [KAIST](https://kaist.ac.kr/en/), also under Professor Yang's guidance. Additionally, I hold a Bachelor's degree in Computer Science and Mathematics from KAIST.
+I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am fulfilling my **alternative military service** under the supervision of Professor [**Eunho Yang**](https://mli.kaist.ac.kr/people/). Prior to joining AITRICS, I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/), also under Professor Yang's guidance. Additionally, I hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
 
-My research has focused on the essential dimensions of trustworthy machine learning, explored across various application domains including 3D point cloud classification, automatic speech recognition, tabular learning, and time series analysis:
+My research has focused on the essential dimensions of **trustworthy machine learning**, explored across various application domains including 3D point cloud classification, automatic speech recognition, tabular learning, and time series analysis:
 - **Out-of-distribution generalization**
 - **Explainability**
-- **Uncertainty quantification**
+- **Uncertainty calibration**
 
-As I progress in my academic and research journey, I am particularly drawn to the development of trustworthy deep generative models and the theoretical frameworks that can demystify artificial intelligence systems. My long-term research vision aims to establish truly trustworthy machine learning systems through two complementary approaches:
+As I progress in my academic and research journey, I am particularly drawn to the development of **trustworthy deep generative models** and the **theoretical frameworks** that can demystify artificial intelligence systems. My long-term research vision aims to establish truly trustworthy machine learning systems through two complementary approaches:
 - **Designing empirically well-motivated and theoretically grounded practical algorithms**
-- **Conducting rigorous theoretical analyses of empirical machine learning techniques**
+- **Conducting rigorous theoretical analyses** of empirical machine learning techniques, including **generalization error bounds**
 
-I am open to research collaborations on a global scale and intend to pursue doctoral studies beginning in Fall 2026. Remote collaboration opportunities are welcome. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
+I am open to **research collaborations** on a global scale and intend to pursue **doctoral studies** beginning in **Fall 2026**. Remote collaboration opportunities are welcome. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
