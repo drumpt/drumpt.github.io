@@ -4,7 +4,7 @@ company_logo: mlilab
 company_url: "https://mli.kaist.ac.kr/"
 location: Daejeon, Korea
 items:
-    - title: Graduate Researcher
+    - title: Research Assistant
       date_start: "2022-03-02"
       date_end: "2024-02-27"
     - title: Undergraduate Researcher
