@@ -82,7 +82,22 @@
 {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
 {{ $sort_ascending := $block.content.sort_ascending | default (eq $block.content.order "asc") | default false }}
 {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+
+{{ if eq $block.id "publications" }}
+{{ $manuscripts := where $query "Params.publication_types" "intersect" (slice "3") }}
+{{ $journals := where $query "Params.publication_types" "intersect" (slice "2") }}
+{{ $conferences := where $query "Params.publication_types" "intersect" (slice "1") }}
+{{ $others := $query | complement $manuscripts | complement $journals | complement $conferences }}
+
+{{ $manuscripts = sort $manuscripts "Date" "desc" }}
+{{ $journals = sort $journals "Date" "desc" }}
+{{ $conferences = sort $conferences "Date" "desc" }}
+{{ $others = sort $others "Date" "desc" }}
+
+{{ $query = $manuscripts | append $journals | append $conferences | append $others }}
+{{ else }}
 {{ $query = sort $query $sort_by $sort_order }}
+{{ end }}
 
 {{/* Offset and Limit */}}
 {{ if gt $items_offset 0 }}

@@ -1,0 +1,14 @@
+{{ $pub_type := index (.Params.publication_types) 0 }}
+{{ $order := 0 }}
+
+{{ if eq $pub_type "3" }}
+{{ $order = 1 }} {{/* Manuscripts */}}
+{{ else if eq $pub_type "2" }}
+{{ $order = 2 }} {{/* Journals */}}
+{{ else if eq $pub_type "1" }}
+{{ $order = 3 }} {{/* Conferences */}}
+{{ else }}
+{{ $order = 4 }} {{/* Others, including workshops */}}
+{{ end }}
+
+{{ return $order }}
