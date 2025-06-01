@@ -1,8 +1,8 @@
 ---
-title: I was selected as a top reviewer at ICML 2025 with complimentary registration award!
+title: I am nominated as one of the top reviewers (206/10,943=1.9%) at ICML 2025 with complimentary registration award!
 
-event:
-event_url:
+event: 
+event_url: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -38,7 +38,7 @@ links:
   - icon:
     icon_pack:
     name:
-    url:
+    url: 
 url_code: ''
 url_pdf: ''
 url_slides: ''
