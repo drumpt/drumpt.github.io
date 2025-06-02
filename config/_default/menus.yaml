@@ -36,6 +36,6 @@ main:
   # - name: Blog
   #   url: 'blog'
   #   weight: 11
-  # - name: CV
-  #   url: uploads/CV_ChanghunKim.pdf
-  #   weight: 12
+  - name: CV
+    url: uploads/CV_ChanghunKim.pdf
+    weight: 12
