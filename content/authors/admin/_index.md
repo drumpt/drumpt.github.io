@@ -82,15 +82,17 @@ highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am fulfilling my **alternative military service** under the supervision of Professor [**Eunho Yang**](https://mli.kaist.ac.kr/people/). Prior to joining AITRICS, I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/), also under Professor Yang's guidance. Additionally, I hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
+I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, under Professor [**Eunho Yang**](https://mli.kaist.ac.kr/people/)'s supervision. I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Professor Yang and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
 
-My research has focused on the essential dimensions of **trustworthy machine learning**, explored across various application domains including 3D point cloud classification, automatic speech recognition, tabular learning, and time series analysis:
-- **Out-of-distribution generalization**
-- **Explainability**
-- **Uncertainty calibration**
+I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
 
-As I progress in my academic and research journey, I am particularly drawn to the development of **trustworthy deep generative models** and the **theoretical frameworks** that can demystify artificial intelligence systems, especially in terms of **generalizaion error bounds**. My long-term research vision aims to establish truly trustworthy machine learning systems through two complementary approaches:
-- **Designing empirically well-motivated and theoretically grounded practical algorithms**
-- **Conducting rigorous theoretical analyses of empirical machine learning techniques**
+My research focuses on developing **trustworthy machine learning systems** for reliable deployment through **robust deep generative models**, **algorithms with strong empirical and theoretical foundations**, and **theoretical analysis** with **machine learning theory**.
 
-I am open to **research collaborations** on a global scale and intend to pursue **doctoral studies** beginning in **Fall 2026**. Remote collaboration opportunities are welcome. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
+**Research Interests:**
+* Trustworthy Machine Learning
+* Deep Generative Models
+* Machine Learning Theory
+
+My research has explored **trustworthy machine learning** across domains including 3D point clouds, speech recognition, and time series: **out-of-distribution generalization**, **explainability**, and **uncertainty calibration**.
+
+Moving forward, I aim to develop **trustworthy deep generative models** and **theoretical frameworks** for AI systems, particularly **generalization error bounds**, through **theoretically grounded algorithms** and **rigorous theoretical analyses**.
