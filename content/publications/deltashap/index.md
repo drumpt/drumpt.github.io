@@ -11,8 +11,8 @@ author_notes:
 date: "2024-10-04T12:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["3"]
-publication: Manuscript, 2025
-publication_short: Manuscript 2025
+publication: ICML Workshop on Actionable Interpretability, 2025
+publication_short: ICMLW-AIW 2025
 
 url_pdf:
 url_preprint:
