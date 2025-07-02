@@ -1,21 +1,21 @@
 ---
-title: Workshop Reviewer
+title: Conference Reviewer
 items:
-  - organization: NeurIPS Workshop on Mathematical Reasoning and AI
+  - organization: Conference on Neural Information Processing Systems (**NeurIPS**)
     date: 
-  - organization: NeurIPS Workshop on Time Series in the Age of Large Models
+  - organization: International Conference on Machine Learning (**ICML**)
     date: 
-  - organization: ICML Workshop on Foundation Models for Structured Data
+  - organization: International Conference on Learning Representations (**ICLR**)
     date: 
-  - organization: ICML Workshop on Actionable Interpretability
+  - organization: International Joint Conference on Artificial Intelligence (**IJCAI**)
     date: 
-  - organization: ICLR Workshop on Bidirectional Human-AI Alignment
+  - organization: Annual Meeting of the Association for Computational Linguistics (**ACL**)
     date: 
-  - organization: "ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge"
+  - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
     date: 
-  - organization: ECCV Workshop on Women in Computer Vision
+  - organization: Learning on Graphs Conference (**LoG**)
     date: 
-weight: 30
+weight: 20
 _build:
   render: false
   list: true

@@ -1,12 +1,12 @@
 ---
-title: One paper is accepted to ICLR 2025 Workshop on XAI4Science.
+title: One paper is accepted to ICML 2025 Workshop on Actionable Interpretability.
 
 event:
 event_url:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-03-05'
+date: '2025-06-20'
 date_end:
 all_day: true
 

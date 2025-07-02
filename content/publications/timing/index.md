@@ -13,8 +13,8 @@ publication_types: ["1"]
 publication: "International Conference on Machine Learning (**ICML**), 2025 (**Spotlight, 313/12107=2.6%**)<br>ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge, 2025"
 publication_short: "ICML 2025 (Spotlight), ICLRW-XAI4Science 2025"
 
-url_pdf:
-url_preprint:
+url_pdf: https://icml.cc/virtual/2025/poster/43941
+url_preprint: https://arxiv.org/abs/2506.05035
 url_code: https://github.com/drumpt/TIMING
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
