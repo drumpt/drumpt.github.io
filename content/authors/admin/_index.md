@@ -86,13 +86,13 @@ I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?r
 
 I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
 
-My research focuses on developing **trustworthy machine learning systems** for reliable deployment through **robust deep generative models**, **algorithms with strong empirical and theoretical foundations**, and **theoretical analysis** with **machine learning theory**.
-
 **Research Interests:**
 * Trustworthy Machine Learning
 * Deep Generative Models
 * Machine Learning Theory
 
-My research has explored **trustworthy machine learning** across domains including 3D point clouds, speech recognition, and time series: **out-of-distribution generalization**, **explainability**, and **uncertainty calibration**.
+My research aims to build **trustworthy machine learning systems** for real-world deployment through **robust deep generative models**, **theoretically grounded algorithms**, and **rigorous analysis** rooted in **machine learning theory**.
 
-Moving forward, I aim to develop **trustworthy deep generative models** and **theoretical frameworks** for AI systems, particularly **generalization error bounds**, through **theoretically grounded algorithms** and **rigorous theoretical analyses**.
+I address key challenges in **trustworthy ML**—**out-of-distribution generalization**, **explainability**, and **uncertainty calibration**—that span diverse modalities such as vision, vision-language, speech, tabular data, and time series.
+
+Looking ahead, I plan to develop **trustworthy generative models** and **theoretical frameworks** for AI, focusing on **generalization error bounds** and **principled algorithm design**.
