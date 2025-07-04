@@ -14,9 +14,9 @@ publication_types: ["1"]
 publication: ICML Workshop on Actionable Interpretability, 2025
 publication_short: ICMLW-AIW 2025
 
-url_pdf:
-url_preprint:
-url_code:
+url_pdf: 
+url_preprint: https://arxiv.org/abs/2507.02342
+url_code: https://github.com/AITRICS/DeltaSHAP
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""
