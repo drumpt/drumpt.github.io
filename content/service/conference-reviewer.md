@@ -11,6 +11,8 @@ items:
     date: 
   - organization: Annual Meeting of the Association for Computational Linguistics (**ACL**)
     date: 
+  - organization: Conference on Empirical Methods in Natural Language Processing (**EMNLP**)
+    date: 
   - organization: IEEE International Conference on Acoustics, Speech, and Signal Processing (**ICASSP**)
     date: 
   - organization: Learning on Graphs Conference (**LoG**)
