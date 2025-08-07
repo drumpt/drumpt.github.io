@@ -82,7 +82,7 @@ highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, under Professor [**Eunho Yang**](https://mli.kaist.ac.kr/people/)'s supervision. I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Professor Yang and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
+I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, under Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/)'s supervision. I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang as well and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
 
 I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
 
