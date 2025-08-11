@@ -82,7 +82,9 @@ highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, under Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/)'s supervision. I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang as well and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
+I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, under Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/)'s supervision. I also closely collaborate with Prof. [**Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/). I completed my Master’s degree in Artificial Intelligence at KAIST under Prof. Eunho Yang and hold a Bachelor’s degree in Computer Science and Mathematics from KAIST.
+
+I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang as well and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
 
 I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
 
@@ -91,8 +93,6 @@ I am open to **research collaborations** globally and intend to pursue **doctora
 * Deep Generative Models
 * Machine Learning Theory
 
-My research aims to build **trustworthy machine learning systems** for real-world deployment through **robust deep generative models**, **theoretically grounded algorithms**, and **rigorous analysis** rooted in **machine learning theory**.
+My ultimate research goal is to design **trustworthy machine learning algorithms** that enable stable deployment in real-world applications, with a particular focus on **deep generative models**. I work toward this goal by developing **empirically well-motivated** and **theoretically grounded** methods, complemented by **rigorous analysis** rooted in **machine learning theory**.
 
-I address key challenges in **trustworthy ML**—**out-of-distribution generalization**, **explainability**, and **uncertainty calibration**—that span diverse modalities such as vision, vision-language, speech, tabular data, and time series.
-
-Looking ahead, I plan to develop **trustworthy generative models** and **theoretical frameworks** for AI, focusing on **generalization error bounds** and **principled algorithm design**.
+In this pursuit, I have addressed key challenges in **trustworthy machine learning**—including **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration**—across diverse modalities such as vision, vision-language, speech, tabular data, and time series.
