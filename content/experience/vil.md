@@ -1,6 +1,6 @@
 ---
 company: KAIST Vehicular Intelligence Lab
-company_logo: vil
+company_logo: kaist_logo_squared
 company_url: "https://vil.kaist.ac.kr/"
 location: Daejeon, Korea
 items:

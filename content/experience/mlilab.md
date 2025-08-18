@@ -1,6 +1,6 @@
 ---
 company: KAIST Machine Learning and Intelligence Lab
-company_logo: mlilab
+company_logo: kaist_logo_squared
 company_url: "https://mli.kaist.ac.kr/"
 location: Daejeon, Korea
 items:
