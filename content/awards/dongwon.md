@@ -1,7 +1,7 @@
 ---
-title: Dongwon Full Masters Scholarship
+title: Dongwon Full Master's Scholarship
 organization: Dongwon Group
-date: Spring 2022–Fall 2023
+date: Spring 2022 – Fall 2023
 weight: 10
 _build:
   render: false

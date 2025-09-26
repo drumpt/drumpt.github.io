@@ -1,5 +1,5 @@
 ---
-title: "Delta-XAI: A Unified Framework for Explaining Prediction Shifts in Online Time Series"
+title: "Delta-XAI: A Unified Framework for Explaining Prediction Changes in Online Time Series Monitoring"
 authors:
   - admin
   - Yechan Mun
@@ -10,7 +10,7 @@ authors:
 author_notes:
   - "Equal contribution"
   - "Equal contribution"
-date: "2024-10-07T00:00:00Z"
+date: "2024-10-08T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["3"]
 publication: Manuscript, 2025
