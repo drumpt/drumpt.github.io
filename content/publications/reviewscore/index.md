@@ -28,7 +28,7 @@ publication: Manuscript, 2025
 publication_short: Manuscript 2025
 
 url_pdf: 
-url_preprint: https://arxiv.org/pdf/2509.21679
+url_preprint: https://arxiv.org/abs/2509.21679
 url_code: 
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
