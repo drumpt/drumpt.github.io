@@ -93,4 +93,4 @@ I am open to **research collaborations** globally and intend to pursue **doctora
 
 My ultimate research goal is to design **trustworthy machine learning algorithms** that enable stable deployment in real-world applications, with a particular focus on **deep generative models**. I work toward this goal by developing **empirically well-motivated** and **theoretically grounded** methods, complemented by **rigorous analysis** rooted in **machine learning theory**.
 
-In this pursuit, I have addressed key challenges in **trustworthy machine learning**—including **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration**—across diverse modalities such as vision, vision-language, speech, tabular data, and time series.
+In this pursuit, I have addressed key challenges in **trustworthy machine learning**, including **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration**, across diverse modalities such as vision, vision-language, speech, tabular data, and time series.
