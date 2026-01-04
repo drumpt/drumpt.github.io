@@ -8,12 +8,12 @@ authors:
 author_notes:
 date: '2024-10-05T00:00:00Z'
 publishDate: '1998-03-20T00:00:00Z'
-publication_types: ['3']
-publication: Manuscript, 2025
-publication_short: Manuscript 2025
+publication_types: ['1']
+publication: Conference of the European Chapter of the Association for Computational Linguistics (**EACL**), 2026 (Findings)
+publication_short: EACL 2026 Findings
 
 url_pdf: 
-url_preprint: https://openreview.net/forum?id=KZ3NspcpLN&referrer=%5Bthe%20profile%20of%20Changhun%20Kim%5D(%2Fprofile%3Fid%3D~Changhun_Kim1)
+url_preprint: https://openreview.net/forum?id=KZ3NspcpLN
 url_code: 
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
