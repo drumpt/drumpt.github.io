@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to ICLR 2025 Workshop on XAI4Science.
+title: One paper was accepted to ICLR 2025 Workshop on XAI4Science.
 
 event:
 event_url:

@@ -34,8 +34,8 @@ interests:
 contact:
   - icon: fa-li fa-solid fa-location-pin
     text: AP Tower 13F, 218, Teheran-ro, Gangnam-gu, Seoul 06221, Korea
-  - icon: fa-li fa-solid fa-phone
-    text: (+82) 10-3264-6509
+  # - icon: fa-li fa-solid fa-phone
+  #   text: +82 10-3264-6509
   - icon: fa-li fa-solid fa-envelope
     text: 'changhun.a.kim@gmail.com'
 
@@ -72,17 +72,17 @@ education:
   courses:
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2024
-    - course: B.S. in Computer Science and Mathematics
+      year: Feb 2022 – Feb 2024
+    - course: B.S. in Computer Science and Mathematics (Double Major)
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: 2022
+      year: Feb 2017 – Feb 2022
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am supervised by Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/) and Prof. [**Juho Lee**](https://juho-lee.github.io/). I also closely collaborate with Prof. [**Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/). I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
+I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am advised by Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/) and Prof. [**Juho Lee**](https://juho-lee.github.io/). I also collaborate closely with Prof. [**Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/). I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
 
 I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
 

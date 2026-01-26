@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to ICML 2025 Workshop on Actionable Interpretability.
+title: One paper was accepted to ICML 2025 Workshop on Actionable Interpretability.
 
 event:
 event_url:

@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to EACL 2026 Findings.
+title: One paper was accepted to Findings of EACL 2026.
 
 event:
 event_url:

@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to NeurIPS 2024 Workshop on Table Representation Learning.
+title: One paper was accepted to NeurIPS 2024 Workshop on Table Representation Learning.
 
 event:
 event_url:

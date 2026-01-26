@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to ICASSP 2025.
+title: One paper was accepted to ICASSP 2025.
 
 event:
 event_url:

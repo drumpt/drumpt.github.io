@@ -12,12 +12,12 @@ author_notes:
   - "Equal contribution"
 date: "2024-10-08T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
-publication_types: ["3"]
-publication: Manuscript, 2025
-publication_short: Manuscript 2025
+publication_types: ["1"]
+publication: International Conference on Learning Representations (**ICLR**), 2026
+publication_short: ICLR 2026
 
-url_pdf:
-url_preprint:
+url_pdf: 
+url_preprint: https://arxiv.org/abs/2511.23036
 url_code:
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"

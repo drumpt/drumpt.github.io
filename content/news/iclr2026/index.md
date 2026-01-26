@@ -1,12 +1,12 @@
 ---
-title: One paper was accepted to ICML 2025 as a spotlight presentation!
+title: Two papers were accepted to ICLR 2026.
 
 event:
 event_url:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-05-01'
+date: '2026-01-23'
 date_end:
 all_day: true
 
@@ -22,7 +22,7 @@ summary:
 abstract:
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-07-29'
+publishDate:
 
 authors: []
 tags: []

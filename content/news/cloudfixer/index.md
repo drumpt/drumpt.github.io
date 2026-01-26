@@ -1,5 +1,5 @@
 ---
-title: One paper is accepted to ECCV 2024.
+title: One paper was accepted to ECCV 2024.
 
 event:
 event_url:
