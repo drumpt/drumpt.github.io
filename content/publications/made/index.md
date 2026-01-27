@@ -2,8 +2,8 @@
 title: " Development and External Validation of a Transformer-Based Cardiac Arrest Prediction System for General Ward Patients: A Multicenter Study"
 authors:
   - Sungsoo Hong
-  - Yechan Mun
   - Kyung Hyun Lee
+  - Yechan Mun
   - Sangchul Hahn
   - Sunguk Jang
   - admin
