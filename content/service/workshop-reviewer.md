@@ -7,9 +7,11 @@ items:
     date: 
   - organization: ICML Workshop on Actionable Interpretability
     date: 
+  - organization: ICLR Workshop on Test-Time Updates
+    date: 
   - organization: ICLR Workshop on Bidirectional Human-AI Alignment
     date: 
-  - organization: "ICLR Workshop on XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge"
+  - organization: ICLR Workshop on XAI4Science
     date: 
   - organization: ECCV Workshop on Women in Computer Vision
     date: 
