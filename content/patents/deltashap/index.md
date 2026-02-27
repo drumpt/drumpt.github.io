@@ -1,5 +1,5 @@
 ---
-title: "Method for Providing Explanation for Online Patient Monitoring and Electronic Apparatus Therefor"
+title: "Method and Apparatus for Explaining Prediction Changes in Online Patient Monitoring"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here

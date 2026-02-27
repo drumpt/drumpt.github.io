@@ -73,7 +73,7 @@ education:
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: Feb 2022 – Feb 2024
-    - course: B.S. in Computer Science and Mathematics (Double Major)
+    - course: B.S. in Computer Science and Mathematics
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: Feb 2017 – Feb 2022
 
