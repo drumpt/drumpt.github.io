@@ -6,14 +6,14 @@ authors:
   - admin
   - Eunho Yang
 author_notes:
-date: "2024-10-10T00:00:00Z"
+date: "2023-01-03T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
-publication_types: ["3"]
-publication: Manuscript, 2026
-publication_short: Manuscript 2026
+publication_types: ["1"]
+publication: ICLR Workshop on Time Series in the Age of Large Models, 2026
+publication_short: ICLRW-TSALM 2026
 
-url_pdf:
-url_preprint:
+url_pdf: 
+url_preprint: https://openreview.net/forum?id=AxXNor3Kd2
 url_code:
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
