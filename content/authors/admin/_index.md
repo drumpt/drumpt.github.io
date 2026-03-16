@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Machine Learning Researcher
+role: Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
