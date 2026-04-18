@@ -14,12 +14,12 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Researcher
+role: Ph.D. Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: AITRICS
-    url: https://en.aitrics.com/?redirect=no
+  - name: University of Wisconsin–Madison
+    url: https://www.wisc.edu/
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -33,11 +33,11 @@ interests:
 
 contact:
   - icon: fa-li fa-solid fa-location-pin
-    text: AP Tower 13F, 218, Teheran-ro, Gangnam-gu, Seoul 06221, Korea
+    text: 500 Lincoln Dr, Madison, WI 53706, USA
   # - icon: fa-li fa-solid fa-phone
   #   text: +82 10-3264-6509
   - icon: fa-li fa-solid fa-envelope
-    text: 'changhun.a.kim@gmail.com'
+    text: 'changhun.kim@cs.wisc.edu'
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -47,7 +47,7 @@ contact:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:changhun.a.kim@gmail.com'
+    link: 'mailto:changhun.kim@cs.wisc.edu'
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
@@ -65,32 +65,26 @@ social:
     link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'changhun.a.kim@gmail.com'
+email: 'changhun.kim@cs.wisc.edu'
 
 # Education to show in About widget
 education:
   courses:
+    - course: Ph.D. in Computer Science
+      institution: University of Wisconsin–Madison
+      year: Sept 2026 – Present
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: Feb 2022 – Feb 2024
+      year: Feb 2024
     - course: B.S. in Computer Science and Mathematics
       institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: Feb 2017 – Feb 2022
+      year: Feb 2022
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 ---
 
-I am a **machine learning researcher** at [**AITRICS**](http://en.aitrics.com/?redirect=no), a healthcare AI startup in Korea, where I am advised by Prof. [**Eunho Yang**](https://mli.kaist.ac.kr/people/) and Prof. [**Juho Lee**](https://juho-lee.github.io/). I also collaborate closely with Prof. [**Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/). I completed my **Master's degree** in **Artificial Intelligence** at [**KAIST**](https://kaist.ac.kr/en/) under Prof. Eunho Yang and hold a **Bachelor's degree** in **Computer Science** and **Mathematics** from KAIST.
+I am an incoming Ph.D. student in [**Computer Science**](https://www.cs.wisc.edu/) at [**University of Wisconsin–Madison**](https://www.wisc.edu/), where I will work with [**Prof. Sharon Li**](https://pages.cs.wisc.edu/~sharonli/) and [**Prof. Grigorios Chrysos**](https://grigoris.ece.wisc.edu/). Currently, I am a researcher at [**AITRICS**](https://aitrics.com/en/), advised by [**Prof. Eunho Yang**](https://mli.kaist.ac.kr/people/), and collaborate with [**Prof. Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/) and [**Prof. Juho Lee**](https://juho-lee.github.io/) at [**KAIST**](https://kaist.ac.kr/en/). I received my M.S. in **Artificial Intelligence** and B.S. in **Computer Science** and **Mathematics** from [**KAIST**](https://kaist.ac.kr/en/).
 
-I am open to **research collaborations** globally and intend to pursue **doctoral studies** beginning **Fall 2026**. Should my research interests align with your work, I would be pleased to discuss potential collaborations.
-
-**Research Interests:**
-* Trustworthy Machine Learning
-* Deep Generative Models
-* Machine Learning Theory
-
-My ultimate research goal is to design **trustworthy machine learning algorithms** that enable stable deployment in real-world applications, with a particular focus on **deep generative models**. I work toward this goal by developing **empirically well-motivated** and **theoretically grounded** methods, complemented by **rigorous analysis** rooted in **machine learning theory**.
-
-In this pursuit, I have addressed key challenges in **trustworthy machine learning**, including **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration**, across diverse modalities such as vision, vision-language, speech, tabular data, and time series.
+My research focuses on **algorithmic and theoretical foundations** for **trustworthy machine learning** with applications to **Generative AI** (e.g., diffusion models, large language models) and **Embodied AI** (e.g., world models, vision-language-action models). I have worked on **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration** across modalities including vision, speech, tabular data, and time series.

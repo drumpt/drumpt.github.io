@@ -1,0 +1,16 @@
+# Theme metadata
+name = "Crimson"
+
+[light]
+  # Primary
+  primary = "#B4261E"
+
+  # Menu
+  menu_primary = "#B4261E"
+  menu_text = "#ffffff"
+  menu_text_active = "#5c1512"
+  menu_title = "#ffffff"
+
+  # Home sections
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(255, 255, 255)"

@@ -12,7 +12,7 @@ main:
   - name: News
     url: '#news'
     weight: 2
-  - name: Experience
+  - name: Employment
     url: '#experience'
     weight: 3
   - name: Publications

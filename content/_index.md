@@ -24,11 +24,11 @@ sections:
     - block: github.drumpt.experience
       id: experience
       content:
-          title: Professional Experience
+          title: Employment
           date_format: Jan 2006
           filters:
               folders:
-                  - experience
+                  - employment
 
     - block: github.drumpt.news
       id: publications

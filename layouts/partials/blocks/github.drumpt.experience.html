@@ -15,8 +15,13 @@
 
 {{ with $block.content.text }}{{ . | emojify | $page.RenderString }}{{ end }}
 
-{{ if site.GetPage "experience" }}
-{{ $exp_items := sort (site.GetPage "experience").Pages ".Params.weight" }}
+{{/* Section: prefer filters.folders (e.g. employment), else legacy "experience" */}}
+{{ $exp_section := "experience" }}
+{{ if $block.content.filters.folders }}
+{{ $exp_section = index $block.content.filters.folders 0 }}
+{{ end }}
+{{ if site.GetPage $exp_section }}
+{{ $exp_items := sort (site.GetPage $exp_section).Pages ".Params.weight" }}
 {{ $exp_len := len $exp_items }}
 {{ range $idx, $company := $exp_items }}
 
