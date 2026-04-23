@@ -1,5 +1,5 @@
 ---
-title: I am attending KOSMI 2024 in person. See you in Seoul!
+title: I am attending KOSMI 2024 in person. See you in Seoul! 🇰🇷
 
 event:
 event_url:

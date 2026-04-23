@@ -1,5 +1,5 @@
 ---
-title: I am attending ICML 2025 in person. See you in Vancouver!
+title: I am attending ICML 2025 in person. See you in Vancouver! 🇨🇦
 
 event:
 event_url:

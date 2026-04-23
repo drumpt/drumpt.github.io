@@ -6,7 +6,7 @@ location: Vancouver, BC, Canada
 items:
     - title: External Collaborator
       date_start: "2025-07-28"
-      date_end: ""
+      date_end: "2026-05-31"
 _build:
   render: false
   list: true

@@ -1,5 +1,5 @@
 ---
-title: I am attending INTERSPEECH 2023 in person. See you in Dublin!
+title: I am attending INTERSPEECH 2023 in person. See you in Dublin! 🇮🇪
 
 event:
 event_url:

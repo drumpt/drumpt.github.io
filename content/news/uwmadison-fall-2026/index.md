@@ -1,12 +1,12 @@
 ---
-title: I am attending ICASSP 2024 in person. See you in Seoul! 🇰🇷
+title: Excited to join the Ph.D. program in Computer Science at the University of Wisconsin–Madison starting Fall 2026 🇺🇸
 
 event:
 event_url:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-04-14'
+date: '2026-04-23'
 date_end:
 all_day: true
 
@@ -58,3 +58,4 @@ slides:
 #   Otherwise, set `projects = []`.
 projects:
 ---
+

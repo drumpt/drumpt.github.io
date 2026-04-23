@@ -7,6 +7,11 @@
 {{ $items_offset := $block.content.offset | default 0 }}
 {{ $items_count := $block.content.count }}
 
+{{/* Home News: show 10 initially, expand in place. */}}
+{{ $is_home_news := and $page.IsHome (eq $block.id "news") }}
+{{ $news_initial_count := 10 }}
+{{ $use_news_expand := and $is_home_news (not $items_count) }}
+
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
 <div class="section-subheading">
@@ -113,10 +118,17 @@
 {{ end }}
 
 {{ range $index, $item := $query }}
+{{ if and $use_news_expand (ge $index $news_initial_count) }}<div class="drumpt-news-extra">{{ end }}
 {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design.view | default "compact") "index" $index) }}
+{{ if and $use_news_expand (ge $index $news_initial_count) }}</div>{{ end }}
 {{ end }}
 
 {{/* Archive link */}}
+{{ if and $use_news_expand (gt $count $news_initial_count) }}
+<button type="button" class="btn btn-link p-0" id="drumpt-news-expand-btn" style="font-weight: bold;">
+  See All<i class="fas fa-angle-right"></i>
+</button>
+{{ else }}
 {{ $show_archive_link := $block.content.archive.enable | default (gt $count $items_count) }}
 {{ if $show_archive_link | and $archive_page }}
 {{ $archive_link := "" }}
@@ -141,10 +153,11 @@
 {{ end }}
 
 <!-- {{ $archive_text := $block.content.archive.text | default (i18n $i18n) | default "SEE ALL" }} -->
-{{ $archive_text := "See all" }}
+{{ $archive_text := "See All" }}
 <!-- <div class="see-all"> -->
 <a style="font-weight: bold;" href="{{ $archive_link }}">
   {{ $archive_text | emojify }}<i class="fas fa-angle-right"></i>
 </a>
 <!-- </div> -->
+{{ end }}
 {{ end }}

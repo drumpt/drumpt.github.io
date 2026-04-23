@@ -1,10 +1,4 @@
 {
-  "scripts": {
-    "clean": "rm -rf public resources",
-    "server": "hugo server",
-    "server:clean": "npm run clean && hugo server",
-    "server:prod": "hugo server -e production"
-  },
   "dependencies": {
     "hugo-bin": "^0.108.0",
     "hugo-bin-extended": "^0.111.3",

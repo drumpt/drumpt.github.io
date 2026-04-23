@@ -1,5 +1,5 @@
 ---
-title: "Method and Apparatus for Explaining Prediction Changes in Online Patient Monitoring"
+title: "DeltaSHAP: Explaining Prediction Evolutions in Online Patient Monitoring with Shapley Values"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -28,7 +28,7 @@ publishDate: "2023-07-03T00:00:00Z"
 publication_types: ["8"]
 
 # Publication name and optional abbreviated publication name.
-publication: KR Patent App. 10-2025-0052533, 2025
+publication: KR Patent App. 10-2026-0072989, 2026
 
 publication_short:
 

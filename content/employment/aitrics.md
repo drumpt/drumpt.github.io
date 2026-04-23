@@ -6,7 +6,7 @@ location: Seoul, Korea
 items:
     - title: Researcher
       date_start: "2023-11-20"
-      date_end: ""
+      date_end: "2026-05-31"
 _build:
   render: false
   list: true

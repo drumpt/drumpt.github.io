@@ -1,0 +1,12 @@
+<script>
+  (function () {
+    const btn = document.getElementById('drumpt-news-expand-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      const section = document.getElementById('news');
+      if (!section) return;
+      section.classList.add('drumpt-news-expanded');
+    });
+  })();
+</script>
+

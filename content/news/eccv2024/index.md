@@ -1,5 +1,5 @@
 ---
-title: I am attending ECCV 2024 in person. See you in Milano!
+title: I am attending ECCV 2024 in person. See you in Milano! 🇮🇹
 
 event:
 event_url:
