@@ -37,7 +37,7 @@ contact:
   # - icon: fa-li fa-solid fa-phone
   #   text: +82 10-3264-6509
   - icon: fa-li fa-solid fa-envelope
-    text: 'changhun.kim@cs.wisc.edu'
+    text: 'changhun.a.kim@gmail.com'
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -47,7 +47,7 @@ contact:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:changhun.kim@cs.wisc.edu'
+    link: 'mailto:changhun.a.kim@gmail.com'
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
@@ -65,7 +65,7 @@ social:
     link: uploads/CV_ChanghunKim.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'changhun.kim@cs.wisc.edu'
+email: 'changhun.a.kim@gmail.com'
 
 # Education to show in About widget
 education:

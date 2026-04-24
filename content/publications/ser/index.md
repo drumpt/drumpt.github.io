@@ -14,8 +14,8 @@ publication: International Conference on Learning Representations (**ICLR**), 20
 publication_short: ICLR 2026
 
 url_pdf:
-url_preprint: https://openreview.net/forum?id=TuQW7VPfXF
-url_code:
+url_preprint: https://arxiv.org/abs/2603.06693
+url_code: https://github.com/aitrics-chris/SER
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""

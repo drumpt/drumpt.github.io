@@ -18,7 +18,7 @@ publication_short: ICLR 2026
 
 url_pdf: 
 url_preprint: https://arxiv.org/abs/2511.23036
-url_code:
+url_code: https://github.com/AITRICS/Delta-XAI
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""

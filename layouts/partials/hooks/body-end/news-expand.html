@@ -5,7 +5,10 @@
     btn.addEventListener('click', function () {
       const section = document.getElementById('news');
       if (!section) return;
-      section.classList.add('drumpt-news-expanded');
+      const expanded = section.classList.toggle('drumpt-news-expanded');
+      btn.innerHTML = expanded
+        ? 'See Less<i class="fas fa-angle-up"></i>'
+        : 'See All<i class="fas fa-angle-right"></i>';
     });
   })();
 </script>
