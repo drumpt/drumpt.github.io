@@ -1,12 +1,15 @@
 ---
-title: "SPAM: Sampling Pattern Meta-Learning for Domain Generalization on Irregular Time Series"
+title: "TRIAGE: Dialectical Reasoning for Explainable Risk Prediction on Irregularly Sampled Medical Time Series with LLMs"
 authors:
+  - Hyeongwon Jang
+  - Gyouk Chu
   - admin
-  - Joohyung Lee
-  - Kwanhyung Lee
-  - Donghwee Yoon
+  - Joonhyung Park
+  - Hangyul Yoon
   - Eunho Yang
 author_notes:
+  - "Equal contribution"
+  - "Equal contribution"
 date: "2024-10-12T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["3"]
