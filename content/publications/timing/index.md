@@ -10,7 +10,7 @@ author_notes:
 date: "2024-10-02T00:00:00Z"
 publishDate: "1998-03-20T00:00:00Z"
 publication_types: ["1"]
-publication: "International Conference on Machine Learning (**ICML**), 2025 (<span style=\"color: rgb(255, 0, 0);\">**Spotlight**</span>)<br>ICLR Workshop on XAI4Science, 2025<br>CIKM Workshop on Human-Centric AI, 2025 (<span style=\"color: rgb(255, 0, 0);\">**Best Paper Award**</span>)"
+publication: "International Conference on Machine Learning (**ICML**), 2025 (<span style=\"color: rgb(255, 0, 0);\">**Spotlight, 313/12,107=2.6%**</span>)<br>ICLR Workshop on XAI4Science, 2025<br>CIKM Workshop on Human-Centric AI, 2025 (<span style=\"color: rgb(255, 0, 0);\">**Best Paper Award**</span>)"
 publication_short: "ICML 2025 (<span style=\"color: rgb(255, 0, 0);\">Spotlight</span>). ICLRW-XAI4Science 2025. CIKMW-HCAI 2025 (<span style=\"color: rgb(255, 0, 0);\">Best Paper Award</span>)"
 
 url_pdf: https://icml.cc/virtual/2025/poster/43941
