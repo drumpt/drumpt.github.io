@@ -1,5 +1,5 @@
 ---
-title: "Method for Providing Temporality-Aware Explanations for Time Series Data and Electronic Device Therefor"
+title: "Method for Providing Temporality-Aware Explanations for Time Series and Electronic Apparatus Therefor"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
