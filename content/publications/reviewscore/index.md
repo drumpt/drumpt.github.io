@@ -11,7 +11,7 @@ authors:
   - Minyeong Hwang
   - Hyeongwon Jang
   - admin
-  - Hae Chan Kim
+  - Haechan Kim
   - Joowon Kim
   - Yoonjeon Kim
   - Kwanhyung Lee
