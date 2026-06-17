@@ -17,8 +17,8 @@ publication: Manuscript, 2026
 publication_short: Manuscript 2026
 
 url_pdf:
-url_preprint:
-url_code:
+url_preprint: https://arxiv.org/abs/2606.09030
+url_code: https://github.com/HyeongWon-Jang/TRIAGE
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)"
   focal_point: ""
