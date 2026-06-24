@@ -72,7 +72,7 @@ education:
   courses:
     - course: Ph.D. in Computer Science
       institution: University of Wisconsin–Madison
-      year: Sept 2026 – Present
+      year: Aug 2026 – Present
     - course: M.S. in Artificial Intelligence
       institution: Korea Advanced Institute of Science and Technology (KAIST)
       year: Feb 2024
@@ -85,6 +85,6 @@ highlight_name: true
 
 ---
 
-I am an incoming Ph.D. student in [**Computer Science**](https://www.cs.wisc.edu/) at [**University of Wisconsin–Madison**](https://www.wisc.edu/), where I plan to work with [**Prof. Sharon Li**](https://pages.cs.wisc.edu/~sharonli/) and [**Prof. Grigorios Chrysos**](https://grigoris.ece.wisc.edu/). I was a researcher at [**AITRICS**](https://aitrics.com/en/), advised by [**Prof. Eunho Yang**](https://mli.kaist.ac.kr/people/), and collaborate with [**Prof. Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/) and [**Prof. Juho Lee**](https://juho-lee.github.io/) at [**KAIST**](https://kaist.ac.kr/en/). I received my M.S. in **Artificial Intelligence** and B.S. in **Computer Science** and **Mathematics** from [**KAIST**](https://kaist.ac.kr/en/).
+I am an incoming Ph.D. student in [**Computer Science**](https://www.cs.wisc.edu/) at [**University of Wisconsin–Madison**](https://www.wisc.edu/), where I plan to work with [**Prof. Grigorios Chrysos**](https://grigoris.ece.wisc.edu/). I was a researcher at [**AITRICS**](https://aitrics.com/en/), advised by [**Prof. Eunho Yang**](https://mli.kaist.ac.kr/people/), and collaborate with [**Prof. Evan Shelhamer**](https://imaginarynumber.net/) at [**The University of British Columbia**](https://www.ubc.ca/) and [**Prof. Juho Lee**](https://juho-lee.github.io/) at [**KAIST**](https://kaist.ac.kr/en/). I received my M.S. in **Artificial Intelligence** and B.S. in **Computer Science** and **Mathematics** from [**KAIST**](https://kaist.ac.kr/en/).
 
 My research focuses on **algorithmic and theoretical foundations** for **trustworthy machine learning** with applications to **Generative AI** (e.g., diffusion models, large language models) and **Embodied AI** (e.g., world models, vision-language-action models). I have worked on **out-of-distribution generalization**, **explainable artificial intelligence**, and **uncertainty calibration** across modalities including vision, speech, tabular data, and time series.
