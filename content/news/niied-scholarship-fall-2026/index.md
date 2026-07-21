@@ -1,5 +1,5 @@
 ---
-title: Awarded the Study Abroad Scholarship by the National Institute for International Education (NIIED) 🎓
+title: Awarded the Korean Government Scholarship Program for Study Overseas by the National Institute for International Education (NIIED) 🎓
 
 event:
 event_url:
