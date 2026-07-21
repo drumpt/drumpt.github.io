@@ -126,7 +126,7 @@
 {{/* Archive link */}}
 {{ if and $use_news_expand (gt $count $news_initial_count) }}
 <button type="button" class="btn btn-link p-0" id="drumpt-news-expand-btn" style="font-weight: bold;">
-  See All<i class="fas fa-angle-right"></i>
+  See More<i class="fas fa-angle-right"></i>
 </button>
 {{ else }}
 {{ $show_archive_link := $block.content.archive.enable | default (gt $count $items_count) }}
@@ -153,7 +153,7 @@
 {{ end }}
 
 <!-- {{ $archive_text := $block.content.archive.text | default (i18n $i18n) | default "SEE ALL" }} -->
-{{ $archive_text := "See All" }}
+{{ $archive_text := "See More" }}
 <!-- <div class="see-all"> -->
 <a style="font-weight: bold;" href="{{ $archive_link }}">
   {{ $archive_text | emojify }}<i class="fas fa-angle-right"></i>
