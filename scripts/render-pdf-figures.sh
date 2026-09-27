@@ -21,10 +21,11 @@ WIDTH="${WIDTH:-1600}"
 FORCE="${FORCE:-}"
 
 renderer=""
-if command -v pdftoppm >/dev/null 2>&1; then
-    renderer="pdftoppm"
-elif command -v pdftocairo >/dev/null 2>&1; then
+# pdftocairo first: it supports -transp; pdftoppm does not.
+if command -v pdftocairo >/dev/null 2>&1; then
     renderer="pdftocairo"
+elif command -v pdftoppm >/dev/null 2>&1; then
+    renderer="pdftoppm"
 elif command -v magick >/dev/null 2>&1 && command -v gs >/dev/null 2>&1; then
     renderer="magick"
 elif command -v sips >/dev/null 2>&1; then
@@ -34,7 +35,7 @@ fi
 render() { # $1 = source pdf, $2 = target png
     case "$renderer" in
     pdftoppm)
-        pdftoppm -png -transp -singlefile -f 1 -l 1 \
+        pdftoppm -png -singlefile -f 1 -l 1 \
             -scale-to-x "$WIDTH" -scale-to-y -1 "$1" "${2%.png}"
         ;;
     pdftocairo)
