@@ -5,6 +5,8 @@ items:
     date: 
   - organization: IEEE Transactions on Neural Networks and Learning Systems (**TNNLS**)
     date: 
+  - organization: International Journal of Computer Vision (**IJCV**)
+    date: 
 weight: 10
 _build:
   render: false
