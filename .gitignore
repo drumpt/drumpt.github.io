@@ -9,3 +9,6 @@ node_modules/
 go.sum
 .hugo_build.lock
 **/.DS_Store
+
+# PNGs rendered from `featured*.pdf` by scripts/render-pdf-figures.sh
+**/*.pdf.png

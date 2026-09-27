@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: One paper was accepted to INTERSPEECH 2023 as an oral presentation!
 
 event:

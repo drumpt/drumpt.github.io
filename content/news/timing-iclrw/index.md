@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: One paper was accepted to ICLR 2025 Workshop on XAI4Science.
 
 event:

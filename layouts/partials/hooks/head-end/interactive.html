@@ -1,0 +1,7 @@
+{{/* Scroll reveal is opt-in via a class set before first paint, so the page
+     stays fully visible without JS or with reduced motion. */}}
+<script>
+  if (window.IntersectionObserver && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js-reveal');
+  }
+</script>

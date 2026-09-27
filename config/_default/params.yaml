@@ -6,8 +6,8 @@
 # Appearance
 appearance:
   theme_day: custom_green
-  theme_night: 
-  font: native
+  theme_night: custom_green
+  font: inter
   font_size: s
   mode:
   color:
@@ -17,9 +17,9 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    org_name: 'University of Wisconsin-Madison'
+    description: 'Changhun Kim is a Ph.D. student in Computer Science at the University of Wisconsin-Madison, working on the algorithmic and theoretical foundations of deep generative models.'
+    twitter: 'hooni_ne'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -36,7 +36,7 @@ header:
     align: l
     show_logo: true
     show_language: false
-    show_day_night: false
+    show_day_night: true
     show_search: false
     highlight_active_link: true
 
@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/drumpt/drumpt.github.io'
     content_dir: content
     branch: main
   avatar:

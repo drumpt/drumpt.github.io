@@ -6,11 +6,26 @@ name = "Forest"
   primary = "#2c6941"
 
   # Menu
-  menu_primary = "#2c6941"
-  menu_text = "#ffffff"
-  menu_text_active = "#163521"
-  menu_title = "#ffffff"
+  menu_primary = "#ffffff"
+  menu_text = "rgba(0, 0, 0, 0.62)"
+  menu_text_active = "#2c6941"
+  menu_title = "#1c2a22"
 
   # Home sections
   home_section_odd = "rgb(255, 255, 255)"
   home_section_even = "rgb(255, 255, 255)"
+
+[dark]
+  # Primary: a lighter forest green that stays readable on dark grounds
+  primary = "#7cc493"
+
+  # Menu
+  menu_primary = "#1b2a21"
+  menu_text = "rgba(255, 255, 255, 0.72)"
+  menu_text_active = "#ffffff"
+  menu_title = "#ffffff"
+
+  # Background and home sections
+  background = "#16191a"
+  home_section_odd = "#16191a"
+  home_section_even = "#16191a"

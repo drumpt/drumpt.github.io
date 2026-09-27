@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: One paper was accepted to ICASSP 2025.
 
 event:

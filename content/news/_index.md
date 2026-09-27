@@ -17,7 +17,11 @@ header:
   image: ''
 
 cascade:
-  _build:
-    list: true
-    render: true
+  # Target only the individual news items, so the `/news/` archive page itself
+  # still renders while each item stays list-only (no thin standalone page).
+  - _target:
+      kind: page
+    _build:
+      list: true
+      render: false
 ---

@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="github.drumpt.about.css">
-
 {{/* Hugo Blox: About */}}
 {{/* Documentation: https://hugoblox.com/blocks/ */}}
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
@@ -22,113 +20,58 @@
 {{end}}
 {{ $person := $person_page.Params }}
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
-{{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
-<!-- About widget -->
-<br>
-<div class="row">
-<div class="col-12 col-lg-4">
-    <div id="profile">
-
-    {{ if site.Params.features.avatar.gravatar }}
-    <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=270')" alt="{{$person_page.Title}}">
-    {{ else if $avatar }}
-    {{ $avatar_image := $avatar.Fill "540x540 Center" }}
-    <img class="avatar {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}"
-        width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
-        src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
-    {{ end }}
-
-    <div class="portrait-title">
-        <h2>
-        {{- if $person.name_pronunciation -}}
-            <ruby>
-            <rb>{{ $person_page.Title }}</rb>
-            <rt>{{ $person.name_pronunciation }}</rt>
-            </ruby>
-        {{- else -}}
-            <div style="font-weight: normal;">{{- $person_page.Title -}}</div>
-        {{- end -}}
-        </h2>
-
-        {{ with $person.role }}<h3 style="font-weight: normal;">{{ . | markdownify | emojify }}</h3>{{ end }}
-
-        {{ range $person.organizations }}
-        <h3>
-        {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-        <span style="font-weight: normal;">{{ .name }}</span>
-        {{ if .url }}</a>{{ end }}
-        </h3>
-        {{ end }}
+<!-- About widget: a photo card with the social icons beneath it; the name,
+     a tagline and the bio alongside. Children of .intro-seq enter in sequence. -->
+<div class="row masthead intro-seq">
+  <div class="col-12 col-sm-5 col-md-4">
+    <div class="prof-card" style="--i: 0">
+      {{ if $avatar }}
+      {{ $avatar_image := $avatar.Fill "600x600 Center" }}
+      <img class="avatar" width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+        src="{{ $avatar_image.RelPermalink }}" alt="{{ $person_page.Title }}">
+      {{ end }}
     </div>
-
-    <ul class="network-icon" aria-hidden="true">
-        {{ range $person.social }}
-        {{ $pack := or .icon_pack "fas" }}
-        {{ $pack_prefix := $pack }}
-        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-        {{ $pack_prefix = "fa" }}
-        {{ end }}
-        {{ $link := .link }}
-        {{ $scheme := (urls.Parse $link).Scheme }}
-        {{ $target := "" }}
-        {{ if not $scheme }}
-        {{ $link = .link | relLangURL }}
-        {{ else if in (slice "http" "https") $scheme }}
-        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-        {{ end }}
-        <li>
-        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}">
-            <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+    {{ $labels := dict "envelope" "Email" "google-scholar" "Google Scholar" "github" "GitHub" "linkedin" "LinkedIn" "x" "X (Twitter)" "cv" "CV" }}
+    <ul class="network-icon" style="--i: 1">
+      {{ range $person.social }}
+      {{ $label := index $labels .icon | default (.icon | humanize) }}
+      {{ $pack := or .icon_pack "fas" }}
+      {{ $pack_prefix := $pack }}
+      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+      {{ $pack_prefix = "fa" }}
+      {{ end }}
+      {{ $link := .link }}
+      {{ $scheme := (urls.Parse $link).Scheme }}
+      {{ $target := "" }}
+      {{ if not $scheme }}
+      {{ $link = .link | relLangURL }}
+      {{ else if in (slice "http" "https") $scheme }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
+      <li>
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ $label }}" title="{{ $label }}" data-icon="{{ .icon }}">
+          <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }}"></i>
         </a>
-        </li>
-        {{ end }}
+      </li>
+      {{ end }}
     </ul>
+  </div>
 
+  <div class="col-12 col-sm-7 col-md-8 masthead-body">
+    <div class="masthead-header" style="--i: 1">
+      <h1 class="masthead-name">{{ $person_page.Title }}</h1>
     </div>
-</div>
-<div class="col-12 col-lg-8">
-    {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
-    {{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+
+    <p class="masthead-tagline" style="--i: 2">
+      {{- with $person.role }}{{ . }}{{ end }}{{ range first 1 $person.organizations }} @ {{ .name }}{{ end -}}
+    </p>
 
     {{ with $person_page.Content }}
-    <div class="article-style" style="text-align: justify">
-    {{ . }}
+    <div class="article-style masthead-bio" style="--i: 3">
+      {{ . }}
     </div>
     {{ end }}
 
-    <div class="row">
-        {{ with $person.contact }}
-        <div class="col-md-auto" style="width: 50%">
-            <div class="section-subheading">Contact</div>
-            <ul class="ul-contact fa-ul mb-0" style="--fa-li-margin: 1.5em;">
-                {{ range . }}
-                <li>
-                    <i class={{ .icon }}></i>
-                    {{ .text }}
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-        {{ end }}
-    
-        {{ with $person.education }}
-        <div class="col-md-auto" style="width: 50%">
-            <div class="section-subheading">Education</div>
-            <ul class="ul-edu fa-ul mb-0" style="--fa-li-margin: 1.5em;">
-                {{ range .courses }}
-                <li>
-                    <i class="fa-li fa-solid fa-graduation-cap"></i>
-                    <div class="description">
-                        <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
-                        <p class="institution">{{ .institution }}</p>
-                    </div>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-        {{ end }}
-    </div>
-</div>
-</div>
+  </div>
 </div>

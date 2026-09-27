@@ -12,15 +12,15 @@ main:
   - name: News
     url: '#news'
     weight: 2
+  - name: Education
+    url: '#education'
+    weight: 3
   - name: Employment
     url: '#experience'
-    weight: 3
+    weight: 3.5
   - name: Publications
     url: '#publications'
     weight: 4
-  - name: Patents
-    url: '#patents'
-    weight: 5
   - name: Awards
     url: '#awards'
     weight: 6
@@ -30,6 +30,9 @@ main:
   - name: Service
     url: '#service'
     weight: 8
+  - name: Talks
+    url: '#talks'
+    weight: 9
   # - name: Projects
   #   url: '#projects'
   #   weight: 9

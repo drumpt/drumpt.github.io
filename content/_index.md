@@ -22,6 +22,15 @@ sections:
           view: news
 
     - block: github.drumpt.experience
+      id: education
+      content:
+          title: Education
+          date_format: Jan 2006
+          filters:
+              folders:
+                  - education
+
+    - block: github.drumpt.experience
       id: experience
       content:
           title: Employment
@@ -41,17 +50,6 @@ sections:
           columns: "1"
           view: publication
 
-    - block: github.drumpt.news
-      id: patents
-      content:
-          title: Patents
-          filters:
-              folders:
-                  - patents
-      design:
-          columns: "1"
-          view: patent
-
     - block: github.drumpt.others
       id: awards
       content:
@@ -59,6 +57,8 @@ sections:
           filters:
               folders:
                   - awards
+      design:
+          compact: true
 
     - block: github.drumpt.others
       id: teaching
@@ -75,4 +75,12 @@ sections:
         filters:
           folders:
             - service
+
+    - block: github.drumpt.others
+      id: talks
+      content:
+        title: Invited Talks
+        filters:
+          folders:
+            - talks
 ---

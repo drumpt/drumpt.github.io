@@ -9,7 +9,7 @@
 
 {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
 {{ with $block.content.title }}
-<div class="section-subheading">{{ . | markdownify | emojify }}</div>
+<h2 class="section-subheading">{{ . | markdownify | emojify }}</h2>
 <hr>
 {{ end }}
 
@@ -22,8 +22,8 @@
 {{ end }}
 {{ if site.GetPage $exp_section }}
 {{ $exp_items := sort (site.GetPage $exp_section).Pages ".Params.weight" }}
-{{ $exp_len := len $exp_items }}
-{{ range $idx, $company := $exp_items }}
+<div class="exp-grid">
+{{ range $exp_items }}
 
 <div class="pub-content-container">
     <div class="pub-image-container">
@@ -59,12 +59,10 @@
         </div>
         {{ end }}
 
-        {{ if not (eq $idx (sub $exp_len 1)) }}
-        <br>
-        {{ end }}
     </div>
 </div>
 {{ end }}
+</div>
 {{ end }}
 
 <style>

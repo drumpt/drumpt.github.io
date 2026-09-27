@@ -1,0 +1,363 @@
+<script>
+  (function () {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var canAnimate = !reduceMotion && typeof Element.prototype.animate === 'function';
+    var SPRING = 'cubic-bezier(0.34, 1.4, 0.64, 1)';
+    var EASE_OUT = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
+    /* Resolve after an animation or a deadline, whichever comes first, so UI
+       state never waits on a throttled (e.g. backgrounded) animation clock. */
+    var settle = function (promise, ms) {
+      return Promise.race([promise, new Promise(function (r) { setTimeout(r, ms); })]);
+    };
+
+    /* Theme: one click flips light <-> dark via the theme's own handlers. */
+    var toggle = document.querySelector('.js-theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        var next = document.body.classList.contains('dark') ? 'light' : 'dark';
+        var link = document.querySelector('.js-set-theme-' + next);
+        if (link) link.click();
+        toggle.classList.remove('is-spinning');
+        void toggle.offsetWidth; /* restart the animation */
+        toggle.classList.add('is-spinning');
+      });
+    }
+
+    /* Navbar: a pill that springs to the active section, and previews on hover. */
+    var nav = document.querySelector('#navbar-main .navbar-nav');
+    if (nav) {
+      var pill = document.createElement('span');
+      pill.className = 'nav-pill';
+      pill.setAttribute('aria-hidden', 'true');
+      nav.appendChild(pill);
+      nav.classList.add('has-nav-pill');
+      var hovered = null;
+
+      var placePill = function (link, instant) {
+        if (!link || window.innerWidth < 992) {
+          pill.style.opacity = '0';
+          return;
+        }
+        var r = link.getBoundingClientRect();
+        var p = nav.getBoundingClientRect();
+        if (instant) pill.classList.add('no-transition');
+        pill.style.width = r.width + 'px';
+        pill.style.height = (r.height - 12) + 'px';
+        pill.style.transform = 'translate(' + (r.left - p.left) + 'px,' + (r.top - p.top + 6) + 'px)';
+        pill.style.opacity = '1';
+        if (instant) {
+          void pill.offsetWidth;
+          pill.classList.remove('no-transition');
+        }
+      };
+      var firstLink = nav.querySelector('.nav-link');
+      /* Scrollspy clears every link above the first section; call that Home. */
+      var activeLink = function () {
+        return nav.querySelector('.nav-link.active') || (window.scrollY < 80 ? firstLink : null);
+      };
+      window.addEventListener('scroll', function () {
+        if (!hovered && window.scrollY < 80) refresh();
+      }, { passive: true });
+      var refresh = function (instant) { placePill(hovered || activeLink(), instant); };
+
+      nav.querySelectorAll('.nav-link').forEach(function (a) {
+        a.addEventListener('mouseenter', function () { hovered = a; refresh(); });
+      });
+      nav.addEventListener('mouseleave', function () { hovered = null; refresh(); });
+      new MutationObserver(function () { if (!hovered) refresh(); })
+        .observe(nav, { subtree: true, attributes: true, attributeFilter: ['class'] });
+      window.addEventListener('resize', function () { refresh(true); });
+      /* Wait for web fonts so link widths are final. */
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { refresh(true); });
+    }
+
+    var toArray = function (list) { return Array.prototype.slice.call(list); };
+    var refreshSpy = function () {
+      /* Section heights changed, so refresh the navbar scrollspy offsets. */
+      if (window.jQuery) window.jQuery('body').scrollspy('refresh');
+    };
+
+    /* Show/hide a set of elements with a fade-out, FLIP reflow of the rest,
+       and a staggered fade-in of newcomers. `want(el)` decides visibility. */
+    var reflow = function (items, want, animate, done) {
+      var next = items.filter(want);
+      var shown = items.filter(function (el) { return !el.classList.contains('is-hidden'); });
+      var leaving = shown.filter(function (el) { return next.indexOf(el) < 0; });
+      var entering = next.filter(function (el) { return el.classList.contains('is-hidden'); });
+      var staying = next.filter(function (el) { return !el.classList.contains('is-hidden'); });
+      var commit = function () {
+        leaving.forEach(function (el) { el.classList.add('is-hidden'); });
+        entering.forEach(function (el) { el.classList.remove('is-hidden'); });
+      };
+      if (!animate || !canAnimate) {
+        commit();
+        return done && done();
+      }
+      var fades = leaving.map(function (el) {
+        return el.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'scale(0.96)' }],
+          { duration: 180, easing: 'ease-in', fill: 'forwards' });
+      });
+      settle(Promise.all(fades.map(function (f) { return f.finished; })), 220).then(function () {
+        var before = staying.map(function (el) { return el.getBoundingClientRect(); });
+        commit();
+        fades.forEach(function (f) { f.cancel(); });
+        staying.forEach(function (el, i) {
+          var r = el.getBoundingClientRect();
+          var dx = before[i].left - r.left;
+          var dy = before[i].top - r.top;
+          if (Math.abs(dx) > 1 || Math.abs(dy) > 1) {
+            el.animate([{ transform: 'translate(' + dx + 'px,' + dy + 'px)' }, { transform: 'none' }],
+              { duration: 480, easing: SPRING });
+          }
+        });
+        entering.forEach(function (el, i) {
+          el.animate([{ opacity: 0, transform: 'translateY(14px) scale(0.97)' }, { opacity: 1, transform: 'none' }],
+            { duration: 420, delay: 60 + i * 40, easing: EASE_OUT, fill: 'backwards' });
+        });
+        setTimeout(function () { if (done) done(); }, 60 + entering.length * 40 + 480);
+      });
+    };
+
+    /* Publications: Selected / All. */
+    var pubSection = document.getElementById('publications');
+    var pubList = pubSection && pubSection.querySelector('.pub-list');
+    var filter = pubSection && pubSection.querySelector('.pub-filter');
+    if (pubList && filter) {
+      var modeButtons = toArray(filter.querySelectorAll('[data-pub-filter]'));
+      var thumb = filter.querySelector('.pub-filter-thumb');
+      var pubItems = toArray(pubList.children);
+      var pubEntries = pubItems.filter(function (el) { return el.classList.contains('pub-entry'); });
+      var mode = 'selected';
+      var busy = false;
+
+      var want = function (el) {
+        if (el.classList.contains('pub-group-title')) {
+          if (mode !== 'all') return false;
+          var g = el.getAttribute('data-group');
+          return pubEntries.some(function (e) { return e.getAttribute('data-group') === g; });
+        }
+        return mode === 'all' || el.classList.contains('is-selected');
+      };
+      var moveThumb = function () {
+        modeButtons.forEach(function (b) {
+          var on = b.getAttribute('data-pub-filter') === mode;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          if (on) {
+            thumb.style.width = b.offsetWidth + 'px';
+            thumb.style.transform = 'translateX(' + b.offsetLeft + 'px)';
+          }
+        });
+      };
+      var apply = function (animate) {
+        moveThumb();
+        busy = animate && canAnimate;
+        reflow(pubItems, want, animate, function () {
+          busy = false;
+          refreshSpy();
+        });
+      };
+
+      modeButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var next = b.getAttribute('data-pub-filter');
+          if (busy || next === mode) return;
+          mode = next;
+          apply(true);
+        });
+      });
+
+      filter.hidden = false;
+      thumb.classList.add('no-transition');
+      apply(false);
+      void thumb.offsetWidth;
+      thumb.classList.remove('no-transition');
+      /* Wait for web fonts so the thumb matches the final button widths. */
+      (document.fonts ? document.fonts.ready : Promise.resolve()).then(moveThumb);
+    }
+
+    /* News: five at a time, with show more / show less. */
+    var newsList = document.querySelector('#news .news-list');
+    var newsMore = document.querySelector('#news .list-more');
+    if (newsList && newsMore) {
+      var STEP = 5;
+      var newsItems = toArray(newsList.children);
+      var newsShown = STEP;
+      var moreBtn = newsMore.querySelector('[data-news="more"]');
+      var lessBtn = newsMore.querySelector('[data-news="less"]');
+      var sep = newsMore.querySelector('.list-more-sep');
+      var applyNews = function (animate) {
+        reflow(newsItems, function (el) { return newsItems.indexOf(el) < newsShown; }, animate, refreshSpy);
+        moreBtn.hidden = newsShown >= newsItems.length;
+        lessBtn.hidden = newsShown <= STEP;
+        sep.hidden = moreBtn.hidden || lessBtn.hidden;
+      };
+      moreBtn.addEventListener('click', function () {
+        newsShown = Math.min(newsShown + STEP, newsItems.length);
+        applyNews(true);
+      });
+      lessBtn.addEventListener('click', function () {
+        newsShown = STEP;
+        applyNews(true);
+      });
+      newsMore.hidden = false;
+      applyNews(false);
+    }
+
+    /* Publication figures: click to zoom from the thumbnail. */
+    var openLightbox = function (thumbImg) {
+      var overlay = document.createElement('div');
+      overlay.className = 'lightbox';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      overlay.setAttribute('aria-label', thumbImg.alt);
+      overlay.tabIndex = -1;
+      var big = new Image();
+      big.className = 'lightbox-img';
+      big.src = thumbImg.currentSrc || thumbImg.src;
+      big.alt = thumbImg.alt;
+      var caption = document.createElement('div');
+      caption.className = 'lightbox-caption';
+      caption.textContent = thumbImg.alt;
+      overlay.appendChild(big);
+      overlay.appendChild(caption);
+      document.body.appendChild(overlay);
+      document.documentElement.classList.add('lightbox-open');
+
+      var zoom = function (reverse) {
+        if (!canAnimate) return Promise.resolve();
+        var from = thumbImg.getBoundingClientRect();
+        var to = big.getBoundingClientRect();
+        var start = 'translate(' + (from.left - to.left) + 'px,' + (from.top - to.top) + 'px) scale(' + (from.width / to.width) + ')';
+        var frames = [{ transform: start }, { transform: 'none' }];
+        overlay.animate([{ opacity: 0 }, { opacity: 1 }],
+          { duration: reverse ? 200 : 260, direction: reverse ? 'reverse' : 'normal', fill: 'forwards' });
+        return big.animate(frames, {
+          duration: reverse ? 260 : 420,
+          easing: reverse ? 'ease-in' : SPRING,
+          direction: reverse ? 'reverse' : 'normal',
+          fill: 'forwards'
+        }).finished;
+      };
+
+      var closing = false;
+      var close = function () {
+        if (closing) return;
+        closing = true;
+        document.removeEventListener('keydown', onKey);
+        settle(zoom(true), 300).then(function () {
+          overlay.remove();
+          document.documentElement.classList.remove('lightbox-open');
+          thumbImg.focus({ preventScroll: true });
+        });
+      };
+      var onKey = function (e) { if (e.key === 'Escape') close(); };
+      overlay.addEventListener('click', close);
+      document.addEventListener('keydown', onKey);
+      (big.decode ? big.decode() : Promise.resolve()).catch(function () {}).then(function () {
+        zoom(false);
+        overlay.focus({ preventScroll: true });
+      });
+    };
+    document.querySelectorAll('.pub-list .image-container img').forEach(function (img) {
+      img.tabIndex = 0;
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Enlarge figure: ' + img.alt);
+      img.addEventListener('click', function () { openLightbox(img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img);
+        }
+      });
+    });
+
+    /* Email: click copies the address and offers to open the mail app. */
+    var toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    document.body.appendChild(toast);
+    var toastTimer = null;
+    var showToast = function (address, href) {
+      toast.innerHTML = '';
+      var msg = document.createElement('span');
+      msg.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied ';
+      var strong = document.createElement('strong');
+      strong.textContent = address;
+      msg.appendChild(strong);
+      var open = document.createElement('a');
+      open.href = href;
+      open.className = 'copy-toast-action';
+      open.textContent = 'Open mail app';
+      toast.appendChild(msg);
+      toast.appendChild(open);
+      toast.classList.remove('is-visible');
+      void toast.offsetWidth;
+      toast.classList.add('is-visible');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () { toast.classList.remove('is-visible'); }, 3500);
+    };
+    document.querySelectorAll('#about a[href^="mailto:"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (!navigator.clipboard || e.metaKey || e.ctrlKey || e.shiftKey) return;
+        e.preventDefault();
+        var href = a.getAttribute('href');
+        var address = href.replace(/^mailto:/, '').split('?')[0];
+        navigator.clipboard.writeText(address).then(function () {
+          showToast(address, href);
+          a.classList.remove('is-popped');
+          void a.offsetWidth;
+          a.classList.add('is-popped');
+        }, function () { window.location.href = href; });
+      });
+    });
+
+    /* Figures: shimmer until decoded, then fade in sharp. */
+    document.querySelectorAll('.pub-media img').forEach(function (img) {
+      if (img.complete && img.naturalWidth) return;
+      var box = img.parentNode;
+      box.classList.add('is-loading');
+      var clear = function () { box.classList.remove('is-loading'); };
+      img.addEventListener('load', clear, { once: true });
+      img.addEventListener('error', clear, { once: true });
+    });
+
+    /* Back to top: springs in once you are a screen or so down. */
+    var toTop = document.createElement('button');
+    toTop.type = 'button';
+    toTop.className = 'to-top';
+    toTop.setAttribute('aria-label', 'Back to top');
+    toTop.innerHTML = '<i class="fas fa-arrow-up" aria-hidden="true"></i>';
+    document.body.appendChild(toTop);
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+    var onScroll = function () { toTop.classList.toggle('is-visible', window.scrollY > 700); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* Scroll reveal: each section fades up, then its items follow in turn. */
+    if (document.documentElement.classList.contains('js-reveal')) {
+      var STAGGER = '.news-item, .pub-entry, .pub-group-title, .list-item, .exp-grid .pub-content-container';
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var sec = e.target;
+          sec.classList.add('is-revealed');
+          io.unobserve(sec);
+          if (!canAnimate || sec.id === 'about') return;
+          toArray(sec.querySelectorAll(STAGGER))
+            .filter(function (el) { return !el.classList.contains('is-hidden'); })
+            .slice(0, 14)
+            .forEach(function (el, i) {
+              el.animate([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }],
+                { duration: 520, delay: 120 + i * 45, easing: EASE_OUT, fill: 'backwards' });
+            });
+        });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.home-section').forEach(function (t) { io.observe(t); });
+    }
+  })();
+</script>

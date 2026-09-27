@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: Two papers were accepted to ICLR 2026.
 
 event:

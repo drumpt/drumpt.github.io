@@ -37,6 +37,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Install PDF tooling
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Render PDF figures
+        run: ./scripts/render-pdf-figures.sh
+
       - name: Build with Hugo
         run: |
           echo "Building site..."

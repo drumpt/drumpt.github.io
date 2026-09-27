@@ -1,0 +1,27 @@
+{{/* Renders the pages of a content section as a list.
+     Params: section (folder name), compact (one line per item, period on the right). */}}
+{{ with site.GetPage .section }}
+  {{ $compact := $.compact }}
+  {{ range sort .Pages ".Params.weight" }}
+  {{ if $compact }}
+  <div class="list-item is-compact">
+    <span><span style="font-weight: bold;">{{ .Params.title | markdownify | emojify }}</span>{{ with .Params.organization }}, {{ . | markdownify | emojify }}{{ end }}</span>
+    {{ with .Params.period }}<span class="list-item-period">{{ . | markdownify }}</span>{{ end }}
+  </div>
+  {{ else }}
+  <div class="list-item">
+    <span style="font-weight: bold;">{{ .Params.title | markdownify | emojify }}</span><br>
+    {{ if .Params.organization }} {{ .Params.organization | markdownify | emojify }}{{ end }}{{ with .Params.period }}, {{ . | markdownify }}{{ end }}
+    {{ if .Params.items }}
+      <ul style="margin-bottom: 0px">
+      {{ range $subitem := .Params.items }}
+        <li>
+          {{ $subitem.organization | markdownify | emojify }}{{ if $subitem.date }}, {{ $subitem.date }}{{ end }}
+        </li>
+      {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+{{ end }}

@@ -24,5 +24,5 @@ note:
 abstract:
 summary:
 tags: []
-featured: true
+featured: false
 ---

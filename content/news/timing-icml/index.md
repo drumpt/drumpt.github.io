@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: One paper was accepted to ICML 2025 as a spotlight presentation!
 
 event:

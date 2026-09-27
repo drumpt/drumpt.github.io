@@ -1,4 +1,5 @@
 ---
+kind: paper
 title: One paper was accepted to CIKM 2025 Workshop on Human-Centric AI as an oral presentation!
 
 event:
