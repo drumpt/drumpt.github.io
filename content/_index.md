@@ -1,7 +1,5 @@
 ---
 type: landing
-seo:
-  title: Changhun Kim · Ph.D. Student at UW–Madison
 # Home page blocks, in order. Each `site.*` block lives in
 # layouts/partials/blocks/ and reads its entries from content/<folder>/.
 sections:
