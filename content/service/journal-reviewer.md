@@ -1,5 +1,5 @@
 ---
 title: Journal Reviewer
-organization: TMLR, TNNLS, IJCV
+organization: TMLR, TNNLS, Neurocomputing, IJCV
 weight: 10
 ---

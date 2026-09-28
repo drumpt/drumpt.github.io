@@ -79,22 +79,29 @@ button:focus-visible,
     border-radius: 4px;
 }
 
-/* "Skip to content" for keyboard users, visible only when focused */
+/* "Skip to content" for keyboard users. Clipped to nothing until focused
+   (not merely moved off-screen, which elastic overscroll can reveal). */
 .skip-link {
     position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    z-index: 2000;
-    padding: 0.5rem 0.9rem;
-    border-radius: 999px;
-    background: var(--accent);
-    color: var(--on-accent) !important;
-    font-weight: 600;
-    transform: translateY(-150%);
-    transition: transform 0.2s ease;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 
     &:focus {
-        transform: none;
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+        z-index: 2000;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 0.9rem;
+        overflow: visible;
+        clip-path: none;
+        border-radius: 999px;
+        background: var(--accent);
+        color: var(--on-accent) !important;
+        font-weight: 600;
     }
 }
-
