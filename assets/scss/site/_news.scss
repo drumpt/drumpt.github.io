@@ -1,0 +1,142 @@
+/* =========================================================================
+   News: date column, kind badges, hairlines between items
+   ========================================================================= */
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    @extend %hover-card;
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    column-gap: 1rem;
+    margin: 0 -0.75rem;
+    padding: var(--row-pad) 0.75rem;
+    border-top: 1px solid var(--line);
+
+    &:first-child {
+        border-top-color: transparent;
+    }
+
+    /* Hide the hairlines around a lifted row */
+    @media (hover: hover) {
+        &:hover,
+        &:hover + .news-item {
+            border-top-color: transparent;
+        }
+    }
+
+    .news-date {
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        color: var(--ink);
+    }
+
+    @media (max-width: 575px) {
+        grid-template-columns: 1fr;
+
+        .news-date {
+            font-size: 0.8rem;
+            opacity: 0.75;
+        }
+    }
+}
+
+.news-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    margin-left: 0.45rem;
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    vertical-align: 1px;
+    white-space: nowrap;
+    background: var(--badge-bg);
+    color: var(--badge-fg);
+
+    i {
+        font-size: 0.9em;
+    }
+}
+
+.news-badge--paper     { --badge-bg: rgba(58, 123, 213, 0.12); --badge-fg: #2f63ad; }
+.news-badge--award     { --badge-bg: rgba(208, 138, 43, 0.15); --badge-fg: #8f5a10; }
+.news-badge--milestone { --badge-bg: rgba(208, 86, 122, 0.13); --badge-fg: #b03f63; }
+.news-badge--travel    { --badge-bg: rgba(31, 158, 158, 0.13); --badge-fg: #136f6e; }
+
+.dark {
+    .news-badge--paper     { --badge-fg: #8db6f0; }
+    .news-badge--award     { --badge-fg: #f0bf73; }
+    .news-badge--milestone { --badge-fg: #f09ab3; }
+    .news-badge--travel    { --badge-fg: #7fd6d6; }
+}
+
+/* Show more / less */
+.list-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+
+    &[hidden] {
+        display: none;
+    }
+}
+
+.list-more-btn {
+    padding: 0.3rem 0.85rem;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: var(--accent);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.35s var(--spring);
+
+    &:hover {
+        background: var(--accent-soft);
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &.is-less {
+        color: var(--accent-2-text);
+    }
+}
+
+.list-more-sep {
+    width: 2px;
+    height: 1rem;
+    border-radius: 2px;
+    background: var(--line);
+    transform: rotate(20deg);
+}
+
+/* Recent news gets a small pulsing dot after the date */
+.news-item.is-new .news-date::after {
+    content: "";
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    background: var(--accent);
+    vertical-align: 0.15em;
+    animation: new-pulse 2.4s ease-out infinite;
+}
+
+@keyframes new-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(44, 105, 65, 0.45); }
+    70%  { box-shadow: 0 0 0 0.45rem rgba(44, 105, 65, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(44, 105, 65, 0); }
+}

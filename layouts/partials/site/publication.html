@@ -1,0 +1,28 @@
+{{- /* One publication row: figure left (blank when there is none, so the text
+       stays aligned), details and link pills right. */ -}}
+{{- $figure := partial "functions/get_featured_image.html" . -}}
+<article class="pub-row publication-item">
+  <div class="pub-media image-container{{ if not $figure }} is-empty{{ end }}"{{ if not $figure }} aria-hidden="true"{{ end }}>
+    {{ with $figure }}
+    {{- /* Source figures are often several thousand px wide. The row shows
+           ~260px (full width on phones), so serve 640/1280px WebP, and a
+           1800px version for the lightbox. */ -}}
+    {{- $sm := .Resize "640x webp q82" -}}
+    {{- $lg := .Resize "1280x webp q82" -}}
+    {{- $full := . -}}{{ if gt .Width 1800 }}{{ $full = .Resize "1800x webp q85" }}{{ end -}}
+    <img alt="{{ $.Title | plainify }}" decoding="async" loading="lazy"
+      src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 640w, {{ $lg.RelPermalink }} 1280w"
+      sizes="(max-width: 767px) 92vw, 260px" width="{{ $sm.Width }}" height="{{ $sm.Height }}"
+      data-full="{{ $full.RelPermalink }}">
+    {{ end }}
+  </div>
+  <div class="pub-body">
+    <h3 class="pub-title">{{ .Title }}</h3>
+    <p class="pub-authors">{{ partial "site/authors" . }}</p>
+    <p class="pub-venue">
+      {{- .Params.publication | markdownify -}}
+      {{- with .Params.note }}, <strong>{{ . }}</strong>{{ end -}}
+    </p>
+    {{ partial "site/pub_links" . }}
+  </div>
+</article>

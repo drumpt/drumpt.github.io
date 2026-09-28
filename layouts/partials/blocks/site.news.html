@@ -1,0 +1,29 @@
+{{- /* News, newest first. The first five show; the rest are revealed five at a
+       time by site.js (without JS everything shows). */ -}}
+{{- $block := .wcBlock -}}
+{{- $items := sort (where site.RegularPages "Section" $block.content.folder) "Date" "desc" -}}
+{{- $icons := dict "paper" "file-alt" "award" "trophy" "milestone" "flag" "travel" "plane" -}}
+
+{{ partial "site/section_title" $block.content.title }}
+
+<div class="news-list">
+  {{ range $items }}
+  <div class="news-item" data-date="{{ .Date.Format "2006-01-02" }}">
+    <span class="news-date">{{ .Date.Format "Jan 2006" }}</span>
+    <div class="news-body">
+      <span class="news-text">{{ .Title }}</span>
+      {{- with .Params.kind }}
+      <span class="news-badge news-badge--{{ . }}"><i class="fas fa-{{ index $icons . | default "circle" }}" aria-hidden="true"></i>{{ . }}</span>
+      {{- end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ if gt (len $items) 5 }}
+<div class="list-more" hidden>
+  <button type="button" class="list-more-btn" data-news="more">Show more</button>
+  <span class="list-more-sep" aria-hidden="true"></span>
+  <button type="button" class="list-more-btn is-less" data-news="less">Show less</button>
+</div>
+{{ end }}

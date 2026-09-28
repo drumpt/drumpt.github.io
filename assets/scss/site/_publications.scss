@@ -1,0 +1,269 @@
+/* =========================================================================
+   Publications
+   ========================================================================= */
+
+/* Selected / All: segmented control with a sliding thumb */
+.pub-filter {
+    position: relative;
+    display: inline-flex;
+    padding: 2px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+
+    &[hidden] {
+        display: none;
+    }
+
+    button {
+        position: relative;
+        z-index: 1;
+        padding: 0.15rem 0.85rem;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1.5;
+        cursor: pointer;
+        transition: color 0.25s ease;
+
+        &.is-active {
+            color: var(--on-accent);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    }
+}
+
+.pub-filter-thumb {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    transition: transform 0.45s var(--spring), width 0.45s var(--spring);
+}
+
+/* List of rows: figure left, details right */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pub-group-title {
+    margin: 1rem 0 -0.25rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.pub-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    @extend %hover-card;
+    margin: -0.75rem;
+    padding: 0.75rem;
+
+    @media (hover: hover) {
+        &:hover .pub-media img {
+            transform: scale(1.04);
+        }
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+.pub-media {
+    position: relative;
+    flex: 0 0 260px;
+    overflow: hidden;
+    aspect-ratio: unquote("16 / 9");
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+
+    @media (max-width: 767px) {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 6px;
+        object-fit: contain;
+        cursor: zoom-in;
+        transition: transform 0.45s var(--spring), opacity 0.45s ease, filter 0.45s ease;
+
+        &:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: -4px;
+        }
+    }
+
+    /* Loading: shimmer behind, figure fades in sharp once decoded */
+    &.is-loading {
+        background: linear-gradient(100deg, #eef1ef 30%, #f8faf9 50%, #eef1ef 70%);
+        background-size: 200% 100%;
+        animation: shimmer 1.2s linear infinite;
+
+        img {
+            opacity: 0;
+            filter: blur(8px);
+        }
+    }
+}
+
+@keyframes shimmer {
+    from { background-position: 100% 0; }
+    to   { background-position: -100% 0; }
+}
+
+/* Figure-less papers: the column stays, blank */
+.pub-media.is-empty {
+    border-color: transparent;
+    background: transparent;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.pub-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+}
+
+.pub-title {
+    margin: 0;
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.pub-authors {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.pub-venue {
+    margin: 0;
+    font-size: 0.92rem;
+}
+
+/* Author marks (* equal contribution, † equal advising) and their legend */
+.author-mark {
+    margin-left: 0.05em;
+    color: var(--muted);
+    font-size: 0.75em;
+    font-weight: 600;
+}
+
+.pub-legend {
+    margin: -0.5rem 0 1rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+/* The page owner's name stands out in author lists */
+.author-highlighted {
+    font-weight: 700;
+    color: var(--ink);
+}
+
+/* Link pills */
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-top: 0.4rem;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    background: var(--surface-2);
+    color: var(--muted) !important;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.35s var(--spring);
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-2px);
+        background: var(--accent-soft);
+        color: var(--accent) !important;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Lightbox */
+.lightbox-open,
+.lightbox-open body {
+    overflow: hidden;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: rgba(10, 14, 12, 0.78);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    cursor: zoom-out;
+    outline: none;
+}
+
+.lightbox-img {
+    max-width: unquote("min(92vw, 1400px)");
+    max-height: 82vh;
+    padding: 8px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    transform-origin: 0 0;
+}
+
+.lightbox-caption {
+    max-width: unquote("min(92vw, 900px)");
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}

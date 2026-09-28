@@ -1,0 +1,77 @@
+/* =========================================================================
+   Timeline (Education, Employment): logo tiles
+   ========================================================================= */
+
+.org-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--row-gap);
+
+    /* Logo tile on the left, organisation and roles beside it */
+    .org-row {
+        @extend %hover-card;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 -0.75rem;
+        padding: var(--row-pad) 0.75rem;
+
+        @media (hover: hover) {
+            &:hover .org-logo img {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+
+.org-body {
+    flex: 1;
+    min-width: 0;
+}
+
+/* One role per line: title left, period right */
+.org-role {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+}
+
+/* Every organisation logo sits in the same rounded white tile, whatever its
+   own shape, so the lists line up (and read the same in dark mode). */
+.org-logo {
+    display: flex;
+    flex: 0 0 56px;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-right: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: none !important;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 7px !important;
+        border: none !important;
+        box-shadow: none !important;
+        object-fit: contain;
+        transition: transform 0.4s var(--spring);
+    }
+}
+
+.dark .org-logo {
+    border-color: transparent;
+}

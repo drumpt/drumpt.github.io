@@ -1,0 +1,28 @@
+{{- /* Structured data (overrides wowchemy-seo). The whole site is one page, so
+       the home page describes the website and the person behind it; sameAs
+       links let search engines tie the Scholar, GitHub, LinkedIn and X
+       profiles to the same person. */ -}}
+{{- $page := .page -}}
+{{- if $page.IsHome -}}
+{{- with site.GetPage "/authors/admin" -}}
+{{- $avatar := (.Resources.ByType "image").GetMatch "*avatar*" -}}
+{{- $same := slice -}}
+{{- range .Params.social }}{{ if hasPrefix .link "http" }}{{ $same = $same | append .link }}{{ end }}{{ end -}}
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" site.BaseURL)
+  "name" .Title
+  "givenName" .Params.first_name
+  "familyName" .Params.last_name
+  "url" site.BaseURL
+  "jobTitle" .Params.role
+  "description" site.Params.marketing.seo.description
+  "sameAs" $same
+-}}
+{{- with $avatar }}{{ $person = merge $person (dict "image" (.Resize "600x").Permalink) }}{{ end -}}
+{{- with index .Params.organizations 0 }}{{ $person = merge $person (dict "affiliation" (dict "@type" "CollegeOrUniversity" "name" .name "url" .url)) }}{{ end -}}
+{{- $person = merge $person (dict "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "Korea Advanced Institute of Science and Technology (KAIST)" "url" "https://kaist.ac.kr/en/")) -}}
+{{- $website := dict "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) "url" site.BaseURL "name" site.Title "about" (dict "@id" (printf "%s#person" site.BaseURL)) -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice $website $person) | jsonify | safeJS }}</script>
+{{- end -}}
+{{- end -}}

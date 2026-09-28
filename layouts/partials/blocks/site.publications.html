@@ -1,0 +1,29 @@
+{{- /* Publications grouped as in the CV. "Selected" (featured: true) shows by
+       default; site.js toggles "All" and reveals the group titles. */ -}}
+{{- $block := .wcBlock -}}
+{{- $pubs := where site.RegularPages "Section" $block.content.folder -}}
+{{- $groups := slice "Manuscripts" "Journal Publications" "Conference Publications" "Workshop Papers" "Other" -}}
+
+{{- $filter := `<div class="pub-filter" role="group" aria-label="Publication filter" hidden>
+    <span class="pub-filter-thumb" aria-hidden="true"></span>
+    <button type="button" class="is-active" data-pub-filter="selected" aria-pressed="true">Selected</button>
+    <button type="button" data-pub-filter="all" aria-pressed="false">All</button>
+  </div>` -}}
+{{ partial "site/section_title" (dict "title" $block.content.title "aside" ($filter | safeHTML)) }}
+
+<p class="pub-legend"><span aria-hidden="true">*</span> Equal contribution&ensp;<span aria-hidden="true">†</span> Equal advising</p>
+
+<div class="pub-list">
+  {{ range $group := $groups }}
+  {{ $members := slice }}
+  {{ range $pubs }}{{ if eq (partial "site/pub_group" .) $group }}{{ $members = $members | append . }}{{ end }}{{ end }}
+  {{ with $members }}
+  <h3 class="pub-group-title" data-group="{{ $group }}">{{ $group }}</h3>
+  {{ range sort . "Date" "desc" }}
+  <div class="pub-entry{{ if .Params.featured }} is-selected{{ end }}" data-group="{{ $group }}">
+    {{ partial "site/publication" . }}
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>

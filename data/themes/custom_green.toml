@@ -20,12 +20,12 @@ name = "Forest"
   primary = "#7cc493"
 
   # Menu
-  menu_primary = "#1b2a21"
+  menu_primary = "#1c1b18"
   menu_text = "rgba(255, 255, 255, 0.72)"
   menu_text_active = "#ffffff"
   menu_title = "#ffffff"
 
   # Background and home sections
-  background = "#16191a"
-  home_section_odd = "#16191a"
-  home_section_even = "#16191a"
+  background = "#181715"
+  home_section_odd = "#181715"
+  home_section_even = "#181715"

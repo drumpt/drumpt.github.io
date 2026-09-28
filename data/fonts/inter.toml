@@ -1,9 +1,9 @@
 # Font style metadata
 name = "Inter"
 
-google_fonts = "family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500"
+google_fonts = "family=Inter:wght@400;500;600;700;800"
 
 heading_font = "Inter"
 body_font = "Inter"
 nav_font = "Inter"
-mono_font = "JetBrains Mono"
+mono_font = "ui-monospace"

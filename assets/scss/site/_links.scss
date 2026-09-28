@@ -1,0 +1,20 @@
+/* =========================================================================
+   Text links: an underline that draws in from the left
+   ========================================================================= */
+
+#about .article-style a,
+.org-body a,
+.list-item a,
+.news-item a {
+    text-decoration: none !important;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1.5px;
+    transition: background-size 0.35s ease-out, color 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+        background-size: 100% 1.5px;
+    }
+}

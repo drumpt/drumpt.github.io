@@ -1,112 +1,44 @@
-# SITE SETUP
-# Guide: https://wowchemy.com/docs/getting-started/
-# Documentation: https://wowchemy.com/docs/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Wowchemy site parameters. Only settings that differ from the theme defaults.
 
-# Appearance
 appearance:
-  theme_day: custom_green
+  theme_day: custom_green    # data/themes/custom_green.toml (light + dark)
   theme_night: custom_green
-  font: inter
+  font: inter                # data/fonts/inter.toml
   font_size: s
-  mode:
-  color:
 
-# SEO
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: 'University of Wisconsin-Madison'
-    description: 'Changhun Kim is a Ph.D. student in Computer Science at the University of Wisconsin-Madison, working on the algorithmic and theoretical foundations of deep generative models.'
-    twitter: 'hooni_ne'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''  
-  verification:
-    google: ''
-    baidu: ''
+    org_name: University of Wisconsin–Madison
+    description: Changhun Kim is a Ph.D. student in Computer Science at the University of Wisconsin–Madison, working on the algorithmic and theoretical foundations of deep generative models.
+    twitter: hooni_ne
 
-# Site header
 header:
   navbar:
     enable: true
     align: l
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: true     # rendered as a single toggle (components/headers/navbar.html)
     show_search: false
     highlight_active_link: true
 
-# Site footer
 footer:
-  block: minimal
-  copyright:
-    # notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: false
-      allow_derivatives: false
-      share_alike: false
-      allow_commercial: false
+  block: minimal             # the footer itself is emptied in site_footer.html
 
-
-# Localization
 locale:
-  date_format: 'Mar. 20, 1998'
-  time_format: '3:04 PM'
+  date_format: Jan 2, 2006
+  time_format: 3:04 PM
   address_format: en-us
 
-# Site features
 features:
-  syntax_highlighter:
-    theme_light: github-light
-    theme_dark: dracula
   math:
     enable: false
   privacy_pack:
     enable: false
-  repository:
-    url: 'https://github.com/drumpt/drumpt.github.io'
-    content_dir: content
-    branch: main
-  avatar:
-    gravatar: false
-    shape: circle
-  comment:
-    provider: ''
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
-    giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
   search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
-  map:
-    provider: ''
-    api_key: ''
-    zoom: 15
+    provider: ''             # no search: skips Fuse.js, mark.js and index.json
 
-# Extensions
 extensions:
-  cms:
-    branch: main
-    local_backend: false
   academicons:
-    enable: true
-
-# Security
-security:
-  # Allow frame for embedding speaker notes in slides
-  allow_frame: true
+    enable: true             # Google Scholar and CV icons

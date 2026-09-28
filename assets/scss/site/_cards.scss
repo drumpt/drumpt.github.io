@@ -1,0 +1,43 @@
+/* =========================================================================
+   Hover card: every row (papers, news, education, employment, awards, ...)
+   lifts the same way. Padding is pulled back by an equal negative margin so
+   content stays on the page grid.
+   ========================================================================= */
+
+%hover-card {
+    position: relative;
+    border-radius: 12px;
+    transition: transform 0.4s var(--spring), box-shadow 0.35s ease, background-color 0.35s ease;
+
+    @media (hover: hover) {
+        &:hover {
+            z-index: 1;
+            transform: translateY(-3px);
+            background-color: var(--surface);
+            box-shadow: var(--shadow);
+        }
+    }
+}
+
+/* Touch screens have no hover, so a press gives the same lift. */
+@media (hover: none) {
+    .pub-row:active,
+    .news-item:active,
+    .list-item:active,
+    .org-row:active {
+        z-index: 1;
+        transform: translateY(-3px) scale(0.99);
+        background-color: var(--surface);
+        box-shadow: var(--shadow);
+        transition-duration: 0.12s;
+    }
+}
+
+a,
+button,
+.pub-row,
+.news-item,
+.list-item,
+.org-row {
+    -webkit-tap-highlight-color: transparent;
+}

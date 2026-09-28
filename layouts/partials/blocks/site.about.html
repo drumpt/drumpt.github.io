@@ -1,0 +1,44 @@
+{{- /* Masthead: photo card with social icons beneath; name, tagline and bio
+       alongside. Children carrying --i enter in sequence (see _motion.scss). */ -}}
+{{- $block := .wcBlock -}}
+{{- $person_page := site.GetPage (printf "/authors/%s" $block.content.username) -}}
+{{- if not $person_page }}{{ errorf "site.about: no author page for %q" $block.content.username }}{{ end -}}
+{{- $person := $person_page.Params -}}
+{{- $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" -}}
+{{- $labels := dict "envelope" "Email" "google-scholar" "Google Scholar" "github" "GitHub" "linkedin" "LinkedIn" "x" "X (Twitter)" "cv" "CV" -}}
+
+<div class="row masthead intro-seq">
+  <div class="col-12 col-sm-5 col-md-4">
+    {{ with $avatar }}
+    {{ $img := .Resize "600x" }}
+    <div class="prof-card" style="--i: 0">
+      <img class="avatar" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $person_page.Title }}">
+    </div>
+    {{ end }}
+
+    <ul class="network-icon" style="--i: 1">
+      {{ range $person.social }}
+      {{ $pack := .icon_pack | default "fas" }}
+      {{ $prefix := cond (in (slice "fab" "fas" "far" "fal") $pack) "fa" $pack }}
+      {{ $label := index $labels .icon | default (.icon | humanize) }}
+      {{ $external := in (slice "http" "https") (urls.Parse .link).Scheme }}
+      {{ $href := cond (eq (urls.Parse .link).Scheme "") (.link | relLangURL) .link }}
+      <li>
+        <a href="{{ $href | safeURL }}"{{ if $external }} target="_blank" rel="noopener"{{ end }} aria-label="{{ $label }}" title="{{ $label }}" data-icon="{{ .icon }}">
+          <i class="{{ $pack }} {{ $prefix }}-{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="col-12 col-sm-7 col-md-8">
+    <h1 class="masthead-name" style="--i: 1">{{ $person_page.Title }}</h1>
+    <p class="masthead-tagline" style="--i: 2">
+      {{- $person.role }}{{ range first 1 $person.organizations }} @ {{ .name }}{{ end -}}
+    </p>
+    <div class="article-style masthead-bio" style="--i: 3">
+      {{ $person_page.Content }}
+    </div>
+  </div>
+</div>

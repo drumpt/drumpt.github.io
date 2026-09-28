@@ -1,9 +1,11 @@
 ---
 title: Employment
-cms_exclude: true
-type: employment
-
+# Shown as a block on the home page; no pages of its own.
 _build:
-  render: false
-  list: true
+  render: never
+  list: always
+cascade:
+  _build:
+    render: never
+    list: always
 ---

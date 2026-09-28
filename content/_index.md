@@ -1,86 +1,44 @@
 ---
-title:
-date: 2022-10-24
 type: landing
-
+seo:
+  title: Changhun Kim · Ph.D. Student at UW–Madison
+# Home page blocks, in order. Each `site.*` block lives in
+# layouts/partials/blocks/ and reads its entries from content/<folder>/.
 sections:
-    - block: github.drumpt.about
-      id: about
-      content:
-          title:
-          username: admin
+  - block: site.about
+    id: about
+    content: {username: admin}
 
-    - block: github.drumpt.news
-      id: news
-      content:
-          title: News
-          filters:
-              folders:
-                  - news
-      design:
-          columns: "1"
-          view: news
+  - block: site.news
+    id: news
+    content: {title: News, folder: news}
 
-    - block: github.drumpt.experience
-      id: education
-      content:
-          title: Education
-          date_format: Jan 2006
-          filters:
-              folders:
-                  - education
+  - block: site.timeline
+    id: education
+    content: {title: Education, folder: education}
 
-    - block: github.drumpt.experience
-      id: experience
-      content:
-          title: Employment
-          date_format: Jan 2006
-          filters:
-              folders:
-                  - employment
+  - block: site.timeline
+    id: experience
+    content: {title: Employment, folder: employment}
 
-    - block: github.drumpt.news
-      id: publications
-      content:
-          title: Publications
-          filters:
-              folders:
-                  - publications
-      design:
-          columns: "1"
-          view: publication
+  - block: site.publications
+    id: publications
+    content: {title: Publications, folder: publications}
 
-    - block: github.drumpt.others
-      id: awards
-      content:
-          title: Awards and Honors
-          filters:
-              folders:
-                  - awards
-      design:
-          compact: true
+  - block: site.list
+    id: awards
+    content: {title: Awards and Honors, folder: awards}
 
-    - block: github.drumpt.others
-      id: teaching
-      content:
-          title: Teaching Experience
-          filters:
-              folders:
-                  - teaching
+  - block: site.list
+    id: teaching
+    content: {title: Teaching Experience, folder: teaching}
 
-    - block: github.drumpt.others
-      id: service
-      content:
-        title: Academic Service
-        filters:
-          folders:
-            - service
+  - block: site.list
+    id: service
+    content: {title: Academic Service, folder: service}
 
-    - block: github.drumpt.others
-      id: talks
-      content:
-        title: Invited Talks
-        filters:
-          folders:
-            - talks
+  - block: site.list
+    id: talks
+    content: {title: Invited Talks, folder: talks}
+    design: {split: true}
 ---

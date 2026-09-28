@@ -1,0 +1,23 @@
+{{- /* Link pills for a publication. A value naming a page resource links to
+       that file; anything else is used as a URL. */ -}}
+{{- $page := . -}}
+{{- $links := slice
+  (dict "param" "url_preprint" "label" "Paper" "icon" "fas fa-file-alt")
+  (dict "param" "url_code" "label" "Code" "icon" "fas fa-code")
+  (dict "param" "url_dataset" "label" "Dataset" "icon" "fas fa-database")
+  (dict "param" "url_project" "label" "Project" "icon" "fas fa-link")
+  (dict "param" "url_poster" "label" "Poster" "icon" "fas fa-image")
+  (dict "param" "url_slides" "label" "Slides" "icon" "fas fa-chalkboard")
+  (dict "param" "url_video" "label" "Video" "icon" "fab fa-youtube")
+  (dict "param" "url_source" "label" "Source" "icon" "fas fa-file-code")
+-}}
+{{- $pills := slice -}}
+{{- range $l := $links }}{{ with index $page.Params $l.param }}{{ $pills = $pills | append (merge $l (dict "value" .)) }}{{ end }}{{ end -}}
+{{- with $pills }}
+<div class="pub-links">
+  {{- range . }}
+  {{- $href := .value | relURL }}{{ with $page.Resources.GetMatch .value }}{{ $href = .RelPermalink }}{{ end }}
+  <a class="pub-link" href="{{ $href }}" target="_blank" rel="noopener"><i class="{{ .icon }}" aria-hidden="true"></i>{{ .label }}</a>
+  {{- end }}
+</div>
+{{- end }}

@@ -1,0 +1,46 @@
+/* =========================================================================
+   Lists (awards, teaching, service, talks): one line per entry, CV style
+   ========================================================================= */
+
+.entry-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--row-gap);
+}
+
+.list-item {
+    @extend %hover-card;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    margin: 0 -0.75rem;
+    padding: var(--row-pad) 0.75rem;
+
+    /* Title wraps first, so the period stays right until the row is too narrow */
+    .entry-main {
+        flex: 1 1 18rem;
+        min-width: 0;
+    }
+}
+
+/* Split entries: title on its own line, organization and period below */
+.list-item.is-split {
+    display: block;
+
+    .entry-sub {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        column-gap: 1.5rem;
+    }
+}
+
+/* Dates on the right, in lists and timeline roles alike */
+.period {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+}

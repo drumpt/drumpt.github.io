@@ -1,9 +1,11 @@
 ---
 title: Invited Talks
-cms_exclude: true
-
+# Shown as a block on the home page; no pages of its own.
+_build:
+  render: never
+  list: always
 cascade:
   _build:
-    list: true
-    render: false
+    render: never
+    list: always
 ---

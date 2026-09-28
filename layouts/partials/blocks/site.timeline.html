@@ -1,0 +1,33 @@
+{{- /* Organisations with their roles (Education, Employment). Each entry:
+       company, company_logo (assets/media/icons/brands/<name>.png),
+       company_url, location, items: [{title, date_start, date_end}]. */ -}}
+{{- $block := .wcBlock -}}
+{{- $format := $block.content.date_format | default "Jan 2006" -}}
+{{- $entries := sort (where site.RegularPages "Section" $block.content.folder) ".Params.weight" -}}
+
+{{ partial "site/section_title" $block.content.title }}
+
+<div class="org-list">
+  {{ range $entry := $entries }}
+  {{ $logo := resources.Get (printf "media/icons/brands/%s.png" .Params.company_logo) }}
+  {{ if and .Params.company_logo (not $logo) }}{{ errorf "site.timeline: logo not found for %q" .Params.company_logo }}{{ end }}
+  <div class="org-row">
+    <div class="org-logo">
+      {{ with $logo }}
+      {{ with $entry.Params.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+      <img src="{{ .RelPermalink }}" width="56" height="56" alt="{{ $entry.Params.company | plainify }}" loading="lazy">
+      {{ with $entry.Params.company_url }}</a>{{ end }}
+      {{ end }}
+    </div>
+    <div class="org-body">
+      <strong>{{ with .Params.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .Params.company | markdownify }}{{ with .Params.company_url }}</a>{{ end }}</strong>, {{ .Params.location | markdownify }}
+      {{ range .Params.items }}
+      <div class="org-role">
+        <strong>{{ .title | markdownify }}</strong>
+        <span class="period">{{ (time .date_start).Format $format }} – {{ with .date_end }}{{ (time .).Format $format }}{{ else }}Present{{ end }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>

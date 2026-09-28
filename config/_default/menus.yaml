@@ -1,44 +1,12 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+# Navbar links. Section links point at block ids on the home page.
 
 main:
-  - name: Home
-    url: '#about'
-    weight: 1
-  - name: News
-    url: '#news'
-    weight: 2
-  - name: Education
-    url: '#education'
-    weight: 3
-  - name: Employment
-    url: '#experience'
-    weight: 3.5
-  - name: Publications
-    url: '#publications'
-    weight: 4
-  - name: Awards
-    url: '#awards'
-    weight: 6
-  - name: Teaching
-    url: '#teaching'
-    weight: 7
-  - name: Service
-    url: '#service'
-    weight: 8
-  - name: Talks
-    url: '#talks'
-    weight: 9
-  # - name: Projects
-  #   url: '#projects'
-  #   weight: 9
-  # - name: Blog
-  #   url: 'blog'
-  #   weight: 11
-  - name: CV
-    url: uploads/CV_ChanghunKim.pdf
-    weight: 12
+  - {name: News, url: '#news', weight: 2}
+  - {name: Education, url: '#education', weight: 3}
+  - {name: Employment, url: '#experience', weight: 4}
+  - {name: Publications, url: '#publications', weight: 5}
+  - {name: Awards, url: '#awards', weight: 6}
+  - {name: Teaching, url: '#teaching', weight: 7}
+  - {name: Service, url: '#service', weight: 8}
+  - {name: Talks, url: '#talks', weight: 9}
+  - {name: CV, url: uploads/CV_ChanghunKim.pdf, weight: 10}

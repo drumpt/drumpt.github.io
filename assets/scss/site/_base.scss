@@ -1,0 +1,100 @@
+/* =========================================================================
+   Base
+   ========================================================================= */
+
+/* The theme shrinks the root to 77% under 928px wide, which made every
+   rem-based size tiny on phones. Use steady, readable sizes instead. */
+html {
+    font-size: 16px;
+
+    @media screen and (min-width: 58em) {
+        font-size: 17px;
+    }
+}
+
+body {
+    letter-spacing: -0.003em;
+}
+
+/* The theme sets article text to 0.8rem */
+.article-style {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+}
+
+::selection {
+    background: rgba(44, 105, 65, 0.18);
+}
+
+.dark ::selection {
+    background: rgba(124, 196, 147, 0.28);
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+/* Narrower page with generous margins, navbar aligned to it */
+.home-section .container,
+#navbar-main .container-xl {
+    max-width: var(--page-width);
+}
+
+.home-section {
+    padding: 44px 0;
+}
+
+.home-section:nth-of-type(even) {
+    background-color: transparent;
+}
+
+.home-section:first-of-type {
+    padding-top: 0;
+}
+
+/* No footer, so give the last section room to breathe. */
+.home-section:last-of-type {
+    padding-bottom: 5rem;
+}
+
+/* Venue highlights (Oral, Spotlight, awards) and the bio call-out */
+.highlight {
+    color: var(--accent-2-text);
+    font-weight: 700;
+}
+
+/* Keyboard focus: a clear accent ring (mouse clicks do not show it) */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* "Skip to content" for keyboard users, visible only when focused */
+.skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 2000;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent) !important;
+    font-weight: 600;
+    transform: translateY(-150%);
+    transition: transform 0.2s ease;
+
+    &:focus {
+        transform: none;
+    }
+}
+

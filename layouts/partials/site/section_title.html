@@ -1,0 +1,15 @@
+{{- /* Section heading with the accent bar. Pass a string, or a dict with
+       "title" and "aside" (HTML placed beside the title, e.g. a toggle). */ -}}
+{{- $title := . -}}
+{{- $aside := "" -}}
+{{- if reflect.IsMap . }}{{ $title = .title }}{{ $aside = .aside }}{{ end -}}
+{{- with $title -}}
+{{- if $aside }}
+<div class="section-heading-row">
+  <h2 class="section-subheading">{{ . | markdownify }}</h2>
+  {{ $aside }}
+</div>
+{{- else }}
+<h2 class="section-subheading">{{ . | markdownify }}</h2>
+{{- end }}
+{{- end -}}

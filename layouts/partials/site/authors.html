@@ -1,0 +1,12 @@
+{{- /* Author list for a publication. Author notes become CV-style marks
+       (* equal contribution, † equal advising; see the legend by the
+       Publications title) instead of hover-only info icons. */ -}}
+{{- $page := . -}}
+{{- $marks := dict "Equal contribution" "*" "Equal advising" "†" -}}
+{{- range $i, $author := $page.GetTerms "authors" -}}
+  {{- if gt $i 0 }}, {{ end -}}
+  <span{{ if $author.Params.highlight_name }} class="author-highlighted"{{ end }}>{{ $author.LinkTitle }}</span>
+  {{- with index ($page.Params.author_notes | default slice) $i -}}
+    <sup class="author-mark" title="{{ . }}"><span aria-hidden="true">{{ index $marks . | default "‡" }}</span><span class="sr-only"> ({{ lower . }})</span></sup>
+  {{- end -}}
+{{- end -}}

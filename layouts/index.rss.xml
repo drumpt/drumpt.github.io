@@ -1,0 +1,30 @@
+{{- /* RSS feed of the News section (overrides the theme's home feed, which
+       listed other sections and linked to pages that are not rendered).
+       Items link to the News block on the home page. */ -}}
+{{- $news := sort (where site.RegularPages "Section" "news") "Date" "desc" -}}
+{{- $rfc822 := "Mon, 02 Jan 2006 15:04:05 -0700" -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.Title }} · News</title>
+    <link>{{ site.BaseURL }}</link>
+    <description>News from {{ site.Title }}'s homepage.</description>
+    <language>{{ site.LanguageCode | default "en-us" }}</language>
+    {{- with $news }}
+    <lastBuildDate>{{ (index . 0).Date.Format $rfc822 | safeHTML }}</lastBuildDate>
+    {{- end }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml"/>
+    {{- range $news }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ site.BaseURL }}#news</link>
+      <guid isPermaLink="false">{{ site.BaseURL }}news/{{ path.Base .File.Dir }}</guid>
+      <pubDate>{{ .Date.Format $rfc822 | safeHTML }}</pubDate>
+      {{- with .Params.kind }}
+      <category>{{ . }}</category>
+      {{- end }}
+      <description>{{ .Title }}</description>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

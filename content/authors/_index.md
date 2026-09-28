@@ -1,7 +1,5 @@
 ---
-cms_exclude: true
-
-# To publish author profile pages, remove all of the `_build` and `cascade` settings below.
+# Author profiles feed the About block; no author pages are rendered.
 _build:
   render: never
 cascade:

@@ -1,0 +1,118 @@
+/* =========================================================================
+   Print: a clean, CV-like page. No navigation, buttons or motion; every
+   paper and news item shown (not just "Selected" / the first five); always
+   light, whatever the screen theme.
+   ========================================================================= */
+
+@media print {
+    @page {
+        margin: 1.6cm 1.4cm;
+    }
+
+    html {
+        font-size: 10pt;
+    }
+
+    :root,
+    .dark {
+        --ink: #000;
+        --text: #1a1a1a;
+        --muted: #4a4a4a;
+        --accent: #2c6941;
+        --accent-2-text: #8f5a10;
+        --surface: #fff;
+        --surface-2: #f3f3f3;
+        --line: #d8d8d8;
+    }
+
+    body,
+    .dark body {
+        background: #fff !important;
+        color: var(--text) !important;
+    }
+
+    /* Interface chrome */
+    header,
+    .skip-link,
+    .to-top,
+    .copy-toast,
+    .lightbox,
+    .pub-filter,
+    .list-more,
+    .masthead .network-icon {
+        display: none !important;
+    }
+
+    /* Show everything the screen version tucks away */
+    .news-item.is-hidden { display: grid !important; }
+    .pub-entry.is-hidden { display: flex !important; }
+    .pub-group-title.is-hidden { display: block !important; }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        box-shadow: none !important;
+    }
+
+    .js-reveal .home-section,
+    .js-reveal .intro-seq [style*="--i"] {
+        opacity: 1 !important;
+        transform: none !important;
+        translate: none !important;
+    }
+
+    .home-section {
+        padding: 0.8rem 0;
+    }
+
+    .home-section h2.section-subheading {
+        margin-top: 1rem;
+        break-after: avoid;
+    }
+
+    .news-item,
+    .pub-row,
+    .org-row,
+    .list-item {
+        break-inside: avoid;
+    }
+
+    /* Masthead: small photo beside the bio */
+    .masthead > [class*="col-"]:first-child {
+        flex: 0 0 22%;
+        max-width: 22%;
+    }
+
+    .masthead > [class*="col-"]:last-child {
+        flex: 0 0 78%;
+        max-width: 78%;
+    }
+
+    .masthead-tagline {
+        background: none;
+        color: var(--accent);
+    }
+
+    /* Figure left, details right, even though the page is phone-narrow */
+    .pub-row {
+        flex-direction: row !important;
+        gap: 1rem !important;
+    }
+
+    .pub-media {
+        flex: 0 0 150px !important;
+        width: 150px !important;
+    }
+
+    .pub-media.is-empty {
+        display: none;
+    }
+
+    /* Links read as text */
+    a {
+        color: inherit !important;
+        background-image: none !important;
+    }
+}

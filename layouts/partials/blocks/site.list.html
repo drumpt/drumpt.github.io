@@ -1,0 +1,31 @@
+{{- /* Simple lists (awards, teaching, service, talks), CV style: one line per
+       entry, "title, organization" on the left and the period on the right.
+       Entry fields: title, organization, period, weight. Entries without a
+       period read "title: organization" (e.g. "Journal Reviewer: TMLR").
+       design.split: title on its own line, organization and period below
+       (for long titles, e.g. talks). */ -}}
+{{- $block := .wcBlock -}}
+{{- $split := $block.design.split | default false -}}
+{{- $entries := sort (where site.RegularPages "Section" $block.content.folder) ".Params.weight" -}}
+
+{{ partial "site/section_title" $block.content.title }}
+
+<div class="entry-list">
+  {{ range $entry := $entries }}
+  {{ if $split }}
+  <div class="list-item is-split">
+    <strong class="entry-title">{{ .Title | markdownify }}</strong>
+    <div class="entry-sub">
+      <span class="entry-main">{{ .Params.organization | markdownify }}</span>
+      {{ with .Params.period }}<span class="period">{{ . | markdownify }}</span>{{ end }}
+    </div>
+  </div>
+  {{ else }}
+  <div class="list-item">
+    <span class="entry-main"><strong>{{ .Title | markdownify }}</strong>
+      {{- with .Params.organization }}{{ if $entry.Params.period }}, {{ else }}: {{ end }}{{ . | markdownify }}{{ end }}</span>
+    {{ with .Params.period }}<span class="period">{{ . | markdownify }}</span>{{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</div>

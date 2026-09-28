@@ -1,0 +1,146 @@
+/* =========================================================================
+   Masthead
+   ========================================================================= */
+
+/* Photo sits at the vertical middle of the name + bio column */
+.masthead {
+    align-items: center;
+    row-gap: 1.5rem;
+    padding-top: 1.75rem;
+}
+
+/* The photo keeps its own (portrait) proportions */
+.prof-card {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(20, 30, 25, 0.18);
+    transition: transform 0.55s var(--spring), box-shadow 0.4s ease;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            transform: translateY(-4px) rotate(-1.5deg) scale(1.02);
+            box-shadow: 0 22px 50px rgba(20, 30, 25, 0.24);
+        }
+    }
+
+    @media (max-width: 575px) {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+.masthead-name {
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+
+    @media (max-width: 575px) {
+        font-size: 1.9rem;
+    }
+}
+
+/* Social icons centred under the photo */
+.masthead .network-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 10px;
+        color: var(--muted);
+        font-size: 1.15rem;
+        text-decoration: none;
+        transition: transform 0.4s var(--spring), color 0.25s ease, background-color 0.25s ease;
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-3px) scale(1.12);
+            background: var(--surface-2);
+            color: var(--brand, var(--accent));
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(0.96);
+            transition-duration: 0.12s;
+        }
+    }
+
+    /* Each icon picks up its own brand colour on hover */
+    [data-icon="envelope"] { --brand: var(--accent); }
+    [data-icon="google-scholar"] { --brand: #4285f4; }
+    [data-icon="github"] { --brand: #24292f; }
+    [data-icon="linkedin"] { --brand: #0a66c2; }
+    [data-icon="x"] { --brand: #111; }
+    [data-icon="cv"] { --brand: var(--accent-2-text); }
+}
+
+.dark .masthead .network-icon {
+    [data-icon="github"],
+    [data-icon="x"] { --brand: #fff; }
+}
+
+.masthead-tagline {
+    width: fit-content;
+    margin: 0.35rem 0 1rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2-text));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.masthead-bio {
+    max-width: 42rem;
+    text-align: left;
+
+    a {
+        font-weight: 500;
+    }
+
+    strong {
+        font-weight: 700;
+        color: var(--ink);
+    }
+}
+
+/* Internship call-out */
+.bio-callout {
+    margin: 0.25rem 0 0;
+    padding: 0.7rem 0.95rem;
+    border-left: 3px solid var(--accent-2);
+    border-radius: 0 10px 10px 0;
+    background: var(--surface-2);
+    font-weight: 600;
+}
+
+/* Entrance: photo, name, tagline, bio, details rise in turn. Uses the
+   individual `translate` property so hover transforms still apply after. */
+.js-reveal .intro-seq [style*="--i"] {
+    opacity: 0;
+    animation: intro-rise 0.75s var(--ease-out) forwards;
+    animation-delay: calc(var(--i) * 110ms + 80ms);
+}
+
+@keyframes intro-rise {
+    from { opacity: 0; translate: 0 16px; }
+    to   { opacity: 1; translate: none; }
+}

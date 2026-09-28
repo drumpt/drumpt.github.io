@@ -1,0 +1,33 @@
+/* =========================================================================
+   Scroll reveal: sections fade up; the masthead has its own entrance.
+   ========================================================================= */
+
+.js-reveal .home-section {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js-reveal .home-section.is-revealed,
+.js-reveal #about.home-section {
+    opacity: 1;
+    transform: none;
+}
+
+.js-reveal .home-section h2.section-subheading::before {
+    transform: scaleX(0);
+}
+
+.js-reveal .home-section.is-revealed h2.section-subheading::before {
+    transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}

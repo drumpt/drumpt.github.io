@@ -1,92 +1,35 @@
 ---
-# Display name
 title: Changhun Kim
-
-# Full name (for SEO)
 first_name: Changhun
 last_name: Kim
-
-# Status emoji
-status:
-  icon:
-
-# Is this the primary user of the site?
 superuser: true
-
-# Role/position/tagline
-role: Ph.D. Student
-
-# Organizations/Affiliations to show in About widget
+role: CS Ph.D. Student
 organizations:
-  - name: University of Wisconsin–Madison
-    url: https://www.wisc.edu/
-
-# Short bio (displayed in user profile at end of posts)
-# bio: My research interests include distributed robotics, mobile computing and programmable matter.
-bio:
-
-# Interests to show in About widget
-interests:
-  - Diffusion Models
-  - Machine Learning Theory
-  - World (Action) Models
-  - Trustworthy Machine Learning
-
-contact:
-  - icon: fa-li fa-solid fa-location-pin
-    text: 330 N Orchard St, Madison, WI 53715, USA
-  - icon: fa-li fa-solid fa-phone
-    text: +1 608-440-5520
-  - icon: fa-li fa-solid fa-envelope
-    text: 'changhun.kim@cs.wisc.edu'
-
-# Social/Academic Networking
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
-
+- name: University of Wisconsin–Madison
+  url: https://www.wisc.edu/
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:changhun.kim@cs.wisc.edu'
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/drumpt
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/in/changhun-kim/
-  - icon: x
-    icon_pack: fab
-    link: https://twitter.com/hooni_ne
-  - icon: cv
-    icon_pack: ai
-    link: uploads/CV_ChanghunKim.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'changhun.kim@cs.wisc.edu'
-
-# Education to show in About widget
-education:
-  courses:
-    - course: Ph.D. in Computer Science
-      institution: University of Wisconsin–Madison
-      year: Aug 2026 – Present
-    - course: M.S. in Artificial Intelligence
-      institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: Feb 2024
-    - course: B.S. in Computer Science and Mathematics
-      institution: Korea Advanced Institute of Science and Technology (KAIST)
-      year: Feb 2022
-
-# Highlight the author in author lists? (true/false)
+- icon: envelope
+  icon_pack: fas
+  link: mailto:changhun.kim@cs.wisc.edu
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=mY7KEvAAAAAJ
+- icon: github
+  icon_pack: fab
+  link: https://github.com/drumpt
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/changhun-kim/
+- icon: x
+  icon_pack: fab
+  link: https://twitter.com/hooni_ne
+- icon: cv
+  icon_pack: ai
+  link: uploads/CV_ChanghunKim.pdf
 highlight_name: true
-
 ---
 
-I am a first-year Ph.D. student in [Computer Science](https://www.cs.wisc.edu/) at the [University of Wisconsin–Madison](https://www.wisc.edu/), advised by [Prof. Grigorios Chrysos](https://grigoris.ece.wisc.edu/). Before that, I was a researcher at [AITRICS](https://aitrics.com/en/) advised by [Prof. Eunho Yang](https://mli.kaist.ac.kr/people/), where I also worked with [Prof. Evan Shelhamer](https://imaginarynumber.net/) at [UBC](https://www.ubc.ca/) and [Prof. Juho Lee](https://juho-lee.github.io/) at [KAIST](https://kaist.ac.kr/en/). I received my M.S. in Artificial Intelligence, also under Prof. Eunho Yang, and my B.S. in Computer Science and Mathematics, both from [KAIST](https://kaist.ac.kr/en/).
+I am a **first-year Ph.D. student** in [Computer Science](https://www.cs.wisc.edu/) at the [University of Wisconsin–Madison](https://www.wisc.edu/), advised by [Prof. Grigorios Chrysos](https://grigoris.ece.wisc.edu/). Before that, I was a **researcher** at [AITRICS](https://aitrics.com/en/) advised by [Prof. Eunho Yang](https://mli.kaist.ac.kr/people/), where I also worked with [Prof. Evan Shelhamer](https://imaginarynumber.net/) at [UBC](https://www.ubc.ca/) and [Prof. Juho Lee](https://juho-lee.github.io/) at [KAIST](https://kaist.ac.kr/en/). I received my **M.S. in Artificial Intelligence**, also under Prof. Eunho Yang, and my **B.S. in Computer Science and Mathematics**, both from [KAIST](https://kaist.ac.kr/en/).
 
 My research focuses on the **algorithmic and theoretical foundations of deep generative models**. I am particularly interested in understanding **why diffusion models generalize and when they hallucinate**, and in turning these insights into **more principled algorithms** that exploit structured inductive biases. I am also excited about extending generative models to **world (action) models** for embodied agents, and more broadly about building **trustworthy machine learning** systems.
 

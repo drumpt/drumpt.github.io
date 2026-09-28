@@ -1,0 +1,10 @@
+{{- /* CV group for a publication. Workshop papers are typed as conference
+       papers, so they are told apart by the first line of the venue. */ -}}
+{{- $types := .Params.publication_types | default slice -}}
+{{- $venue := index (split (.Params.publication | default "") "<br>") 0 -}}
+{{- $group := "Other" -}}
+{{- if in $types "3" }}{{ $group = "Manuscripts" -}}
+{{- else if in $types "2" }}{{ $group = "Journal Publications" -}}
+{{- else if and (in $types "1") (in $venue "Workshop") }}{{ $group = "Workshop Papers" -}}
+{{- else if in $types "1" }}{{ $group = "Conference Publications" }}{{ end -}}
+{{- return $group -}}

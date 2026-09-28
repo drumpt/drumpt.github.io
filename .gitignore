@@ -1,14 +1,14 @@
-# IDEs
-.idea/
-
-# Hugo
-resources/
+# Hugo build output and caches
 public/
-jsconfig.json
-node_modules/
-go.sum
+resources/
 .hugo_build.lock
-**/.DS_Store
+go.sum
+assets/jsconfig.json
 
-# PNGs rendered from `featured*.pdf` by scripts/render-pdf-figures.sh
+# PNGs rendered from featured*.pdf by scripts/render-pdf-figures.sh
 **/*.pdf.png
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
