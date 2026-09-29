@@ -22,5 +22,6 @@ date: '2024-10-13T00:00:00Z'
 publication_types:
 - '3'
 publication: Manuscript, 2026
+url_preprint: https://arxiv.org/abs/2609.33276
 featured: true
 ---
