@@ -4,7 +4,6 @@
        site straight away. The HTTP status stays 404, so search engines drop
        the old URLs over time. */ -}}
 {{- $home := site.Home.RelPermalink -}}
-{{- $icon := (resources.Get "media/icon.png").Fill "64x64 Center" -}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Page not found · {{ site.Title }}</title>
-  <link rel="icon" type="image/png" href="{{ $icon.RelPermalink }}">
+  <link rel="icon" href="data:,">
   {{- /* Same typeface as the site (data/fonts/inter.toml) */}}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">

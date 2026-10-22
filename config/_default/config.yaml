@@ -19,7 +19,7 @@ taxonomies:
   author: authors
 
 outputs:
-  home: [HTML, RSS, WebAppManifest]
+  home: [HTML, RSS]       # no WebAppManifest: the site has no icon
   section: [HTML]
 
 imaging:
