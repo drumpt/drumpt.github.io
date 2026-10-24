@@ -182,10 +182,17 @@
     font-weight: 600;
 }
 
+/* Sits at the right end of the section heading row; on phones it takes its
+   own line, left-aligned under the title */
 .pub-legend {
-    margin: -0.5rem 0 1rem;
+    margin: 0 0 0 auto;
     color: var(--muted);
-    font-size: 0.8rem;
+    font-size: 0.92rem;   /* same as .pub-authors */
+
+    @media (max-width: 767px) {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
 }
 
 /* The page owner's name stands out in author lists */

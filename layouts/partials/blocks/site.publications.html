@@ -8,10 +8,9 @@
     <span class="pub-filter-thumb" aria-hidden="true"></span>
     <button type="button" class="is-active" data-pub-filter="selected" aria-pressed="true">Selected</button>
     <button type="button" data-pub-filter="all" aria-pressed="false">All</button>
-  </div>` -}}
+  </div>
+  <p class="pub-legend"><span aria-hidden="true">*</span> Equal contribution&ensp;<span aria-hidden="true">†</span> Equal advising</p>` -}}
 {{ partial "site/section_title" (dict "title" $block.content.title "aside" ($filter | safeHTML)) }}
-
-<p class="pub-legend"><span aria-hidden="true">*</span> Equal contribution&ensp;<span aria-hidden="true">†</span> Equal advising</p>
 
 <div class="pub-list">
   {{ range $group := $groups }}
