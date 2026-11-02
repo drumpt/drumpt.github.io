@@ -12,6 +12,7 @@ authors:
 - Hyeongwon Jang
 - admin
 - Haechan Kim
+- Jina Kim
 - Joowon Kim
 - Yoonjeon Kim
 - Kwanhyung Lee
