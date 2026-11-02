@@ -32,6 +32,10 @@ sections:
     content: {title: Teaching Experience, folder: teaching}
 
   - block: site.list
+    id: mentoring
+    content: {title: Mentoring Experience, folder: mentoring}
+
+  - block: site.list
     id: service
     content: {title: Academic Service, folder: service}
 
